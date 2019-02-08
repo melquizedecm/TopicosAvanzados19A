@@ -1,8 +1,5 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Esté es el archivo .js el cual es llamado en el index principal de nuestra página web.
  */
 
-
-
+alert("Hola Mundo desde archivo");
