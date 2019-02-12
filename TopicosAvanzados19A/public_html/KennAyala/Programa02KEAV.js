@@ -7,9 +7,9 @@ var i;
 leerCalificaciones();
 
 function leerCalificaciones() {
-    while (Number.isInteger(n) && n > 0) {
-    n = prompt("Escribe la cantidad de calificaciones");
-    } 
+    do {
+        n = prompt("Escribe la cantidad de calificaciones");
+    } while (!(n > 0 || Number.isInteger(n)));
 
-    document.write("aqui pongo le mensaje a imprimir");
+    alert(n);
 }
