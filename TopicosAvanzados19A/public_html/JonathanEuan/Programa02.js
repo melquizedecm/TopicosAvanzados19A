@@ -25,7 +25,7 @@ function leerCalificaciones(){
 
   do{
     n=prompt("Escribe un número");// leer un numero
-  }while!(n>0);
+  }while(n>0);
 /*  do{
       n=prompt("Escribe la cantidad de calificaciones");
   }while!(Number.IsInteger(n) && n>0){
