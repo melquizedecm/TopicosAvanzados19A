@@ -35,4 +35,3 @@ function leerCalificaciones(){
   document.write("aqui pongo el mensaje a imprimir"); //imprimir en la pagina
   prompt(); //leer
 */
-}
