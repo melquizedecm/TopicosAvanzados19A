@@ -12,19 +12,18 @@ function leerCalificaciones() {
     var suma = 0;
     var i;
     for (i = 0; i < grupo; i++) {
-        while(true){
+        while (true) {
             var calificaciones = prompt("escribe la calificación del alumno");
             cal[i] = Number(calificaciones);
-            if (Number.isInteger(cal[i]) || ((cal[i]<=0) && (cal[i]>100))){
+            if (cal[i] % 1 === 0 && cal[i] >= 0 && cal[i] <= 100) {
                 break;
-            }
-            else{
+            } else {
                 alert("No es una calificacion valida");
             }
-        } 
+        }
         suma = suma + cal[i];
     }
-    document.write(suma/grupo);
+    document.write(suma / grupo);
 
 
 }

@@ -3,13 +3,16 @@ var cal = [];
 var suma = 0;
 var promedio = 0;
 var i;
-
+var t = prompt("Ingrese el tamaño del grupo");
 leerCalificaciones();
 
 function leerCalificaciones() {
-    while (Number.isInteger(n) && n > 0) {
-    n = prompt("Escribe la cantidad de calificaciones");
-    } 
+    for (i; i < t; i++) {
+        do {
+            n = prompt("Escribe la cantidad de calificaciones");
+        } while ((n < 0) || n % 1 !== 0);
+    }
 
-    document.write("aqui pongo le mensaje a imprimir");
+
+    alert(n);
 }
