@@ -24,6 +24,4 @@ function leerCalificaciones() {
         suma = suma + cal[i];
     }
     document.write(suma / grupo);
-
-
 }
