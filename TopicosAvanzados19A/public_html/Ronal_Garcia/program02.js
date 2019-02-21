@@ -1,11 +1,10 @@
-/*
-Descripcion: programa para leer calificaciones de un grupo
-1. Leer n(tamaño de grupo). leer calificaciones
-2. Conservar las calificaciones(arreglo). calcular el promedio
-  (Sumar calificaciones y Dividir entre n)
-3. Imprimir las calificaciones. Imprimir promedio.
-*/
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
+/* global NaN */
 
 function leerCalificaciones() {
     var grupo = document.getElementById("inputGrupo").value;
@@ -26,12 +25,3 @@ function leerCalificaciones() {
     }
     document.write(suma / grupo);
 }
-/*  do{
-      n=prompt("Escribe la cantidad de calificaciones");
-  }while!(Number.IsInteger(n) && n>0){
-
-  }
-  //alert();  //Imprimir
-  document.write("aqui pongo el mensaje a imprimir"); //imprimir en la pagina
-  prompt(); //leer
-*/
