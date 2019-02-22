@@ -693,7 +693,7 @@ section
 }
 .hero_slide_content h1 span
 {
-	
+
 	padding-left: 13px;
 	padding-right: 13px;
 	margin-left: -12px;
@@ -735,13 +735,14 @@ section
 	transform: translateY(calc(-50% + 30px));
 	width: 58px;
 	height: 58px;
-	background: #FFFFFF;
+
 	z-index: 9;
 	cursor: pointer;
 }
 .hero_slider_nav:hover
 {
-	background: #ffb606;
+	background: #000000;
+	border-radius: 40px;
 }
 .hero_slider_nav:hover span
 {
@@ -753,7 +754,7 @@ section
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 700;
-	color: #121212;
+	color: #FFFFFF;
 	line-height: 1;
 }
 .hero_slider_left
