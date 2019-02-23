@@ -224,8 +224,7 @@ section::before,section::after {
     05. parallax
 ========================================================================== */
 .parallax {
-    align-content: center;
-    background:url(../img/parallax1.jpg);
+    background:url(../img/parallax1.jpg) fixed no-repeat center center;
     -webkit-background-size:/*@@prefixmycss->No equivalent*/;
     -moz-background-size:cover;
     -o-background-size:/*@@prefixmycss->No equivalent*/;
@@ -250,7 +249,7 @@ section::before,section::after {
     font-size:40px;
     margin-bottom:20px;
 }
-.parallax h1,.parallax h2,.parallax h3,.parallax h4,.parallax h5,.parallax h6 {
+.parallax h1,.parallax h2,.parallax h3,.parallax h4,.parallax h5, {
     color:#red;
 }
 .facts p {
