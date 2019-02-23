@@ -144,16 +144,16 @@ section::before,section::after {
     03. Navigation
 ========================================================================== */
 #menu {
-    background:rgba(33,45,57,0.8);
+    background:rgba(35,45,57,0.8);
     margin-bottom:0;
 }
 .navbar-brand h2 {
     margin-top:0;
     font-weight:bold;
-    color:white;
+    color:red;
 }
 .navbar-brand {
-    padding-top:8px;
+    padding-top:20px;
     padding-bottom:0;
 }
 .navbar-inverse .navbar-nav>li>a {
