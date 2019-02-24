@@ -1,9 +1,9 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Sours:          index.html
+Description:    Index del programa 1
+Date:           
  */
-
+/* este es otra manera de arrojar un mensaje creando un javascrit file*/
 alert("Hola Mundo desde ARCHIVO JS");
 
 

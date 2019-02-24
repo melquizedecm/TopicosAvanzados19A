@@ -1,10 +1,10 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Sours:          index.html
+Description:    Index del programa 2
+Date:           
  */
 
-/* global NaN */
+/* funcion para la lectura de los numeros ingresados esto para que el numero no se pase del rango */
 
 function leerCalificaciones() {
     var grupo = document.getElementById("inputGrupo").value;
