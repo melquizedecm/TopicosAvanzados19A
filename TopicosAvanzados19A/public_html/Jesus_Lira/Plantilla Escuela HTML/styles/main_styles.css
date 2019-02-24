@@ -333,6 +333,9 @@ section
 	display: inline-block;
 	padding-left: 76px;
 }
+.logo img{
+	border-radius: 25px;
+}
 .logo span
 {
 	font-family: 'Open Sans', sans-serif;
@@ -776,6 +779,7 @@ section
 	height: 0px;
 	z-index: 9;
 	padding-top: 0px;
+
 }
 .hero_boxes_inner
 {
@@ -786,6 +790,7 @@ section
 }
 .hero_box
 {
+	align-items: center;
 	width: 100%;
 	height: 161px;
 	background: #1a1a1a;
