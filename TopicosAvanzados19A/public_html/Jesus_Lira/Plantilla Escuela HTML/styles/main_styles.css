@@ -290,13 +290,14 @@ section
 	transform: translateX(-50%);
 	width: 1318px;
 	height: 104px;
-	background: #FFFFFF;
+
 	z-index: 10;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+
 }
 .header.scrolled
 {
