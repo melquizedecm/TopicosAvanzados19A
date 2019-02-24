@@ -342,7 +342,7 @@ section
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	font-weight: 900;
-	color: white;
+	color: black;
 	vertical-align: middle;
 	text-transform: uppercase;
 	margin-left: 3px;
@@ -377,7 +377,7 @@ section
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: white;
+	color: black;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
