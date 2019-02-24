@@ -781,6 +781,9 @@ section
 	padding-top: 0px;
 
 }
+.col-lg-4{
+	align-items: center;
+}
 .hero_boxes_inner
 {
 	position: absolute;
