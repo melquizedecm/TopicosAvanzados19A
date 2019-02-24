@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+            <link type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet"/>
+      <script>
+    $(document).ready(function() {
+      $('#tableExample').DataTable();
+    });
+      </script>
+
+  </head>
+  <body>
+
+    <div>DataTable Example</div>
+    <table id="tableExample"  class="display" style="width: 70%" >
+      <!-- Encabezado Tabla-->
+      <thead>
+        <tr> <!-- fila -->
+          <th>Nombre</th>             <!-- celda 1 -->
+          <th>Edad</th>               <!-- celda 2 -->
+          <th>Correo</th>             <!-- celda 3 -->
+          <th>Matricula</th>          <!-- celda 4 -->
+        </tr>
+      </thead>
+
+      <!-- Contenido de la Tabla -->
+      <tbody>
+        <tr> <!-- fila 2 -->
+          <td>Jonathan</td>           <!-- celda 1 -->
+          <td>19</td>                 <!-- celda 2 -->
+          <td>aspoke@live.com</td>    <!-- celda 3 -->
+          <td>04170073</td>           <!-- celda 3 -->
+        </tr>
+
+        <tr> <!-- fila 3 -->
+          <td>Aspoke 2</td>           <!-- celda 1 -->
+          <td>50</td>                 <!-- celda 2 -->
+          <td>aspoke2@live.com</td>   <!-- celda 3 -->
+          <td>04170074</td>           <!-- celda 3 -->
+        </tr>
+
+        <tr> <!-- fila 4 -->
+          <td>Jose</td>               <!-- celda 1 -->
+          <td>70</td>                 <!-- celda 2 -->
+          <td>aspoke3@live.com</td>   <!-- celda 3 -->
+          <td>04170075</td>           <!-- celda 4 -->
+        </tr>
+
+        <tr> <!-- fila 5 -->
+          <td>Armando</td>               <!-- celda 1 -->
+          <td>35</td>                 <!-- celda 2 -->
+          <td>aspoke4@live.com</td>   <!-- celda 3 -->
+          <td>04170076</td>           <!-- celda 4 -->
+        </tr>
+
+        <tr> <!-- fila 6 -->
+          <td>Jose2</td>               <!-- celda 1 -->
+          <td>40</td>                 <!-- celda 2 -->
+          <td>aspoke5@live.com</td>   <!-- celda 3 -->
+          <td>04170077</td>           <!-- celda 4 -->
+        </tr>
+
+        <tr> <!-- fila 7 -->
+          <td>Ivana</td>               <!-- celda 1 -->
+          <td>18</td>                 <!-- celda 2 -->
+          <td>aspok@live.com</td>   <!-- celda 3 -->
+          <td>04170078</td>           <!-- celda 4 -->
+        </tr>
+      </tbody>
+
+      <!-- Pie de la Tabla -->
+      <tfoot>
+        <tr> <!-- fila -->
+          <th>Nombre</th>             <!-- celda 1 -->
+          <th>Edad</th>               <!-- celda 2 -->
+          <th>Correo</th>             <!-- celda 3 -->
+          <th>Matricula</th>          <!-- celda 4 -->
+        </tr>
+      </tfoot>

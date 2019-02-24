@@ -7,25 +7,25 @@ Descripcion: programa para leer calificaciones de un grupo
 */
 
 
-var n;
-var cal=[];
-var suma=0;
-var promedio;
-var i;
-
-leerCalificaciones();
-
-
-function leerCalificaciones(){
-
-  alert("estoy en la funcion");
-
-
-  alert(n);// imprimir n
-
-  do{
-    n=prompt("Escribe un número");// leer un numero
-  }while(n>0);
+function leerCalificaciones() {
+    var grupo = document.getElementById("inputGrupo").value;
+    var cal = [];
+    var suma = 0;
+    var i;
+    for (i = 0; i < grupo; i++) {
+        while (true) {
+            var calificaciones = prompt("escribe la calificación del alumno");
+            cal[i] = Number(calificaciones);
+            if (cal[i] % 1 === 0 && cal[i] >= 0 && cal[i] <= 100) {
+                break;
+            } else {
+                alert("No es una calificacion valida");
+            }
+        }
+        suma = suma + cal[i];
+    }
+    document.write(suma / grupo);
+}
 /*  do{
       n=prompt("Escribe la cantidad de calificaciones");
   }while!(Number.IsInteger(n) && n>0){
@@ -35,4 +35,3 @@ function leerCalificaciones(){
   document.write("aqui pongo el mensaje a imprimir"); //imprimir en la pagina
   prompt(); //leer
 */
-}
