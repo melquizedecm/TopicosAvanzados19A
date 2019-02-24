@@ -1,0 +1,123 @@
+*{
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box; //para abrir en el navegador Chrome
+   -moz-box-sizing: border-box; //para abrir navegador Firefox
+   box-sizing: border-box; //para abrir en los navegadores internet Explore y Opera mini
+}
+
+body{
+    background: url(../Imag/ele.jpg);
+    -webkit-background-size: cover; //para acomodar el fondo de en Chrome
+    background-size: cover;
+    background-attachment: fixed; //para que la imagen quede estatica en cualquier navegador
+    font-family: Roboto;
+}
+
+.contenedor-form{
+   position: relative; //para que se fije en la posición adecuada
+   background: rgba(0,0,0,.7); //para la ocapacidad
+   width: 100%;
+   max-width: 500px; //ancho
+   margin: 48px auto; //centrado del margen
+   color: azure; //color de las letras
+   border-radius: 5px; //el color
+}
+
+.contenedor-form.toggle{
+    position: absolute; //para dejar estatico
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid tomato;
+    border-bottom: 2px solid tomato;
+    transition: all .5s ease; //para la duracion del cambio de color de Crear cuenta
+    cursor: pointer; //para cuando pase el cursor
+}
+
+.contenedor-form.toggle span{
+    latter-spacing: 1px;
+}
+
+.contenedor-form.toggle:hover{
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+.contenedor-form h2{
+    margin: 0 0 28px 0;
+    font-size: 20px;//tamaño de letra
+    font-weight: 400;
+    line-height: 1px;
+}
+
+.contenedor-form input[type="text"], //accede al todo el input y los
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"]{
+    outline: none;
+    background: rgba(0, 0, 0, .5);
+    display: block;
+    width: 100%;
+    color: beige;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border-bottom: 4px solid tomato;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    transition: all .5s ease; 
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus {
+    border-bottom: 4px solid blue;
+}
+
+.contenedor-form input[type="submit"]{
+    background: gray;
+    color: azure;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+    latter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]:hover{
+    background: rgba(0, 117, 217, 0.7);
+}
+
+.contenedor-form.reset-password{
+    background: rgba(0, 117, 217, 0.7);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.contenedor-form.reset-password a{
+    color: azure;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor-form.formulario{
+    padding: 40px;
+    display: none;
+}
+
+.contenedor-form.formulario:nth-child(2){//con este el formulario dos aparece en otra parte
+    display: block;
+}

@@ -290,13 +290,14 @@ section
 	transform: translateX(-50%);
 	width: 1318px;
 	height: 104px;
-	background: #FFFFFF;
+
 	z-index: 10;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+
 }
 .header.scrolled
 {
@@ -333,12 +334,15 @@ section
 	display: inline-block;
 	padding-left: 76px;
 }
+.logo img{
+	border-radius: 25px;
+}
 .logo span
 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	font-weight: 900;
-	color: #3a3a3a;
+	color: black;
 	vertical-align: middle;
 	text-transform: uppercase;
 	margin-left: 3px;
@@ -373,7 +377,7 @@ section
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #3a3a3a;
+	color: black;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -693,7 +697,7 @@ section
 }
 .hero_slide_content h1 span
 {
-	
+
 	padding-left: 13px;
 	padding-right: 13px;
 	margin-left: -12px;
@@ -735,13 +739,14 @@ section
 	transform: translateY(calc(-50% + 30px));
 	width: 58px;
 	height: 58px;
-	background: #FFFFFF;
+
 	z-index: 9;
 	cursor: pointer;
 }
 .hero_slider_nav:hover
 {
-	background: #ffb606;
+	background: #000000;
+	border-radius: 40px;
 }
 .hero_slider_nav:hover span
 {
@@ -753,7 +758,7 @@ section
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 700;
-	color: #121212;
+	color: #FFFFFF;
 	line-height: 1;
 }
 .hero_slider_left
@@ -775,6 +780,10 @@ section
 	height: 0px;
 	z-index: 9;
 	padding-top: 0px;
+
+}
+.col-lg-4{
+	align-items: center;
 }
 .hero_boxes_inner
 {
@@ -785,6 +794,7 @@ section
 }
 .hero_box
 {
+	align-items: center;
 	width: 100%;
 	height: 161px;
 	background: #1a1a1a;
