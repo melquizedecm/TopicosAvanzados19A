@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+<!--Nombre: Francisco Montalvo Hidalgo
+Profesor:Melquizedec Moo Medina
+Programa: DataTable
+Fecha:21/feb/2019
+ -->
+
 <html lang="en" dir="ltr">
   <head>
-
+<!--Librerias de bootstrap -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <link type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet"/>
-
+    <!--Script en el cual se implementan las librerias de bootstrap para el DataTable -->
     <script type="text/javascript">
     $(document).ready(function() {
         $('#example').DataTable( {
@@ -20,6 +26,7 @@
 
   </head>
   <body>
+    <!--La clase utilizada en el table es hover ya que es la que se llama desde bootstrap -->
     <div>DataTable Example</div>
     <table id="example" class="hover" style="width:100%">
       <thead>
