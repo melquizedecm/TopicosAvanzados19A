@@ -1,50 +1,153 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Sours:          index.html
+Description:    Index del programa 5
+Date:           
 -->
-<html>
-    <head>
-<script type=text/javascript" src= "https://code.jquery.com/jquery-3.3.1.js"></scrip>
-<script type=text/javascript" src= "https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"> < /scrip>
-<link type=text/css" href= "https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></link>
-<script>
-<script>
-$(document).ready(function(){
-            $('#tableExample')
-})
-</script>
-            
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>DataTable Example </div>
-        table id="tableExample"> border="1"class
-        <!Encableza Tabla> 
-        <thead>
-            <tr> <!--Fila 1-->
-                <th>Nombre</th>  <!--Celda1-->
-                <th>Correo</th>  <!--Celda2-->
-                <th>Matricula</th> <!--Celda3-->
-                <th>Edad</th>       <!--Celda4-->
-                
-            </tr>
-        </thead>
-        
-        <!--Contedino de la tabla-->
-        <tbody
-            <tr>    <!--Fila 2-->
-            <th>ronal</th>  <!--Celda1-->
-                <th>ronincubus360@hotmail.com</th>  <!--Celda2-->
-                <th>04160030</th> <!--Celda3-->
-                <th>31</th>       <!--Celda4-->
-                
-            </tr>
-</body>
-       
-       
-    </body>
+<html lang="en" dir="ltr">
+  <head>
+    <!--Estilo de la tabal a usar -->  
+    <link type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+
+    <script>
+      $(document).ready(function(){
+          $('#tableExample').DataTable();
+      });
+    </script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<div>dataTable Example</div>
+<table id="tableExample" border="1" class="display">
+  <thead>
+
+    <tr>
+      <!--fila 1-->
+      <th>Nombre</th> <!--celda 1-->
+      <th>Edad</th><!--celda 2-->
+      <th>Correo</th><!--celda 3-->
+      <th>Matricula</th><!--celda 4-->
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <!--fila 2-->
+      <td>Ronal Israel Garcia Carrillo</td>
+      <td>31</td>
+      <td>ronincubus360@hotmail.com</td>
+      <td>04160012</td>
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+      <td>eduardo suaste</td>
+      <td>20</td>
+      <td>---@hotmail.com</td>
+      <td>04000000</td>
+    </tr>
+    <tr>
+      <!--fila 2-->
+      <td>Ronal Israel Garcia Carrillo</td>
+      <td>31</td>
+      <td>ronincubus360@hotmail.com</td>
+      <td>04160012</td>
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+      <td>eduardo suaste</td>
+      <td>20</td>
+      <td>---@hotmail.com</td>
+      <td>04000000</td>
+    </tr>
+    <tr>
+      <!--fila 2-->
+    
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+     
+    </tr>
+    <tr>
+      <!--fila 2-->
+     
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+     
+    </tr>
+    
+    <tr>
+      <!--fila 2-->
+     
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+      
+    </tr>
+    
+    <tr>
+      <!--fila 2-->
+     
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+    
+    </tr>
+    
+    <tr>
+      <!--fila 2-->
+     
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+     
+    </tr>
+    
+    <tr>
+      <!--fila 2-->
+      
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+     
+    </tr>
+    
+    <tr>
+      <!--fila 2-->
+     
+    </tr>
+
+    <tr>
+      <!--fila 3-->
+    
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <!--fila 4-->
+      <th>Foot 1</th> <!--celda 1-->
+      <th>Foot 2</th><!--celda 2-->
+      <th>Foot 3</th><!--celda 3-->
+      <th>Foot 4</th><!--celda 4-->
+    </tr>
+  </tfoot>
+</table>
+
+  </body>
+
 </html>

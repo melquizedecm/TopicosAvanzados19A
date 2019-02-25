@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Sours:          index.html
+Description:    Index del programa 6
+Date:           
 
 https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-table-for-database-with-modal-form
 -->
@@ -12,7 +12,7 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>tabla ejemplo de actividad</title>
+        <title>tabla ejemplo de actividad 6</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,22 +20,26 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style type="text/css">
+            <!-- en esta parte se le da forma a la pagina  en el cual se incuyte desde el color hasta el tamaño
+            forma de la pagina-->
             body {
-                color: #566787;
-                background: #f5f5f5;
+                color: #F44336;
+                background: #FFC107;
                 font-family: 'Varela Round', sans-serif;
                 font-size: 13px;
             }
-            .table-wrapper {
-                background: #fff;
+            .table-wrapper { 
+                /* fondo de la tabla */
+                background: #005cbf; /*azul*/
                 padding: 20px 25px;
                 margin: 30px 0;
                 border-radius: 3px;
                 box-shadow: 0 1px 1px rgba(0,0,0,.05);
             }
-            .table-title {        
+            .table-title {  
+                /* fondo da la barra principal */
                 padding-bottom: 15px;
-                background: #435d7d;
+                background: #FFC107; /* amarrilo */
                 color: #fff;
                 padding: 16px 30px;
                 margin: -20px -25px 10px;
@@ -275,8 +279,8 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
                             <h2>Control de Articulos</h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Articulo</span></a>
-                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
+                            <a href="#addMenú" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Articulo</span></a>
+                            <a href="#deleteMenú" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
                         </div>
                     </div>
                 </div>
@@ -298,7 +302,7 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr> <!-- se inserta la informacion de la celda -->
                             <td>
                                 <span class="custom-checkbox">
                                     <input type="checkbox" id="checkbox1" name="options[]" value="1">
@@ -311,8 +315,8 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
                             <td>500</td>
                             <td>medo uso</td>
                             <td>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                <a href="#editMenú" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                             </td>
                         </tr>
                        
@@ -335,7 +339,7 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
             </div>
         </div>
         <!-- Edit Modal HTML -->
-        <div id="addEmployeeModal" class="modal fade">
+        <div id="addMenú" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <form>
@@ -343,6 +347,7 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
                             <h4 class="modal-title">Add Articulo</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         </div>
+                        <!-- ingreso de informacion para agregar a las celdas por medio del area de addarticulo -->
                         <div class="modal-body">					
                             <div class="form-group">
                                 <label>Numero</label>
@@ -374,7 +379,7 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
             </div>
         </div>
         <!-- Edit Modal HTML -->
-        <div id="editEmployeeModal" class="modal fade">
+        <div id="editMenú" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <form>
@@ -382,23 +387,28 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
                             <h4 class="modal-title">Edit Articulo</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         </div>
+                        <!-- para editar articulo --> 
                         <div class="modal-body">					
                             <div class="form-group">
-                                <label>Name</label>
+                                <label>Numero</label>
                                 <input type="text" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Address</label>
-                                <textarea class="form-control" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>Phone</label>
+                                <label>Articulo</label>
                                 <input type="text" class="form-control" required>
-                            </div>					
+                            </div>
+                            <div class="form-group">
+                                <label>Marca</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Precio</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Estado</label>
+                                <input type="text" class="form-control" required>
+                            </div>		
                         </div>
                         <div class="modal-footer">
                             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -409,7 +419,7 @@ https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=crud-data-tabl
             </div>
         </div>
         <!-- Delete Modal HTML -->
-        <div id="deleteEmployeeModal" class="modal fade">
+        <div id="deleteMenú" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <form>
