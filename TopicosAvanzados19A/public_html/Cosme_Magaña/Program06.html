@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- CODIGO CRUD EDITABLE BOOSTRAP-->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -14,13 +16,13 @@
 <style type="text/css">
     body {
         color: #566787;
-		background: #f5f5f5;
+		background: #ffffff;
 		font-family: 'Varela Round', sans-serif;
 		font-size: 13px;
 	}
 	.table-wrapper {
         background: #fff;
-        padding: 20px 25px;
+        padding: 200px 25px;
         margin: 30px 0;
 		border-radius: 3px;
         box-shadow: 0 1px 1px rgba(0,0,0,.05);
@@ -264,7 +266,7 @@ $(document).ready(function(){
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-						<h2>Manage <b>Employees</b></h2>
+						<h2>CRUD  <b>EJEMPLO EDITABLE</b></h2>
 					</div>
 					<div class="col-sm-6">
 						<a href="#addMenú" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
@@ -281,11 +283,11 @@ $(document).ready(function(){
 								<label for="selectAll"></label>
 							</span>
 						</th>
-                        <th>Name</th>
-                        <th>Email</th>
-						<th>Address</th>
-                        <th>Phone</th>
-                        <th>Actions</th>
+                        <th>Nombre</th>
+                        <th>correo</th>
+						<th>Direccion</th>
+                        <th>Telefono</th>
+                        <th>Editar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -296,10 +298,10 @@ $(document).ready(function(){
 								<label for="checkbox1"></label>
 							</span>
 						</td>
-                        <td>Thomas Hardy</td>
-                        <td>thomashardy@mail.com</td>
-						<td>89 Chiaroscuro Rd, Portland, USA</td>
-                        <td>(171) 555-2222</td>
+                        <td>Cosme MAgaña</td>
+                        <td>117c@outlook.com</td>
+						<td>Yucatan</td>
+                        <td>12345</td>
                         <td>
                             <a href="#editMenú" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>

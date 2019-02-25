@@ -2,7 +2,7 @@
   2- Conservarlas. Calcular el promedio.
   3- Imprimir Calif y Prom.*/
 
-var n;  //se escribe var por wue si no seria una variable loczl
+var n;  //se escribe var por que si no seria una variable local
 var cal=[];
 var suma=0;
 var promedio;

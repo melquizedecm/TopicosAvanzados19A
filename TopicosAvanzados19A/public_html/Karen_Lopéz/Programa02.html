@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Source: Programa3newhtml.html
+Description: como crear un boton y utilizarlo en una funcion.
+Date: 14/02/19
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Promedios de calificaciones</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script Type="text/JavaScript" src="programa02.JS"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="divGrupo">
+            <form>
+                <input type="number" id="inputGrupo" min="1" max="100">
+                <button id="buttonGrupo" onclick="leerCalificaciones()">Agregar</button>
+            </form>
+        </div>
     </body>
-</html>

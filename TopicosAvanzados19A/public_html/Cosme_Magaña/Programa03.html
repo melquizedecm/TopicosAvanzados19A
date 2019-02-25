@@ -6,6 +6,8 @@ Date:           14/Febrero/2019
 -->
 <html>
     <head>
+
+      <!--agregamos las configuraciones del boostrap para la interfaz-->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -19,18 +21,21 @@ Date:           14/Febrero/2019
         <div id = "divHeaded">
 
         </div>
+
+        <!-- agregamos dentro de un div-->
         <div id = "divContainer">
             <div id = "divForm">
                 <form class="form-singin">
 
                     <input name="inputUsername" id = "inputUsername" type="text" size="20" placeholder="Ejemplo: Mickey" /><br>
 
+<!-- aqui agregamos los que seran las opciones disponibles a seleccionar-->
                     <input id = "radio1" name ="radio1" type="radio" value="1"> Chocolate<br>
                     <input id = "radio2" name ="radio2" type="radio" value="1"> Helado<br>
                     <input id = "radio3" name ="radio3" type="radio" value="1"> Abrazos<br>
                     <input id = "radio4" name ="radio4" type="radio" value="1"> Sorpresa<br>
 
-
+<!-- aqui agregamos los valores a leer mediante el submit-->
                     <input type="number" min="1" max="20" /><br>
                     <input type= "date"><br>
                     <input type= "email"><br>
