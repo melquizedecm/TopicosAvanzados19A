@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+body {
+	font-family: 'Arial', 'Helvetica', 'sans-serif normal';
+	width: auto;
+	height: auto;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+	position: static;
+	width: 550px;
+	margin: auto;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+h {
+	
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.title {
+	text-align: center;
+}
+
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.avatar {
+	width: 20%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: auto;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+</style>
+
+</head>
+<body>
+	<h1 class="title">Registro</h1>	
+
+	<form action="/action_page.php">
+		<div class="imgcontainer">
+		  <p><img src="..\Recursos\login\avatar.png" alt="Avatar" class="avatar"></p>
+		</div>
+
+		<div class="container">
+		
+			<label for="uname"><b>Nombre(s)</b></label> 
+			<input type="text" placeholder="Nombre de Usuario" name="uname" required> 
+			<label for="uname"><b>Apellido paterno</b></label> 
+			<input type="text" placeholder="Apellido paterno" name="uname" required> 
+			<label for="uname"><b>Apellido materno</b></label> 
+			<input type="text" placeholder="Apellido materno" name="uname" required> 
+			<label for="uname"><b>Correo electrónico</b></label> 
+			<input type="text" placeholder="E-mail" name="uname" required> 
+			<label for="uname"><b>Usuario</b></label> 
+			<input type="text" placeholder="Nombre de Usuario" name="uname" required> 
+			<label for="psw"><b>Contraseña</b></label> 
+			<input type="password" placeholder="Ingresar contraseña" name="psw" required>
+
+		</div>
+
+		<div class="container" style="background-color: #f1f1f1">
+        			<button type="submit" >Finalizar registro</button>
+
+		  <button type="button" class="cancelbtn">Cancelar</button>
+		</div>
+	</form>
+</body>
+</html>
