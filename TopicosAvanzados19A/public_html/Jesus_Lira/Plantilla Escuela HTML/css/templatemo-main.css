@@ -208,7 +208,7 @@ h4, .h4 {
 
 .service-content .left-text p {
 align=left:10px;
-  color: #fff;
+  color: #FF0000;
 }
 
 .service-content .left-text ul {
@@ -231,7 +231,7 @@ align=left:10px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 50px 600px;
   text-align: left;
-  color: #fff;
+  color: #FF0000;
   margin-bottom: 30px;
 }
 
