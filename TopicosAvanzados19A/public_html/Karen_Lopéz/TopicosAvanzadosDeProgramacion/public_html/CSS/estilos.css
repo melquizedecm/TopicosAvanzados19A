@@ -7,7 +7,7 @@
 }
 
 body{
-    background: skyblue;
+    background: #00D3BC;
     -webkit-background-size: cover; //para acomodar el fondo de en Chrome
     background-size: cover;
     background-attachment: fixed; //para que la imagen quede estatica en cualquier navegador
