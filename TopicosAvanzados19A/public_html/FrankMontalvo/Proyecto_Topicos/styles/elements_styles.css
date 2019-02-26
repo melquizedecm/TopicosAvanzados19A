@@ -17,15 +17,15 @@
 	4.2 Menu copyright
 5. Home
 7. Page Section
-8. Buttons
-9. News
-	9.1 Comments
-	9.2 Leave Comment
-10. Sidebar
-11. Footer
-	11.1 Newsletter
-	11.2 Footer Content
-	11.3 Footer Copyright
+8. Elements
+	8.1 Buttons
+	8.2 Progress Bars
+	8.3 Accordions
+	8.4 Loaders
+	8.5 Milestones
+	8.6 Icon Boxes
+9. Footer
+	9.1 Footer Copyright
 
 
 ******************************/
@@ -75,7 +75,7 @@ p
 	font-size: 14px;
 	line-height: 2.29;
 	font-weight: 400;
-	color: black;
+	color: #a5a5a5;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -135,14 +135,14 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
+h1::selection, 
+h2::selection, 
+h3::selection, 
+h4::selection, 
+h5::selection, 
 h6::selection
 {
-
+	
 }
 ::-webkit-input-placeholder
 {
@@ -156,14 +156,14 @@ h6::selection
 	font-weight: 500 !important;
 	color: #a5a5a5 !important;
 }
-::-moz-placeholder /* Firefox 19+ */
+::-moz-placeholder /* Firefox 19+ */ 
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: #a5a5a5 !important;
-}
+} 
 :-ms-input-placeholder
-{
+{ 
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: #a5a5a5 !important;
@@ -288,7 +288,7 @@ section
 	transition: all 200ms ease;
 }
 .header.scrolled
-{
+{	
 	top: 15px;
 }
 .header.scrolled .header_content::before
@@ -321,9 +321,6 @@ section
 {
 	display: inline-block;
 	padding-left: 76px;
-}
-.logo img{
-	border-radius: 25px;
 }
 .logo span
 {
@@ -667,7 +664,7 @@ section
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-
+	background: #ffb606;
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;
@@ -677,7 +674,7 @@ section
 {
 	font-size: 72px;
 	font-weight: 400;
-	color: #737373;
+	color: #FFFFFF;
 	line-height: 0.5;
 	white-space: nowrap;
 }
@@ -720,12 +717,38 @@ section
 }
 
 /*********************************
-8. Buttons
+8. Elements
 *********************************/
 
+.elements
+{
+	width: 100%;
+	padding-top: 109px;
+	padding-bottom: 106px;
+}
+.elements_title
+{
+	font-size: 24px;
+	font-weight: 500;
+	color: #1a1a1a;
+}
+
+/*********************************
+8.1 Buttons
+*********************************/
+
+.buttons_container
+{
+	margin-top: 107px;
+}
 .button
 {
-	cursor: pointer;
+	display: inline-block;
+	width: 188px;
+	height: 53px;
+	vertical-align: middle;
+	margin-right: 9px;
+	margin-bottom: 15px;
 }
 .button:hover
 {
@@ -733,155 +756,313 @@ section
 }
 .button a
 {
-	font-size: 14px;
-	line-height: 48px;
+	line-height: 53px;
+	display: block;
+	font-size: 16px;
 	font-weight: 700;
-	text-transform: uppercase;
 }
-.button_1
+.button_color_1
 {
-	width: 202px;
-	height: 48px;
+	background: #ffb606;
+}
+.button_color_1 a
+{
+	color: #FFFFFF;
+}
+.button_color_2
+{
+	background: #1a1a1a;
+}
+.button_color_2 a
+{
+	color: #FFFFFF;
+}
+.button_line_1
+{
+	background: transparent;
+	border: solid 2px #ffb606;
+}
+.button_line_1 a
+{
+	color: #ffb606;
+}
+.button_line_2
+{
+	background: transparent;
+	border: solid 2px #1a1a1a;
+}
+.button_line_2 a
+{
+	color: #1a1a1a;
 }
 
 /*********************************
-9. Contact
+8.2 Progress Bars
 *********************************/
 
-.contact
+.pbars_accordions
 {
-	padding-top: 106px;
-	padding-bottom: 117px;
+	margin-top: 94px;
 }
-.contact_title
+.pbars_accordions_container
 {
-	font-size: 36px;
-	font-weight: 500;
+	padding-top: 104px;
+}
+.pbar_container
+{
+	background: #f8f4f4;
+	padding-left: 99px;
+	padding-right: 97px;
+	padding-top: 46px;
+	padding-bottom: 45px;
+}
+.pb_item
+{
+	margin-bottom: 18px;
+}
+.pb_item h4
+{
 	color: #1a1a1a;
+	font-weight: 400 !important;
+	padding-left: 2px;
+	margin-bottom: 13px;
 }
-.contact_form_container
+.skill_bars
 {
-	margin-top: 70px;
+	height: 5px;
 }
-.input_field
+
+/*********************************
+8.3 Accordions
+*********************************/
+
+.elements_accordions
 {
+	
+}
+.accordion_container
+{
+	margin-bottom: 15px;
+}
+.accordion
+{
+	height: 60px;
 	width: 100%;
 	background: #f8f4f4;
-	border: solid 2px transparent;
-	margin-bottom: 24px;
-	height: 42px;
-	padding-left: 33px;
+	padding-left: 30px;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
-.input_field:focus
+.accordion.active
 {
-	outline: none !important;
-	border-color: #ffb606;
+	background: #ffb606;
+	color: #FFFFFF;
 }
-.text_field
+.accordion:active
 {
-	width: 100%;
-	height: 189px;
-	background: #f8f4f4;
-	border: solid 2px transparent;
-	padding-left: 33px;
-	margin-bottom: 24px;
+	background: #ffb606 !important;
+	color: #FFFFFF;
 }
-.text_field:focus
+.accordion::after
 {
-	outline: none !important;
-	border-color: #ffb606;
-}
-.contact_send_btn
-{
-	width: 100%;
-	height: 48px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 62px;
+	height: 100%;
+	content: '+';
 	background: #ffb606;
 	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
 	color: #FFFFFF;
-	cursor: pointer;
-	border: none;
+	font-weight: 500;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
-.contact_send_btn:focus
+.accordion.active::after
 {
-	outline: solid 1px #ffb606;
-	border: green !important;
+	content: '-';
+}
+.accordion:hover
+{
+	background: #e4e4e4;
+}
+.accordion_panel
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.accordion_panel p
+{
+	padding-top: 15px;
 }
 
 /*********************************
-10. About
+8.4 Loaders
 *********************************/
 
-.about_title
+.loaders
+{
+	margin-top: 119px;
+}
+.elements_loaders_container
+{
+	margin-top: 60px;
+}
+.loader
+{
+	width: 195px;
+	height: 195px;
+	margin: 0 auto;
+}
+.loader_text
+{
+	font-size: 16px;
+	font-weight: 500;
+	color: #1a1a1a;
+	margin-top: 26px;
+}
+.loader .progressbar-text
+{
+	top: 50% !important;
+}
+.loader_sub
+{
+	font-size: 15px;
+	font-weight: 400;
+	color: #a5a5a5;
+	margin-top: 5px;
+}
+
+/*********************************
+8.5 Milestones
+*********************************/
+
+.milestones
+{
+	width: 100%;
+	margin-top: 102px;
+}
+.milestones_container
+{
+	width: 100%;
+	padding-top: 118px;
+	padding-bottom: 107px;
+	margin-top: 108px;
+}
+.milestones_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.milestone
+{
+	width: 100%;
+}
+.milestone_icon
+{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+}
+.milestone_icon img
+{
+	width: 100%;
+}
+.milestone_counter
 {
 	font-size: 36px;
 	font-weight: 500;
-	color: #1a1a1a;
+	color: #ffb606;
+	line-height: 1;
+	margin-top: 41px;
 }
-.about_text
+.milestone_text
 {
-	margin-top: 20px;
-}
-.contact_info
-{
-	margin-top: 64px;
-	padding-left: 46px;
-}
-.contact_info_item
-{
-	font-size: 14px;
-	font-weight: 400;
-	color: #a5a5a5;
-	margin-bottom: 22px;
-}
-.contact_info_item:last-child
-{
-	margin-bottom: 0px;
-}
-.contact_info_icon
-{
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	vertical-align: middle;
-	margin-right: 10px;
-}
-.contact_info_icon img
-{
-	width: 100%;
+	font-size: 22px;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-top: 3px;
 }
 
 /*********************************
-11. Google Map
+8.6 Icon Boxes
 *********************************/
 
-#google_map
+.icon_boxes
 {
-	width: 100%;
-	height: 532px;
-	margin-top: 117px;
+	margin-top: 112px;
 }
-.map_container
+.icon_boxes_container
 {
-	width: 100%;
-	height: 90%;
-	overflow: hidden;
+	margin-top: 109px;
 }
-#map
+.icon_box
 {
-	width: 100%;
-	height: calc(100% + 30px);
+	
+}
+.icon_box h3
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	color: #1a1a1a;
+	margin-bottom: 13px;
+}
+.icon_box p
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #a5a5a5;
+	max-width: 100%;
+	margin-bottom: 0px;
+}
+.icon_container
+{
+	height: 41px;
+	width: auto;
+	margin-bottom: 30px;
+}
+.icon_container img
+{
+	height: 100%;
 }
 
 /*********************************
-12. Footer
+9. Footer
 *********************************/
 
 .footer
 {
 	width: 100%;
-	padding-top: 86px;
 	background: #1a1a1a;
 }
 .footer .section_title h1
@@ -890,127 +1071,7 @@ section
 }
 
 /*********************************
-12.1 Newsletter
-*********************************/
-
-.newsletter
-{
-	padding-bottom: 85px;
-	border-bottom: solid 2px #4d4e4e;
-}
-.newsletter_form_container
-{
-	width: 60%;
-	margin-top: 48px;
-}
-.newsletter_email
-{
-	width: calc(100% - 164px);
-	height: 42px;
-	border: none;
-	padding-left: 27px;
-	font-weight: 500;
-	color: #1a1a1a;
-}
-.newsletter_email:focus
-{
-	outline: solid 2px #ffb606;
-}
-.newsletter_submit_btn
-{
-	width: 164px;
-	height: 42px;
-	border: none;
-	background: #ffb606;
-	color: #FFFFFF;
-	font-size: 14px;
-	font-weight: 500;
-	cursor: pointer;
-}
-.newsletter_submit_btn:focus
-{
-	border: solid 2px #FFFFFF;
-}
-
-/*********************************
-12.2 Footer Content
-*********************************/
-
-.footer_content
-{
-	padding-top: 80px;
-	padding-bottom: 83px;
-	border-bottom: solid 2px #4d4e4e;
-}
-.footer_content .logo_container
-{
-	padding-left: 0px;
-}
-.footer_content .logo span
-{
-	color: #FFFFFF;
-}
-.footer_about_text
-{
-	margin-top: 24px;
-	margin-bottom: 0px;
-	padding-right: 20px;
-}
-.footer_column_title
-{
-	font-size: 18px;
-	font-weight: 500;
-	color: #FFFFFF;
-	padding-top: 15px;
-}
-.footer_column_content
-{
-	margin-top: 32px;
-}
-.footer_list_item
-{
-	margin-bottom: 11px;
-}
-.footer_list_item a
-{
-	font-size: 14px;
-	color: #a5a5a5;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_list_item a:hover
-{
-	color: #ffb606;
-}
-.footer_contact_item
-{
-	font-size: 14px;
-	font-weight: 400;
-	color: #a5a5a5;
-	margin-bottom: 22px;
-}
-.footer_contact_item:last-child
-{
-	margin-bottom: 0px;
-}
-.footer_contact_icon
-{
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	vertical-align: middle;
-	margin-right: 10px;
-}
-.footer_contact_icon img
-{
-	width: 100%;
-}
-
-/*********************************
-12.3 Footer Copyright
+9.1 Footer Copyright
 *********************************/
 
 .footer_bar
