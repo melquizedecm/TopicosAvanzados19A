@@ -1,7 +1,8 @@
 /* 
  Sours:          index.html
 Description:    Index del programa 2
-Date:           
+Date:           12/febrero/19
+autor:          Ronal Garcia
  */
 
 /* funcion para la lectura de los numeros ingresados esto para que el numero no se pase del rango */
