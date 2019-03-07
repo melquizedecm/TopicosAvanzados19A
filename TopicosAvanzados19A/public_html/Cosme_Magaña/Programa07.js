@@ -10,19 +10,29 @@ var i;
 
 
 
-leerCalificaciones();
-promedio=suma/n;
-
-alert(promedio);
+function cantidadalumnos(){
+  while(true){
+  n=prompt("Escribe el numero de alumnos a calificar"); //por lo pronto para imprimir
+  if(n %1===0 && grupo >=0 ){
+    break;
+  }else{
+    alert("Escribe un numero entero positivo");
+  }
+}
+}
 
 function leerCalificaciones(){
-
-do{
-n=prompt("Escribe el numero de alumnos a calificar"); //por lo pronto para imprimir
-}while (!Number.isInteger(n) && !(n>0));/*para saber si n es entero*/
-
 for (i = 0; i < n; i++) {
 cal[i]=prompt("Escribe la calificacion ");
 suma=suma+parseInt(cal[i]);
+
 }
+}
+
+function getpromedio(){
+  promedio=suma/n;
+
+  alert(promedio);
+  suma=0;
+  cal=[];
 }
