@@ -1,16 +1,25 @@
 <!DOCTYPE html>
+<!--Nombre: Francisco Montalvo Hidalgo
+Profesor:Melquizedec Moo Medina
+Programa: DataTable Editable
+Fecha:22/feb/2019
+ -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+<!--Librerias utilizadas-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Etiqueta Style en la cual se configuran los estilos del documento-->
+<!--Nota imporante: Se puede observar que en el style estan los elementos editados por sus clases, etiquetas o id's
+por lo cual es importante buscar cada elemento(Se recomienda usar inspeccionar desde el navegador) para poder editarlo a gusto propio-->
 <style type="text/css">
     body {
         color: #566787;
@@ -232,6 +241,7 @@
 		font-weight: normal;
 	}
 </style>
+<!--Script en el que se le da la funcionamiento a la tabla utilizando funciones de bootstrap-->
 <script type="text/javascript">
 $(document).ready(function(){
 	// Activate tooltip
@@ -259,6 +269,7 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+  <!--Creación de la tabla-->
     <div class="container">
         <div class="table-wrapper">
             <div class="table-title">

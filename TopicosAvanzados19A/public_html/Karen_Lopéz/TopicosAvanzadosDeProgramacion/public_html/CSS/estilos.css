@@ -7,21 +7,20 @@
 }
 
 body{
-    background: url(../Imag/ele.jpg);
+    background: #00D3BC;
     -webkit-background-size: cover; //para acomodar el fondo de en Chrome
     background-size: cover;
     background-attachment: fixed; //para que la imagen quede estatica en cualquier navegador
     font-family: Roboto;
+    text-align: center;
 }
 
 .contenedor-form{
-   position: relative; //para que se fije en la posición adecuada
-   background: rgba(0,0,0,.7); //para la ocapacidad
-   width: 100%;
-   max-width: 500px; //ancho
-   margin: 48px auto; //centrado del margen
+   width: 680px;
+   float: bottom;
+   margin: auto;//centrado del margen
    color: azure; //color de las letras
-   border-radius: 5px; //el color
+   border: 3px solid #ff851b; //el color
 }
 
 .contenedor-form.toggle{
@@ -33,14 +32,15 @@ body{
     font-size: 12px;
     line-height: 25px;
     text-align: center;
-    border-top: 2px solid tomato;
-    border-bottom: 2px solid tomato;
+    border-top: 2px solid #ff851b;
+    border-bottom: 2px solid #ff851b;
     transition: all .5s ease; //para la duracion del cambio de color de Crear cuenta
     cursor: pointer; //para cuando pase el cursor
 }
 
 .contenedor-form.toggle span{
-    latter-spacing: 1px;
+   background: rgba(0,0,0,0.7); //para la ocapacidad
+   position: relative; //para que se fije en la posición adecuada
 }
 
 .contenedor-form.toggle:hover{
@@ -58,19 +58,20 @@ body{
 .contenedor-form input[type="text"], //accede al todo el input y los
 .contenedor-form input[type="password"],
 .contenedor-form input[type="email"]{
-    outline: none;
-    background: rgba(0, 0, 0, .5);
+    outline: none !important;
+    float: right;
     display: block;
-    width: 100%;
-    color: beige;
+    background: rgba(0,0,0,.5);
+    min-width: 50px;
+    color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 2px;
-    border-bottom: 4px solid tomato;
+    border-bottom: 4px solid #ff851b;
     font-family: Roboto;
     font-size: 14px;
     font-weight: normal;
-    margin: 0 0 20px 0;
+    margin-left: 10px;
     transition: all .5s ease; 
 }
 
@@ -84,13 +85,13 @@ body{
     background: gray;
     color: azure;
     border: none;
-    width: 100%;
-    padding: 10px 0;
+    min-width: 50px;
+    padding: 10px 15px;
     font-family: Roboto;
     font-weight: normal;
     font-size: 16px;
     cursor: pointer;
-    latter-spacing: 1px;
+    float: bottom;
     transition: all .5s ease;
 }
 
@@ -114,10 +115,10 @@ body{
 }
 
 .contenedor-form.formulario{
-    padding: 40px;
+    padding: 10px 15px;
     display: none;
 }
 
-.contenedor-form.formulario:nth-child(2){//con este el formulario dos aparece en otra parte
+.contenedor-form.formulario:nth-child(2){
     display: block;
 }
