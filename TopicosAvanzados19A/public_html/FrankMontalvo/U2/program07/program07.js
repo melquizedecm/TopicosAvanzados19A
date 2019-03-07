@@ -5,13 +5,24 @@
  */
 
 /* global NaN */
+
+var grupo=0; //= document.getElementById("inputGrupo").value;
+var cal = [];
+var suma = 0;
+var i;
+
+function getCantidadAlumnos(){
+  while(true){
+    grupo = prompt("Escribela Cantidad de Alumnos");
+    if(grupo %1===0 && grupo >=0){
+      break;
+    }else{
+      alert("Escribe un entero positivo")
+    }
+  }
+}
 //función para leer las calificaciónes
 function leerCalificaciones() {
-  //Se toma el valor de el elemento inputGrupo y se le asigna a una variable
-    var grupo = document.getElementById("inputGrupo").value;
-    var cal = [];
-    var suma = 0;
-    var i;
     //Ciclo for en el que se validan las calificaciones y se leen todas ellas para guardarlas
     for (i = 0; i < grupo; i++) {
         while (true) {
@@ -23,8 +34,13 @@ function leerCalificaciones() {
                 alert("No es una calificacion valida");
             }
         }
+
         suma = suma + cal[i];
     }
     //promedio de calificaciones
-    document.write(suma / grupo);
+    alert("Suma de calificaciones del grupo: "+suma);
+}
+
+function getPromedio(){
+alert("El promedio de calificaciones es: "+(suma/grupo));
 }
