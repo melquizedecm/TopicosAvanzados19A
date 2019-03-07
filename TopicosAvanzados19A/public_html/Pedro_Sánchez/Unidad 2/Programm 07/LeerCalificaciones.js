@@ -1,5 +1,7 @@
 /*
-*
+* Sourse: Index.html
+* Description: Creamos dos botones para ingresar calificaciones de alumnos.
+* Date: 07/03/2019
 */
 
 var grupo=0;
