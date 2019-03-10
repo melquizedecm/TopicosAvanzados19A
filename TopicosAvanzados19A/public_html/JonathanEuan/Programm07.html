@@ -1,13 +1,21 @@
-<html lang="en" dir="ltr">
-  <head>
+<!-- Promedio de calificaciones
+Fecha:12/feb/2019
+ -->
+<html>
+    <head>
+        <title> PROMEDIOS CALIFICACIONES </title>
 
-    <script src="Program07.js" type="text/javascrip"></script>
-    <meta charset="utf-8">
-    <title>:v</title>
-  </head>
-  <body>
-    <button onclick="getCantidadAlumnos();">Escribir Cantidad de alumnos</button>
-    <button onclick="getleerCalificaciones();">Escribir calificaciones</button>
-    <button onclick="getPromedio();">Visualizar promedio</button>
-  </body>
+        <!--Se utiliza el script desde un archivo externo-->
+        <script type='text/javascript' src='program07.js'></script>
+
+    </head>
+    <body>
+        <div id="divGrupo">
+            <form>
+                <button type="button" onclick="getCantidadAlumnos()">Insertar número de alumnos</button>
+                <button type="button" onclick="leerCalificaciones()">Leer calificaciones</button>
+                <button type="button" onclick="getPromedio()">Promedio</button>
+            </form>
+        </div>
+    </body>
 </html>
