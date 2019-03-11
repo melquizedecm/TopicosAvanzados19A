@@ -20,17 +20,12 @@ function validarEntero(valor){
 
 //Validar Flotantes
 function validarFlotante(valor){
-  //Se crea la función isFloat para validar Flotantes
-   Number.isFloat = Number.isFloat || function(value) {
-    return typeof value === 'number' &&
-      isFinite(value) &&
-      Math.floor(value) !== value;
-  };
+  
   //Validamos si es un número
   if(isNaN(valor)){
     return NaN;
     //Si es número validamos que sea flotante de lo contrario retorna falso
-   }else if(Number.isFloat(valor)){
+  }else if(valor%1!=0){
           return true;
    }else{
      return false;
