@@ -13,13 +13,7 @@ y modificar los datos con la informacion que queramos -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
-  /*  body {
-        color: #566787;
-		background: #f5f5f5;
-		font-family: 'Varela Round', sans-serif;
-		font-size: 13px;
-	} */
-
+/* Todo el bloque que esta a continuacion, son para editar vistas de la y el cuerbo de la tabla */
 	.table-wrapper {
         background: #fff;
         padding: 20px 25px;
@@ -113,59 +107,7 @@ y modificar los datos con la informacion que queramos -->
 		vertical-align: middle;
 		margin-right: 10px;
 	}
-
-	/* Custom checkbox */
-	.custom-checkbox {
-		position: relative;
-	}
-	.custom-checkbox input[type="checkbox"] {
-		opacity: 0;
-		position: absolute;
-		margin: 5px 0 0 3px;
-		z-index: 9;
-	}
-	.custom-checkbox label:before{
-		width: 18px;
-		height: 18px;
-	}
-	.custom-checkbox label:before {
-		content: '';
-		margin-right: 10px;
-		display: inline-block;
-		vertical-align: text-top;
-		background: white;
-		border: 1px solid #bbb;
-		border-radius: 2px;
-		box-sizing: border-box;
-		z-index: 2;
-	}
-	.custom-checkbox input[type="checkbox"]:checked + label:after {
-		content: '';
-		position: absolute;
-		left: 6px;
-		top: 3px;
-		width: 6px;
-		height: 11px;
-		border: solid #000;
-		border-width: 0 3px 3px 0;
-		transform: inherit;
-		z-index: 3;
-		transform: rotateZ(45deg);
-	}
-	.custom-checkbox input[type="checkbox"]:checked + label:before {
-		border-color: #03A9F4;
-		background: #03A9F4;
-	}
-	.custom-checkbox input[type="checkbox"]:checked + label:after {
-		border-color: #fff;
-	}
-	.custom-checkbox input[type="checkbox"]:disabled + label:before {
-		color: #b8b8b8;
-		cursor: auto;
-		box-shadow: none;
-		background: #ddd;
-	}
-	/* Modal styles */
+		/* Estilos */
 	.modal .modal-dialog {
 		max-width: 400px;
 	}
@@ -200,11 +142,11 @@ y modificar los datos con la informacion que queramos -->
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
-	// Activate tooltip
+	// Activar tooltip
 	$('[data-toggle="tooltip"]').tooltip();
-
-	// Select/Deselect checkboxes
-	var checkbox = $('table tbody input[type="checkbox"]');
+	// Seleccionar/Deseleccionar checkboxes
+	var checkbox = $('table tbody input[type="checkbox"]');   /* este es un ejemplo para poder de selectores, nos ayudan a seleccionar los diferentes elementos del DOM,
+    bien sea por su nombre, tipo, valores o propiedades de los atributos. */
 	$("#selectAll").click(function(){
 		if(this.checked){
 			checkbox.each(function(){
@@ -225,6 +167,7 @@ $(document).ready(function(){
 </script>
 </head>
 <body background="11253228_848256938575763_8141838970849982173_n.jpg">
+<!-- linea de codigo para agregar al fondo de la pagina una imagen-->
     <div class="container">
         <div class="table-wrapper">
             <div class="table-title">
@@ -247,7 +190,6 @@ $(document).ready(function(){
                         <th>Precio</th>
                         <th>Editar/Eliminar</th>
                     </tr>
-
                     <tr>
 					              <th>Ceviches</th>
                         <th> </th>
@@ -256,7 +198,6 @@ $(document).ready(function(){
                         <th> </th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
                         <td>Pescado (grande)</td>
@@ -268,7 +209,6 @@ $(document).ready(function(){
                             <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
-
                     <tr>
                         <td> Pulpo (grande)</td>
                         <td>$160</td>
@@ -279,7 +219,6 @@ $(document).ready(function(){
                             <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
-
 					              <tr>
 					              <td>Camaron (grande)</td>
                         <td>$120</td>
@@ -290,7 +229,6 @@ $(document).ready(function(){
                             <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
-
                     <tr>
                       <th>Cocteles</th>
                       <th> </th>
@@ -298,8 +236,6 @@ $(document).ready(function(){
                       <th> </th>
                       <th> </th>
                     </tr>
-
-
                         <td>Pescado (grande)</td>
                         <td>$100</td>
                         <td>Margarita</td>
@@ -309,7 +245,6 @@ $(document).ready(function(){
                             <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
-
                     <tr>
                         <td>Pulpo (grande)</td>
                         <td>$100</td>
@@ -320,7 +255,6 @@ $(document).ready(function(){
                             <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                   </tr>
-
                     <tr>
                         <td>Camaron (grande)</td>
                         <td>$100</td>
@@ -331,7 +265,6 @@ $(document).ready(function(){
                             <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
-
                     <tr>
                         <th>Camarones</th>
                         <th> </th>
@@ -339,7 +272,6 @@ $(document).ready(function(){
                         <th> </th>
                         <th> </th>
                     </tr>
-
                       <tr>
                         <td>Empanizados</td>
                         <td>$120</td>
@@ -350,11 +282,8 @@ $(document).ready(function(){
                            <a href="#deleteMenú" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
-
-
                 </tbody>
             </table>
-
         </div>
     </div>
 	<!-- Edit Modal HTML -->

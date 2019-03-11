@@ -6,28 +6,42 @@ Descripcion: PROGRAMA PARA LEER CALIFICACIONES DE UN GRUPO
 3. IMPRIMIR LAS CALIFICACIONES. IMPRIMIR EL PROMEDIO.
 */
 
+/* goblal NaN */
+var grupo=0; //= document.getElementById("inputGrupo").value;
+var cal = [];
+var suma = 0;
+var i;
+
+function getCantidadAlumnos(){
+  while(true){
+    grupo = prompt("Escribela Cantidad de Alumnos");
+    if(grupo %1===0 && grupo >=0){
+      break;
+    }else{
+      alert("Escribe un entero positivo")
+    }
+  }
+}
+//función para leer las calificaciónes
 function leerCalificaciones() {
-    var grupo = document.getElementById("inputGrupo").value;
-    var cal = []; //arreglo donde se guardan las caliciones
-    var suma = 0; //variable donde se sumaran las caliciones
-    var i;      //indice de las caliciones
+    //Ciclo for en el que se validan las calificaciones y se leen todas ellas para guardarlas
     for (i = 0; i < grupo; i++) {
         while (true) {
             var calificaciones = prompt("escribe la calificación del alumno");
-          /*linea de codigo que muestra una ventana donde inserter lo solicitado,
-          en este parte el usuario ingresa las calificaciones de todos los alumnos.
-          */
             cal[i] = Number(calificaciones);
             if (cal[i] % 1 === 0 && cal[i] >= 0 && cal[i] <= 100) {
-/* si la calificaion es entera positiva, mayor igual cero y/o menor igual 100
-en caso de no ser una calificacion valida, se ejecuta el else.*/
                 break;
             } else {
                 alert("No es una calificacion valida");
             }
         }
+
         suma = suma + cal[i];
-  /* En esta parte se suman las calificaciones */
     }
-    document.write(suma / grupo);
+    //promedio de calificaciones
+    alert("Suma de calificaciones del grupo: "+suma);
+}
+
+function getPromedio(){
+alert("El promedio de calificaciones es: "+(suma/grupo));
 }
