@@ -11,12 +11,13 @@ function validarEntero(valor){
      if(isNaN(valor)){
        return NaN;
        //Si es un número validamos si es entero si no retornara falso
-     }else if(Number.isInteger(valor)){
+     }else if(valor%1==0){
             return true;
      }else{
        return false;
      }
 }
+
 //Validar Flotantes
 function validarFlotante(valor){
   //Se crea la función isFloat para validar Flotantes
