@@ -30,6 +30,8 @@ document.write(n);
 
 }
 function OptenerPromedio(){
-  promedio=suma/_grupo;
-alert(Promedio)
+  promedio=suma/grupo;
+alert(Promedio);
+suma=0;
+cal=[];
 }
