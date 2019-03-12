@@ -12,3 +12,10 @@ function image(){
      pdf.addImage(img, 'JPEG', 15, 40, 180, 160);
      pdf.save('image.pdf');
 }
+
+function circulo(){
+
+var pdf = new jsPDF();
+pdf.ellipse(49,80,15,100);
+pdf.save('circulo.pdf');
+}
