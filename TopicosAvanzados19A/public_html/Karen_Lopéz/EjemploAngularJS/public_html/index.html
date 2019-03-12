@@ -1,0 +1,15 @@
+<head>
+<script src="angular.min.js"></script>
+</head>
+<script>
+function HelloWorld($scope) {
+ $scope.test = 'Mundo';
+ }
+</script>
+<body>
+<div ng-controller="HelloWorld">
+ Tu nombre: <input type="text" ng-model="test"/>
+<hr/>
+ Hola {{test || "Mundo"}}!
+</div>
+</body>

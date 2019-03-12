@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Source: Programa08
+Description: cambiar texto a mayuscula y minuscula
+Date: 09/04/19
+-->
+<html>
+    <head>
+        <title>Mayuscula o minuscula</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+        function convertir(tipo){
+            var mensaje= document.getElementById("mensaje");
+            var texto=mensaje.value;
+            if (tipo==1){
+                mensaje.value=texto.toUpperCase();
+            }else if(tipo==2){
+                mensaje.value=texto.toLowerCase();
+            }
+        }
+        
+        </script>
+    </head>
+    <body>
+        <div></div>
+        <input type="text" id="mensaje" value=""/>
+        <input type="button" onclick="convertir(1);" id="boton" value="convertir mayuscula"/>
+        <input type="button" onclick="convertir(2);" id="boton2" value="convertir minuscula"/>
+    </body>
+</html>
