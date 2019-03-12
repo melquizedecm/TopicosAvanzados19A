@@ -1,0 +1,36 @@
+<div class="menuPpal" ng-include='"templates/header.html"'></div>
+<div ng-include='"templates/menu.html"'></div>
+
+<section id="main-content" ng-controller="miComponenteControlador">
+    <section class="wrapper" >
+        <div class="spinner center" ng-show="cargaPagina"><img src="images/ico_preload.gif"></div>
+        <div id="usuarios" >
+	        <div class="encabezado">
+	        	<div class="row">
+	        		<div class="col-md-6">
+	            		<h1><i class="fa fa-users"></i> Mi componente</h1>
+	            	</div>
+	            </div>
+	        </div>
+	        <div id="cuerpo">
+		        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+		        <section ng-show="!loading">
+		            <table class="table table-hover">
+			            <thead>
+			                <th>ID</th>
+			                <th><span tooltip="Nombre de la entrada">Nombre</span></th>
+			                <th>Valor</th>
+			                <th>Descripci&oacute;n</th>
+			            </thead>
+			            <tr ng-repeat="entrada in info">
+			                <td>{{entrada.id}}</td>
+			                <td>{{entrada.nombre}}</td>
+			                <td>{{entrada.valor}}</td>
+			                <td>{{entrada.descripcion}}</td>
+			            </tr>
+		            </table>
+		        </section>
+	        </div>
+        </div>
+    </section>
+</section>

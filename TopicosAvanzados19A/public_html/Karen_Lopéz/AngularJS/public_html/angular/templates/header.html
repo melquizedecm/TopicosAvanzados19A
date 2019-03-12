@@ -1,0 +1,25 @@
+<div ng-controller="accesoControlador">
+    <header class="header fixed-top clearfix" class="ng-cloak">
+        <div class="brand">
+            <a href="index.html" class="logo">
+            </a>
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars" ng-click="closeMenu"></div>
+            </div>            
+        </div>
+        <div class="top-nav clearfix">
+            <ul class="nav pull-right top-menu" id="menuUsuario">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="fa fa-user"></i>
+                        <span class="username">Hola {{nombre}}</span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu extended logout">
+                        <li><a href="" ng-click="logout()"><i class="fa fa-power-off"></i> Cerrar sesi&oacute;n</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+</div>
