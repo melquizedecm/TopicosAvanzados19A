@@ -10,7 +10,7 @@ function leerCalificaciones(){
 
 do{
 n=prompt("Escribe el numero de alumnos a calificar"); //por lo pronto para imprimir
-}while (!Number.isInteger(n) && !(n>0));/*para saber si n es entero y verificar si no es un caracter*/
+}while (!Number.isInteger(n) && !(n>0) && !(n<100));/*para saber si n es entero y verificar si no es un caracter*/
 
     alert(n);
 }
