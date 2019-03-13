@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.js" integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+    <script src="jspdf.min.js"></script>
+    <title>pdf Ejemplo</title>
+  </head>
+  <body>
+    <center><div id="navbar"><font size=26 face="Singlet">Control de Justificaciones</font></div></center>
+
+    <div id="wrapper">
+      <input type="text" id="name" class="form-control form-control-success" placeholder="Nombre"><br>
+      <input type="text" id="carrera" class="form-control form-control-success" placeholder="Carrera"><br>
+      <input type="text" id="semestre" class="form-control form-control-success" placeholder="Semestre"><br>
+      <input type="text" id="matricula" class="form-control form-control-success" placeholder="Matricula"><br>
+      <input type="date" id="fecha" class="form-control form-control-success"><br>
+      <center><input type="button" class="btn btn-warning" value="Generar Solicitud" id="button" ></center>
+    </div>
+
+    <script>
+
+  	$('#button').click(function() {
+
+  		 var doc = new jsPDF();
+
+  		var name = $('#name').val();
+  		var carrera = $('#carrera').val();
+  		var semestre = $('#semestre').val();
+  		var matricula = $('#matricula').val();
+      var fecha = $('#fecha').val();
+
+  		doc.setFontSize(15);
+
+  		doc.text(15, 20, "Por este medio se le informa que el alumno "+name+"\rcon matricula "+matricula+" de la carrea de "+carrera+"\rcursando actualmente el "+semestre+" semestre no pudo asistir a clases\ren la fecha "+fecha+" por cuestiones ajenas a el.\rEsperemos considere la asistencia en la fecha emitida.");
+      doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
+       doc.save('justificacion.pdf');
+
+
+  	});
+  </script>
+
+  </body>
+</html>
