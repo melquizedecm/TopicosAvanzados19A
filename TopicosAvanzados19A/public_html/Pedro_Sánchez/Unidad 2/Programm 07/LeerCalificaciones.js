@@ -2,6 +2,7 @@
 * Sourse: Index.html
 * Description: Creamos dos botones para ingresar calificaciones de alumnos.
 * Date: 07/03/2019
+* Autor: Pedro Sánchez Cárdenas.
 */
 
 var grupo=0;
