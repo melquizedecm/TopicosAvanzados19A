@@ -10,12 +10,15 @@ Date: 09/04/19
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript">
+            //función para convertir mayuscula o minuscula
         function convertir(tipo){
             var mensaje= document.getElementById("mensaje");
             var texto=mensaje.value;
             if (tipo==1){
+                //esta linea convierte el mensaje en mayuscula
                 mensaje.value=texto.toUpperCase();
             }else if(tipo==2){
+                //esta lo convierte en minuscula
                 mensaje.value=texto.toLowerCase();
             }
         }
@@ -25,7 +28,9 @@ Date: 09/04/19
     <body>
         <div></div>
         <input type="text" id="mensaje" value=""/>
+        <!--boton de mayuscula-->
         <input type="button" onclick="convertir(1);" id="boton" value="convertir mayuscula"/>
+        <!--boton de minuscula-->
         <input type="button" onclick="convertir(2);" id="boton2" value="convertir minuscula"/>
     </body>
 </html>
