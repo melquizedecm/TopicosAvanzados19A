@@ -5,7 +5,7 @@
     <script type="text/javascript">
     $(document).ready(function(){ //funcion que determina que se va a mostrar cuando carge la pagina
       var datos={
-        type: "pie",
+    t   type: "pie",
         data:{
           datasets:[{
             data:[
@@ -34,6 +34,7 @@
       option: {
         responsive: true,
       }
+
     };
     var canvas= document.getElementById('chart').getContext('2d');
     window.pier=new Chart(canvas, datos);
@@ -41,7 +42,7 @@
     setInterval(function (){
       datos.data.datasets.splice(0);
       var newData={
-        backgroundColor:{
+        backgroundColor:[
           "#f7464a",
           "#46bfbd",
           "#fdb45c",
@@ -53,14 +54,17 @@
       datos.data.datasets.push(newData);
       window.pie.update();
     }, 5000);
-        }
-      }
-    })
+
+    function getRandom(){
+      return Math.round(Math.random()*100);
+    }
+
   });
     </script>
   </head>
   <body>
-
-  <body>
+    <div id="canvas-container" style="width:50%;">
+      <canvas id="chart" width:"500" heigth="350"></canvas>
+    </div>
   </body>
 </html>
