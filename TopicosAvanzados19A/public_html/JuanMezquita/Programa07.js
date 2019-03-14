@@ -1,10 +1,22 @@
+var grupo=0; //= document.getElementById("inputGrupo").value;
+var cal = [];
+var suma = 0;
+var i;
+
+function getCantidadAlumnos(){
+      while(true){
+        grupo=Number(prompt("escribe la cantidad de alumnos"));
+        if(grupo %1===0 && grupo >=0){
+          break;
+        }else{
+          alert("escirbe un entero positivo");
+        }
+      }
+}
 
 function leerCalificaciones() {
   /* aqui se inician las variables*/
-    var grupo = document.getElementById("inputGrupo").value;
-    var cal = [];
-    var suma = 0;
-    var i;
+grupo=10;
     /* for para ingresar los datos en un arreglo */
     for (i = 0; i < grupo; i++) {
         while (true) {
@@ -19,6 +31,11 @@ function leerCalificaciones() {
         }
         suma = suma + cal[i];
     }
-    document.write(suma / grupo);
 }
-leerCalificaciones();
+
+function getPromedio(){
+  suma=0;
+
+var promedio=Number(suma)/Number(grupo);
+alert(promedio);
+}
