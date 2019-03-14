@@ -9,28 +9,36 @@
 var entrada;
 
 /*Funcion que se encarga de pedir el dato*/
-function pedir(){
+function Pedir(){
 	entrada = prompt("Ingrese un dato:");
-	return entrada;
 }
 
 /*funciones para validar*/
+function Vacio(){
+	var val = $('#dato').val();
 
-function int (entrada){
+	if(val === ""){
+		alert("Ingrese un Valor primero");
+	}else{
+		alert("dato ingresado");
+	}
+}
+
+function Int(){
+
+}
+
+function Float(){
 	
 }
 
-function Float (){
-
+function Minusculas(){
+	
 }
 
-function minusculas(){
-
+function Mayusculas(){
+	
 }
-
-function mayusculas(){
-
-}
-function rango(){
-
+function Rango(){
+	Vacio()
 }

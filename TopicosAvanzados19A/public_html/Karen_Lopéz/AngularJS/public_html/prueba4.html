@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- el modulo ngAnimate agrega y elimina clases -->
+<!--ng-show: desaparece primero el cuadro y cuando le das boton aparece
+ng-hide: aparece y desaparece
+ng-class: no desaprece ni se oculta
+ng-view: lo mismo q el ng-class
+ng-include: desaparece completamente aunque le des click
+ng-repeat: lo mismo q el ng-include
+ng-if: se cicla :v osea aparece desaperece no aparece etc.
+ng-switch: igual q el class y el view -->
+<html>
+    <!-- el color y tamaño del cuadrado que se va ocultar-->
+    <style>    
+        div {
+            transition: all linear 0.5s;
+            background-color: red;
+            height: 100px;
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .ng-hide {
+            height: 0;
+            width: 0;
+            background-color: transparent;
+            top:-200px;
+            left: 200px;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <body ng-app="myApp">
+        <!--bonton para q el cuadro desaparesca y apareca XD -->
+        <h1>ocultar el cuadro: <input type="checkbox" ng-model="myCheck"></h1>
+        <!-- aqui se pone los atributos del ngAnimate-->
+        <div ng-hide="myCheck"></div>
+        <!-- su variable-->
+        <script>
+            var app = angular.module('myApp', ['ngAnimate']);
+        </script>
+    </body>
+</html>

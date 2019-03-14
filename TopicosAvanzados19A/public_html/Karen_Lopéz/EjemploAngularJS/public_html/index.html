@@ -1,15 +1,26 @@
-<head>
-<script src="angular.min.js"></script>
-</head>
-<script>
-function HelloWorld($scope) {
- $scope.test = 'Mundo';
- }
-</script>
-<body>
-<div ng-controller="HelloWorld">
- Tu nombre: <input type="text" ng-model="test"/>
-<hr/>
- Hola {{test || "Mundo"}}!
-</div>
-</body>
+<!DOCTYPE html>
+<!--
+
+-->
+<<html >
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div ng-app ng-init="pensamientos = [];">
+            <h1>AngularJS</h1>
+            <p>
+                ¿Qué hay de nuevo?
+                <br />
+                <input type="text" ng-model="nuevoPensamiento" /> 
+                <input type="button" value="Agregar" ng-click="pensamientos.push(nuevoPensamiento);
+                    nuevoPensamiento = '';" />
+            </p>
+            <h2>Pensamientos que has tenido</h2>
+            <p ng-repeat="pensamiento in pensamientos" ng-init="paso = $index">
+                Pensaste esto: {{pensamiento}} (Iteración con índice {{paso}})
+            </p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
+    </body>
+</html>

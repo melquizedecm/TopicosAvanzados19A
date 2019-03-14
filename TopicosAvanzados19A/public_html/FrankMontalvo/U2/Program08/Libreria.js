@@ -9,7 +9,7 @@ Fecha:10/mar/2019
 function validarEntero(valor){
   //Validamos si es un número
      if(isNaN(valor)){
-       return NaN;
+       return false;
        //Si es un número validamos si es entero si no retornara falso
      }else if(valor%1==0){
             return true;
@@ -20,10 +20,10 @@ function validarEntero(valor){
 
 //Validar Flotantes
 function validarFlotante(valor){
-  
+
   //Validamos si es un número
   if(isNaN(valor)){
-    return NaN;
+    return false;
     //Si es número validamos que sea flotante de lo contrario retorna falso
   }else if(valor%1!=0){
           return true;
@@ -69,7 +69,7 @@ function validarMinusculas(letras){
 function validarRango(valor, x,y){
   //Validamos si alguno de los valores no es número
   if(isNaN(valor) || isNaN(x) || isNaN(y)){
-    return NaN;
+    return false;
   }
   /*Comparamos los 2 parametros del rango para saber cual es mayor o cual es menor
    y en función de eso comparamos los valores con el rango*/
