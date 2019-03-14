@@ -1,10 +1,3 @@
-/*
-Nombre: Francisco Montalvo Hidalgo
-Profesor:Melquizedec Moo Medina
-Programa: Mi primera Libreria para validar diferentes elementos
-Fecha:10/mar/2019
-*/
-
 //Validar Enteros
 function validarEntero(valor){
   //Validamos si es un número
@@ -20,7 +13,7 @@ function validarEntero(valor){
 
 //Validar Flotantes
 function validarFlotante(valor){
-  
+
   //Validamos si es un número
   if(isNaN(valor)){
     return NaN;
