@@ -1,3 +1,5 @@
+<!--programa8-->
+
 var N;
 var N2;
 var N3;
@@ -16,7 +18,7 @@ function Rango(){
   alert("El numero esta en el rango");
   boolean(N);
     }else{
-  alert("El numero no esta en el rango");
+  alert("El numero NO esta en el rango");
   boolean(F);
   }
 }
@@ -40,6 +42,7 @@ boolean(X==Y);
 }
 
 function Flotante(){
+var  Q=prompt('Numero a convertir en flotante');
   P=parseFloat( Resultado )
   boolean(P== Resultado);
 }
