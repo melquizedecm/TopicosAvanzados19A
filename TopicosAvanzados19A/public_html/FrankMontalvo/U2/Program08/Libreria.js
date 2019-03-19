@@ -6,8 +6,8 @@ Fecha:10/mar/2019
 */
 
 //Validar Enteros
-function validarEntero(valor){
-  //Validamos si es un número
+function validarEntero(){
+  valor=$("#entero").val();
      if(isNaN(valor)){
        return false;
        //Si es un número validamos si es entero si no retornara falso

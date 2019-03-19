@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!--
+Source:Programa10
+Description: ChartJS
+Equipo: 2
+Integrantes: Rodrigo, Kenn y Pedro
+Date: 13/03/19
+-->
 <html>
 <head>
 	<title></title>
@@ -22,7 +29,7 @@
 						"#46BFBD",
 						"#FDB45C",
 						"#949FB1",
-						"#4D5360"
+						"#4D5360",
 					],
 				}],
 				labels : [
@@ -30,7 +37,7 @@
 					"Datos 2",
 					"Datos 3",
 					"Datos 4",
-					"Datos 5"
+					"Datos 5",
 				]
 			},
 			options : {
@@ -49,7 +56,7 @@
 					"#46BFBD",
 					"#FDB45C",
 					"#949FB1",
-					"#4D5360"
+					"#4D5360",
 				],
 				data : [getRandom(), getRandom(), getRandom(), getRandom(), getRandom()]
 			};
@@ -60,15 +67,19 @@
 
 		}, 5000);
 
+
+
 		function getRandom(){
 			return Math.round(Math.random() * 100);
 		}
+
 
 	});
 	</script>
 </head>
 <body>
 	<!--El <canvas>elemento HTML se utiliza para dibujar gráficos sobre la marcha, a través de JavaScript.-->
+
 	<div id="canvas-container" style="width:50%;">
 		<canvas id="chart" width="500" height="350"></canvas>
 	</div>
