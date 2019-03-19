@@ -1,7 +1,7 @@
 /*
-Nombre: Francisco Montalvo Hidalgo
+Nombre: Jesus Alberto Lira Romero
 Profesor:Melquizedec Moo Medina
-Programa: Mi primera Libreria para validar diferentes elementos
+Programa: Librerias
 Fecha:10/mar/2019
 */
 

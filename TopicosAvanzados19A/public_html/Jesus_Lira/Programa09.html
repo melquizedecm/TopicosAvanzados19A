@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.4.js" integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=" crossorigin="anonymous"></script>
-  <!--Libreria-->  <script src="jspdf.min.js"></script>
+  <script src="jspdf.min.js"></script>
 </head>
 <body>
 
@@ -12,22 +12,29 @@
 <div id="wrapper">
 
 		<input type="text" id="name" class="form-control form-control-success" placeholder="Nombre"><br>
-
+		<input type="text" id="carrera" class="form-control form-control-success" value="" placeholder="Carrera" /><br>
+		<input type="text" id="semestre" class="form-control form-control-success" value="" placeholder="Semestre" /><br>
+		<input type="text" id="matricula" class="form-control form-control-success" value="" placeholder="Matricula"/><br>
+    <input type= "date" id="fecha" class="form-control form-control-success" value=""><br>
 		<center><input type="button" class="btn btn-warning" id="button" value="Descargar"/></center>
 
 	<script>
-
+s
 	$('#button').click(function() {
 
 		 var doc = new jsPDF();
 
 		var name = $('#name').val();
+		var carrera = $('#carrera').val();
+		var semestre = $('#semestre').val();
+		var matricula = $('#matricula').val();
+    var fecha = $('#fecha').val();
 
 		doc.setFontSize(15);
-    
-		doc.text(15, 20, "Has creado tu primer pdf "+name);
 
-     doc.save('justificacion.pdf');
+		doc.text(15, 20, "Por este medio se le informa que el alumno "+name+"\rcon matricula "+matricula+" de la carrea de "+carrera+"\rcursando actualmente el "+semestre+" semestre no pudo asistir a clases\ren la fecha "+fecha+" por cuestiones ajenas a el.\rEsperemos considere la asistencia en la fecha emitida.");
+    doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
+    doc.save('justificacion.pdf');
 
 
 	});
