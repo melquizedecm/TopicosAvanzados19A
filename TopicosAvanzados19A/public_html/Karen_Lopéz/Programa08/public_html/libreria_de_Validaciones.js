@@ -1,11 +1,10 @@
 var valor;
 
-function Vacio(val){
+function Vacio(val){  //función que permitira al usuario registrar los valores 
     valor = document.getElementById("valor");
 	var val = valor.value;
-
 	if(val === ""){
-		alert("Ingrese un Valor primero");
+		alert("Ingrese el dato primero");
 	}else{
 		alert("dato ingresado");
 	}
@@ -38,7 +37,7 @@ function validarMayus(letras) {
     var band = false;
     for (var index = 0; index < letras.length; index++) {       //ciclo for
         var letraB = letras.charAt(index);
-        if (letraB !== letraB.toUpperCase()) {     //cuando algun valor es minuscula se vuelve falso y se sale del ciclo for, el toUpperCase sirve para convertir las variables en minusculas
+        if (letraB !== letraB.toUpperCase()) {     //cuando algun valor es minuscula se vuelve falso y se sale del ciclo for, el toUpperCase sirve para convertir las variables en mayusculas
             band = false;
             break;
         } else {
@@ -53,7 +52,7 @@ function validarMinus(letras) {
     var band = false;
     for (var index = 0; index < letras.length; index++) {
         var letraA = letras.charAt(index);
-        if (letraA !== letraA.toLowerCase()) {     //el toLowerCase sirve para convertir las variables en mayusculas
+        if (letraA !== letraA.toLowerCase()) {     //el toLowerCase sirve para convertir las variables en minusculas
             band = false;
             break;
         } else {
