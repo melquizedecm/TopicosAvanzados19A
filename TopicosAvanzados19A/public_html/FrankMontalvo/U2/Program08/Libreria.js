@@ -8,82 +8,86 @@ Fecha:10/mar/2019
 //Validar Enteros
 function validarEntero(){
   valor=$("#entero").val();
-     if(isNaN(valor)){
-       return false;
-       //Si es un número validamos si es entero si no retornara falso
-     }else if(valor%1==0){
-            return true;
-     }else{
-       return false;
-     }
+    if(isNaN(valor)){
+     document.getElementById("validacionentero").innerHTML=false;
+      //Si es un número validamos si es entero si no retornara falso
+    }else if(valor%1==0 && valor!=""){
+            document.getElementById("validacionentero").innerHTML=true;
+    }else{
+     document.getElementById("validacionentero").innerHTML=false;
+    }
 }
 
 //Validar Flotantes
-function validarFlotante(valor){
-
+function validarFlotante(){
+  valor=$("#flotante").val();
   //Validamos si es un número
   if(isNaN(valor)){
-    return false;
+    document.getElementById("validacionflotante").innerHTML=false;
     //Si es número validamos que sea flotante de lo contrario retorna falso
-  }else if(valor%1!=0){
-          return true;
+  }else if(valor%1!=0 &&valor!=""){
+          document.getElementById("validacionflotante").innerHTML=true;
    }else{
-     return false;
+     document.getElementById("validacionflotante").innerHTML=false;
    }
 }
 //Validar Mayusculas
-function validarMayusculas(letras){
+function validarMayusculas(){
+  letras=$('#mayusculas').val();
   //Variable para retornar valor true or false segun el caso
   var band=false;
   //Ciclo for para recorrer toda la cadena
   for(var index = 0; index < letras.length; index++){
     var letraActual = letras.charAt(index);
     //Si algun valor es minuscula se vuelve falso y se sale del ciclo for
-    if(letraActual!=letraActual.toUpperCase()){
+    if(letraActual!=letraActual.toUpperCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
         band=false;
         break;
     }else{
       band=true;
     }
   }
-  return band;
+  document.getElementById("validacionmayus").innerHTML=band;
 }
 //Validar Minusculas
-function validarMinusculas(letras){
+function validarMinusculas(){
+  letras=$('#minusculas').val();
   //Variable para retornar valor true or false segun el caso
   var band=false;
   //Ciclo for para recorrer toda la cadena
   for(var index = 0; index < letras.length; index++){
     var letraActual = letras.charAt(index);
     //Si algun valor es mayusucla se vuelve falso y se sale del ciclo for
-    if(letraActual!=letraActual.toLowerCase()){
+    if(letraActual!=letraActual.toLowerCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
         band=false;
         break;
     }else{
       band=true;
     }
   }
-  return band;
+  document.getElementById("validacionmin").innerHTML=band;
 }
 //Validar Rango
 function validarRango(valor, x,y){
-  //Validamos si alguno de los valores no es número
+  valor=$('#Rango').val();
+  x=$('#Rango1').val();
+  y=$('#Rango2').val();
   if(isNaN(valor) || isNaN(x) || isNaN(y)){
-    return false;
+    document.getElementById("validacionrango").innerHTML=false;
   }
   /*Comparamos los 2 parametros del rango para saber cual es mayor o cual es menor
    y en función de eso comparamos los valores con el rango*/
   if(x<y){
     if(valor <=y && valor>=x){
-      return true;
+      document.getElementById("validacionrango").innerHTML=true;
     }else{
-      return false;
+      document.getElementById("validacionrango").innerHTML=false;
     }
   }else if(y<x){
     if(valor <=x && valor>=y){
-      return true;
+      document.getElementById("validacionrango").innerHTML=true;
     }else{
-      return false;
+      document.getElementById("validacionrango").innerHTML=false;
     }
   }
 }
