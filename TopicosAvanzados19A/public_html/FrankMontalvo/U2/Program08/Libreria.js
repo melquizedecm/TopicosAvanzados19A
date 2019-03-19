@@ -38,8 +38,9 @@ function validarMayusculas(){
   var band=false;
   //Ciclo for para recorrer toda la cadena
   for(var index = 0; index < letras.length; index++){
+    var letraActual = letras.charAt(index);
     //Si algun valor es minuscula se vuelve falso y se sale del ciclo for
-    if(letras.charAt(index)!=letras.charAt(index).toUpperCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
+    if(letraActual!=letraActual.toUpperCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
         band=false;
         break;
     }else{
@@ -55,8 +56,9 @@ function validarMinusculas(){
   var band=false;
   //Ciclo for para recorrer toda la cadena
   for(var index = 0; index < letras.length; index++){
+    var letraActual = letras.charAt(index);
     //Si algun valor es mayusucla se vuelve falso y se sale del ciclo for
-    if(letras.charAt(index)!=letras.charAt(index).toLowerCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
+    if(letraActual!=letraActual.toLowerCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
         band=false;
         break;
     }else{
