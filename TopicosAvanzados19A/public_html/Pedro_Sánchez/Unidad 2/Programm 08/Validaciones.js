@@ -11,6 +11,8 @@ var entrada;
 /*Funcion que se encarga de pedir el dato*/
 function Pedir(){
 	entrada = prompt("Ingrese un dato:");
+
+
 }
 
 /*funciones para validar*/
