@@ -8,11 +8,11 @@ var mayuscula;
 
 function getEnteros(){
   while(true){
-    entero= prompt("Ingrese un número");
+   entero=prompt("Ingrese un número");
     if(entero %1===0){
       break;
     }else{
-      alert("No es un número entero, intentelo de nuevo")
+      alert("No es un número entero, intentelo de nuevo");
     }
   }
 }
@@ -50,9 +50,11 @@ function getMayusculas(){
     }
   }
 
+/* Funcion que imprimime los valores ingresados
 function getImprimir(){
   alert("Usted a ingresado: "+ entero);
     alert("Usted a ingresado: "+ numero);
       alert("Usted ingreso la letra: "+ palabra);
         alert("Usted ingreso al letra: "+ mayuscula);
 }
+*/
