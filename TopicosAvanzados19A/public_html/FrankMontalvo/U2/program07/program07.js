@@ -11,7 +11,7 @@ var cal = [];
 var suma = 0;
 var i;
 
-function getEnteroPositivo(){
+function getCantidadDeAlumnos(){
   while(true){
     grupo = prompt("Escribela Cantidad de Alumnos");
     if(grupo %1===0 && grupo >=0){
@@ -23,7 +23,7 @@ function getEnteroPositivo(){
 
 }
 //función para leer las calificaciónes
-function leerCalificaciones() {
+function getLeerCalificaciones() {
     //Ciclo for en el que se validan las calificaciones y se leen todas ellas para guardarlas
     for (i = 0; i <grupo ; i++) {
         while (true) {
