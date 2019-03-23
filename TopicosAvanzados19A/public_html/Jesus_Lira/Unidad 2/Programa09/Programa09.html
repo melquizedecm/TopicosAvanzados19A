@@ -12,18 +12,16 @@
 <div id="wrapper">
 
 		<input type="text" id="name" class="form-control form-control-success" placeholder="Nombre"><br>
-<<<<<<< HEAD
+
 <input type="text" id="matricula" class="form-control form-control-success" placeholder="matricula"><br>
-=======
+
 		<input type="text" id="carrera" class="form-control form-control-success" value="" placeholder="Carrera" /><br>
 		<input type="text" id="semestre" class="form-control form-control-success" value="" placeholder="Semestre" /><br>
 		<input type="text" id="matricula" class="form-control form-control-success" value="" placeholder="Matricula"/><br>
     <input type= "date" id="fecha" class="form-control form-control-success" value=""><br>
->>>>>>> 87e18c2645c0570290f23f7880f72e569860ab8c
 		<center><input type="button" class="btn btn-warning" id="button" value="Descargar"/></center>
 
 	<script>
-s
 	$('#button').click(function() {
 
 		 var doc = new jsPDF();
@@ -35,11 +33,7 @@ s
     var fecha = $('#fecha').val();
 
 		doc.setFontSize(15);
-<<<<<<< HEAD
 
-		doc.text(15, 20, "Has creado tu primer pdf "+name);
-=======
->>>>>>> 87e18c2645c0570290f23f7880f72e569860ab8c
 
 		doc.text(15, 20, "Por este medio se le informa que el alumno "+name+"\rcon matricula "+matricula+" de la carrea de "+carrera+"\rcursando actualmente el "+semestre+" semestre no pudo asistir a clases\ren la fecha "+fecha+" por cuestiones ajenas a el.\rEsperemos considere la asistencia en la fecha emitida.");
     doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
