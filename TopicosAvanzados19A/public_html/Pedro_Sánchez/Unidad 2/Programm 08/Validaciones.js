@@ -11,12 +11,11 @@ var entrada;
 /*Funcion que se encarga de pedir el dato*/
 function Pedir(){
 	entrada = prompt("Ingrese un dato:");
-
-
+  return entrada;
 }
 
 /*funciones para validar*/
-function validarEntero(entrada){
+function Entero(entrada){
      if(isNaN(valor)){
        return NaN;
 
@@ -28,7 +27,7 @@ function validarEntero(entrada){
 }
 
 //Validar Flotantes
-function validarFlotante(entrada){
+function Flotante(entrada){
   
   //Validamos si es un número
   if(isNaN(valor)){
@@ -41,7 +40,7 @@ function validarFlotante(entrada){
    }
 }
 //Validar Mayusculas
-function validarMayusculas(entrada){
+function Mayusculas(entrada){
   var band=false;
   //Ciclo for para recorrer toda la cadena
   for(var index = 0; index < letras.length; index++){
@@ -57,7 +56,7 @@ function validarMayusculas(entrada){
   return band;
 }
 //Validar Minusculas
-function validarMinusculas(entrada){
+function Minusculas(entrada){
   var band=false;
   //Ciclo for para recorrer toda la cadena
   for(var index = 0; index < letras.length; index++){
@@ -73,7 +72,7 @@ function validarMinusculas(entrada){
   return band;
 }
 //Validar Rango
-function validarRango(entrada, x,y){
+function Rango(entrada, x,y){
   //Validamos si alguno de los valores no es número
   if(isNaN(valor) || isNaN(x) || isNaN(y)){
     return NaN;
