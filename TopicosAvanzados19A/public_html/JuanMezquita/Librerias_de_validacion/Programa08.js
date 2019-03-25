@@ -5,10 +5,10 @@ function getEnteros(){
       while(true){
         num=Number(prompt("escribe un numero entero"));
         if(num %1===0){
-            alert("numero aceptado");
+            alert("su palabra no tiene minusculas");
           break;
         }else{
-          alert("debes escribir un numero entero");
+          alert("su palabra tiene minusculas");
         }
       }
 }
@@ -20,7 +20,7 @@ function getFlotante(){
             alert("numero aceptado");
           break;
         }else{
-          alert("debes escribir un numero con decimales");
+          alert("su palabra no tiene minusculas");
         }
       }
 }
@@ -42,13 +42,42 @@ var rango=10;
         }
 }
 
-function minusculas(){
+function validarMayusculas(){
+var palabra;
+  c=0
+palabra= prompt("escribe una palabra");
+  for(var i = 0; i < letras.length; i++){
+    palabra = palabra.charAt();
+      cal[i] = Number(calificaciones);
+    if(palabra===!palabra.toUpperCase()){
+        c=0
+        break;
+    }else{
+      c=c+1;
+    }
+  }
+  if(c>0){
+    alert("hay mayusculas en tu frase");
+  }
 
-  String cadena;
-  
-  for (int i = 0; i < cadena.length; i++){
-      char letra = cadena.charAt(i);
-      //Tratamiento del caracter
+}
+
+function validarMinusculas(){
+var palabra;
+  c=0
+palabra= prompt("escribe una palabra");
+  for(var i = 0; i < letras.length; i++){
+    palabra = palabra.charAt();
+      cal[i] = Number(calificaciones);
+    if(palabra===!palabra.toLowerCase()){
+        c=0
+        break;
+    }else{
+      c=c+1;
+    }
+  }
+  if(c>0){
+    alert("hay mayusculas en tu frase");
   }
 
 }
