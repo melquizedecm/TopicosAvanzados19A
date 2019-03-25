@@ -9,28 +9,86 @@
 var entrada;
 
 /*Funcion que se encarga de pedir el dato*/
-function pedir(){
+function Pedir(){
 	entrada = prompt("Ingrese un dato:");
-	return entrada;
+  return entrada;
 }
 
 /*funciones para validar*/
+function Entero(entrada){
+     if(isNaN(valor)){
+       return NaN;
 
-function int (entrada){
-	
+     }else if(valor%1==0){
+            return true;
+     }else{
+       return false;
+     }
 }
 
-function Float (){
+//Validar Flotantes
+function Flotante(entrada){
+  
+  //Validamos si es un número
+  if(isNaN(valor)){
+    return NaN;
 
+  }else if(valor%1!=0){
+          return true;
+   }else{
+     return false;
+   }
 }
+//Validar Mayusculas
+function Mayusculas(entrada){
+  var band=false;
+  //Ciclo for para recorrer toda la cadena
+  for(var index = 0; index < letras.length; index++){
+    var letraActual = letras.charAt(index);
 
-function minusculas(){
-
+    if(letraActual!=letraActual.toUpperCase()){
+        band=false;
+        break;
+    }else{
+      band=true;
+    }
+  }
+  return band;
 }
+//Validar Minusculas
+function Minusculas(entrada){
+  var band=false;
+  //Ciclo for para recorrer toda la cadena
+  for(var index = 0; index < letras.length; index++){
+    var letraActual = letras.charAt(index);
 
-function mayusculas(){
-
+    if(letraActual!=letraActual.toLowerCase()){
+        band=false;
+        break;
+    }else{
+      band=true;
+    }
+  }
+  return band;
 }
-function rango(){
+//Validar Rango
+function Rango(entrada, x,y){
+  //Validamos si alguno de los valores no es número
+  if(isNaN(valor) || isNaN(x) || isNaN(y)){
+    return NaN;
+  }
 
+  if(x<y){
+    if(valor <=y && valor>=x){
+      return true;
+    }else{
+      return false;
+    }
+  }else if(y<x){
+    if(valor <=x && valor>=y){
+      return true;
+    }else{
+      return false;
+    }
+  }
 }

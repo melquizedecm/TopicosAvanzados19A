@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" scr="dist/Chart.bundle.min.js"></script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        var datos={
+          type: "pie",
+          datos:{
+            datasets:[{
+              data:[
+              5,
+              10,
+              40,
+              12,
+              23,
+              ],
+              backgroundColor:[
+              "#F7464",
+              "#39B431",
+              "#3F7AD5",
+              "#7E23A0",
+              "#E0DB2F"
+              ],
+            }],
+            labels:[
+            "Dato 1",
+            "Dato 2",
+            "Dato 3",
+            "Dato 4",
+            "Dato 5"
+            ]
+          },
+          option : {
+            responsive: true,
+          }
+        };
+
+        var canvas = document.getElementById('chart').getContext('2d');
+    		window.pier = new Chart(canvas, datos);
+
+    		setInterval(function(){
+    			datos.data.datasets.splice(0);
+    			var newData = {
+    				backgroundColor : [
+              "#F7464",
+              "#39B431",
+              "#3F7AD5",
+              "#7E23A0",
+              "#E0DB2F"
+    				],
+    				data : [getRandom(), getRandom(), getRandom(), getRandom(), getRandom()]
+    			};
+
+    			datos.data.datasets.push(newData);
+
+    			window.pie.update();
+        }, 5000);
+function getrandoom(){
+  return Math.round(Math.random()*100);
+}
+      });
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+  <div id="canvas-container" style="width:50%;">
+    <canvas id="chart" width="500" height="350"></canvas>
+  </div>
+  </body>
+</html>

@@ -18,6 +18,7 @@ function Rango(){
   alert("El numero esta en el rango");
   boolean(N);
     }else{
+
   alert("El numero NO esta en el rango");
   boolean(F);
   }
