@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- aqui es para q tu nombre o el apelido tambien lo q se a querias poner se convertira en mayuscula, minuscula etc.
+currency: Formato de un número a un formato de moneda.
+date: Formato de una fecha a un formato especificado.
+filter: Seleccione un subconjunto de elementos de una matriz.
+json: Formatear un objeto a una cadena JSON.
+limitTo: Limita una matriz / cadena a un número específico de elementos / caracteres.
+lowercase: Formato de una cadena para minúsculas.
+number: Formato de un número a una cadena.
+orderBy: Ordena una matriz por una expresión.
+uppercase: Formato de una cadena a mayúsculas.-->
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <!-- -->
+        <div ng-app="myApp" ng-controller="personCtrl">
+            <!--lowercase: minuscula
+            Los filtros se pueden agregar a las expresiones usando el carácter de canalización |, seguido de un filtro.-->
+            <p>El nombre es: {{ firstName | lowercase }}</p>
+            <p>El apellido es: {{ lastName | lowercase }}</p>
+        </div>
+        <!-- -->
+        <script>
+            angular.module('myApp', []).controller('personCtrl', function ($scope) {
+                $scope.firstName = "John",
+                        $scope.lastName = "Doe"
+            });
+        </script>
+    </body>
+</html>
