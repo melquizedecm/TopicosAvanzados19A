@@ -1,0 +1,63 @@
+<html>
+<!--
+Nombre: Jesus Alberto Lira Romero
+        Francisco Montalvo Hidalgo
+        Cosme Magaña Camara
+Profesor: Melquizedec Moo Medina
+Programa: Programa09.html
+Description: Ejemplo de exposicion.
+            Generador de un control de justificaciones mediante la Libreria
+            expuesta por el equipo (jsPDF), utiliznado al mismo tiempo la libreria JQuery
+Fecha: 11/mar/2019
+-->
+<head>
+  <!--Librerias Utilizadas -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.1.4.js" integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=" crossorigin="anonymous"></script>
+  <script src="jspdf.min.js"></script> <!-- Libreria de PDF -->
+</head>
+<body>
+          <!-- Encabezao del programa -->
+<center><div id="navbar" ><font size=26 face="Sniglet">Control de Justificaciones</font></div></center>
+<div id="wrapper">
+
+    <!-- Input's para la entrada de los datos-->
+    <!-- Los botones estan siendo tomados de bootstrap al igual que los inpts-->
+		<input type="text" id="name" class="form-control form-control-success" placeholder="Nombre"><br>
+		<input type="text" id="carrera" class="form-control form-control-success" value="" placeholder="Carrera" /><br>
+		<input type="text" id="semestre" class="form-control form-control-success" value="" placeholder="Semestre" /><br>
+		<input type="text" id="matricula" class="form-control form-control-success" value="" placeholder="Matricula"/><br>
+    <input type= "date" id="fecha" class="form-control form-control-success" value=""><br>
+		<center><input type="button" class="btn btn-warning" id="button" value="Descargar"/></center>
+
+    <!--Scrip de procedimiento -->
+	<script>
+  //Utilizando la libreria JQuery
+	$('#button').click(function() { //indicacion de procedimiento que pasara a la hora de apretar el boton "Descargar"
+
+		 var doc = new jsPDF(); //instanceando una variable "doc"
+
+     //creamos variables nuevas, tomando el valor que esta en los imputs
+     //por medio de su ID
+		var name = $('#name').val(); //.val es para tomar valores que estan en el input
+		var carrera = $('#carrera').val();
+		var semestre = $('#semestre').val();
+		var matricula = $('#matricula').val();
+    var fecha = $('#fecha').val();
+
+		doc.setFontSize(15); //Seleccion del tamaño de la fuente del PDF
+
+    //doc.text es para llamar a una hoja en pdf e indicarle lo que quieres ingresar en los parentsis
+    //lso 2 primeros numeros (15,20) indican el margen de distancia que tendran en "X" y "Y"
+    // "/r" es para el salto de linea
+		doc.text(15, 20, "Por este medio se le informa que el alumno "+name+"\rcon matricula "+matricula+" de la carrea de "+carrera+"\rcursando actualmente el "+semestre+" semestre no pudo asistir a clases\ren la fecha "+fecha+" por cuestiones ajenas a el.\rEsperemos considere la asistencia en la fecha emitida.");
+    doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
+    doc.save('justificacion.pdf'); //aca guardamos el PDF con un nombre que le queramos dar
+
+
+	});
+</script>
+</body>
+</html>
