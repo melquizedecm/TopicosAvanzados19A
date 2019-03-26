@@ -1,3 +1,8 @@
+<!--Autor: Cosme MAgaña 13/03/19-->
+<!--Libreria para obtener sugerencias desde un servidor-->
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +10,8 @@
 <meta charset="utf-8">
 
 <script>
+
+//funcion que toma los elementos y los muestra segun lo escrito
 	function mostrarSugerencia(str) {
 
 		var xmlhttp;
@@ -26,6 +33,7 @@
 
 		}
 
+//se toma el listado del servidor
 		xmlhttp.open("GET", "listadoDatos.php?q=" + str, true);
 
 		xmlhttp.send();
