@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Nombre: Francisco Montalvo Hidalgo
+Profesor: Melquizedec Moo Medina
+Programa: AngularJS
+Description: Ejemplo de exposicion.
+            Generador de un documento responsivo mediante la Libreria
+            AngularJS, en el cual lo que ingreses sera mostrado en pantalla.
+Fecha: 16/mar/2019
+-->
+<!--con ng-app inicializamos angular, a esto se le llama directiva-->
+<html ng-app>
+<head>
+    <!--Angular es JavaScript que se ejecuta del lado del cliente (Browser)-->
+    <title>Installation - Angular JS</title>
+</head>
+<body>
+ <!--ejecuta para inicializar la aplicacion-->
+<div ng-init="name='Karen Lozano'">
+    <!--con {{name}} se imprime el contenido-->
+    <h1>Welcome {{name}}</h1>
+    <!--con este podremos modificar la variable de name-->
+    <p><input ng-model="name" type="text" /></p>
+</div>
+<!--la libreria-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+</body>
+</html>

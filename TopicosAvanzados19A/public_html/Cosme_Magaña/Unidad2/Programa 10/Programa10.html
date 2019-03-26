@@ -1,0 +1,79 @@
+<!DOCTYPE html><!-- Crear Grafica -->
+<!--Autor:Cosme Magaña
+13/03/19
+Libreria chart-->
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src="dist/jquery-1.12.0.min.js"> </script>
+    <script type="text/javascript" src="dist/Chart.bundle.min.js"> </script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        var datos={
+          type: "pie",
+          data:{
+            datasets:[{
+              data:[
+              5,
+              10,
+              40,
+              12,
+              23
+              ],
+              backgroundColor:[
+              "#ABEBC6",
+              "#ABEBE6",
+              "#008080",
+              "#ABB0EB",
+              "#C6ABEB"
+              ],
+
+            }],
+            labels:[
+            "Dato1",
+            "Dato2",
+            "Dato3",
+            "Dato4",
+            "Dato5"
+            ]
+          },
+            otions:{
+              responsive: true,
+            }
+        };
+        var canvas = document.getElementById('chart').getContext('2d');
+        window.pier = new Chart(canvas, datos);
+
+        setInterval(function(){
+          datos.data.datasets.splice(0);
+          var newData={
+            backgroundColor:[
+              "#ABEBC6",
+              "#ABEBE6",
+              "#008080",
+              "#ABB0EB",
+              "#C6ABEB"
+            ],
+            data: [getRandom(),getRandom(),getRandom(),getRandom(),getRandom()]
+          };
+          datos.data.datasets.push(newData);
+          window.pie.update();
+        },5000);
+        function getRandom(){
+          return Math.round(Math.random()=100);
+        }
+      });
+    </script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <div id="canvas-container" style="width:50%;">
+        <canvas id="chart" width="500" hwight="350"></canvas>
+  </div>
+
+  </body>
+</html>

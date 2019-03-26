@@ -1,0 +1,59 @@
+<!--Autor: Cosme MAgaña 13/03/19-->
+<!--Libreria para obtener sugerencias desde un servidor-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cursos aprende a programar</title>
+<meta charset="utf-8">
+
+<script>
+
+//funcion que toma los elementos y los muestra segun lo escrito
+	function mostrarSugerencia(str) {
+
+		var xmlhttp;
+
+		if (str.length == 0) {
+			document.getElementById("txtSugerencia").innerHTML = "";
+			return;
+		}
+
+		xmlhttp = new XMLHttpRequest();
+
+		xmlhttp.onreadystatechange = function() {
+
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+				document.getElementById("txtSugerencia").innerHTML = xmlhttp.responseText;
+
+			}
+
+		}
+
+//se toma el listado del servidor
+		xmlhttp.open("GET", "listadoDatos.php?q=" + str, true);
+
+		xmlhttp.send();
+
+	}
+</script>
+</head>
+
+<body>
+	<h3>Empieza a escribir un nombre en la casilla para obtener una sugerencia:</h3>
+
+	<form action="">
+
+		Nombre: <input type="text" id="txt1" onkeyup="mostrarSugerencia(this.value)" />
+
+	</form>
+
+	<p>
+		Sugerencias: <span id="txtSugerencia"></span>
+	</p>
+
+</body>
+</html>
