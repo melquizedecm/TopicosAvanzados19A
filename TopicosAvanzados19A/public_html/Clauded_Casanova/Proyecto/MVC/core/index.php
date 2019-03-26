@@ -7,4 +7,5 @@
 			
 			$link=mysql_connect($DBserver, $DBuser, $DBdatos, $DBdatos);
 			return link;
+        }
         ?>
