@@ -1,13 +1,13 @@
 
-      function caballo(etiquetaNombre,metros, fin){
+      function caballo(nombreCaballos,metros, fin){
         var contador=0;
         var i=0;
         while(i<=fin){
-            nombre=document.getElementById(etiquetaNombre).value;
+            nombre=document.getElementById(nombreCaballos).value;
         document.getElementById(metros).value= nombre + " " + i + "mts";
         i++;
         }
-        nombre=document.getElementById(etiquetaNombre).vanlue;
+        nombre=document.getElementById(nombreCaballos).vanlue;
         alert("Gano el caballo: "+nombre);
 
 

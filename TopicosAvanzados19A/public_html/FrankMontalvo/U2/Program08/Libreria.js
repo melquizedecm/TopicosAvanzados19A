@@ -79,15 +79,19 @@ function validarRango(valor, x,y){
    y en función de eso comparamos los valores con el rango*/
   if(x<y){
     if(valor <=y && valor>=x){
-      document.getElementById("validacionrango").innerHTML=true;
-    }else{
+
       document.getElementById("validacionrango").innerHTML=false;
+    }else{
+
+      document.getElementById("validacionrango").innerHTML=true;
     }
   }else if(y<x){
     if(valor <=x && valor>=y){
-      document.getElementById("validacionrango").innerHTML=true;
-    }else{
+
       document.getElementById("validacionrango").innerHTML=false;
+    }else{
+      
+      document.getElementById("validacionrango").innerHTML=true;
     }
   }
 }

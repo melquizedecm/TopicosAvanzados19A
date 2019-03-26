@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comidas mas demandadas del mes</title>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var datos = {
+			type: "pie",
+			data : {
+				datasets :[{
+					data : [
+						40,
+						30,
+						15,
+						10,
+						5,
+					],
+					backgroundColor: [
+						"#F7464A",
+						"#46BFBD",
+						"#FDB45C",
+						"#949FB1",
+						"#4D5360"
+					],
+				}],
+				labels : [
+					"Pescado frito",
+					"Ceviche de pescado",
+					"Camaron empanizado",
+					"coctel de camaron",
+					"ceviche de camaron y pulpo"
+				]
+			},
+			options : {
+				responsive : true,
+			}
+		};
+
+
+
+		var canvas = document.getElementById('chart').getContext('2d');
+		window.pier = new Chart(canvas, datos);
+
+		setInterval(function(){
+			datos.data.datasets.splice(0);
+			var newData = {
+				backgroundColor : [
+					"#F7464A",
+					"#46BFBD",
+					"#FDB45C",
+					"#949FB1",
+					"#4D5360"
+				],
+				data : [getRandom(), getRandom(), getRandom(), getRandom(), getRandom()]
+			};
+
+			datos.data.datasets.push(newData);
+
+			window.pie.update();
+
+		}, 5000);
+
+		function getRandom(){
+			return Math.round(Math.random() * 100);
+		}
+
+	});
+
+  $(document).ready(function(){
+		var datos = {
+			type: "pie",
+			data : {
+				datasets :[{
+					data : [
+						40,
+						30,
+						15,
+						10,
+						5,
+					],
+					backgroundColor: [
+						"#F7464A",
+						"#46BFBD",
+						"#FDB45C",
+						"#949FB1",
+						"#4D5360"
+					],
+				}],
+				labels : [
+					"Pescado frito",
+					"Ceviche de pescado",
+					"Camaron empanizado",
+					"coctel de camaron",
+					"ceviche de camaron y pulpo"
+				]
+			},
+			options : {
+				responsive : true,
+			}
+		};
+
+
+
+		var canvas = document.getElementById('chart').getContext('2d');
+		window.pier = new Chart(canvas, datos);
+
+		setInterval(function(){
+			datos.data.datasets.splice(0);
+			var newData = {
+				backgroundColor : [
+					"#F7464A",
+					"#46BFBD",
+					"#FDB45C",
+					"#949FB1",
+					"#4D5360"
+				],
+				data : [getRandom(), getRandom(), getRandom(), getRandom(), getRandom()]
+			};
+
+			datos.data.datasets.push(newData);
+
+			window.pie.update();
+
+		}, 5000);
+
+		function getRandom(){
+			return Math.round(Math.random() * 100);
+		}
+
+	});
+
+	</script>
+
+</head>
+<body style="background-color:aqua;">
+
+  <h1 alingh="center ">COMIDAS MAS DEMANDADAS DEL MES </h1>
+	<!--El <canvas>elemento HTML se utiliza para dibujar gráficos sobre la marcha, a través de JavaScript.-->
+<div id="canvas-container" style="width:50%;" alingh="right">
+		<canvas id="chart" width="500" height="350"></canvas>
+	</div>
+
+  <h1 alingh="center ">BEBIDAS MAS DEMANDADAS DEL MES </h1>
+  <div id="canvas-container" style="width:50%;" alingh="right">
+  		<canvas id="chart" width="500" height="350"></canvas>
+  	</div>
+</body>
+</html>

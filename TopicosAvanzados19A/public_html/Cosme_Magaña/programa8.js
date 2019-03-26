@@ -2,8 +2,6 @@
 //Libreria de Validaciones
 //16/03/19
 
-
-
 var x;
 var y;
 var z;

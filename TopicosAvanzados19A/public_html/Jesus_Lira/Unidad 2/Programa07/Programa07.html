@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!--
+* Sourse: Programa07.html
+* Description: Creacion de botones para ingresar numero de alumnos, ingresar sus
+calificaciones y sacarles un promedio mediante funciones hechas en JS (program07.js).
+* Date: 07/03/2019
+* Autor: Jesus Lira Romero.
+-->
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--librerias de bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <script type="text/javascript" src="program07.js"> </script> <!--Se llama al JS para que se ejecute en la pagina-->
+    <title>
+
+    </title>
+  </head>
+  <body>
+    <!-- Creacion de los botones ingresndo la funcion que se ejecutara de program07.js en onclick="nombredeFunction" -->
+      <button type="button" class="btn btn-primary" onclick="getCantidadAlumnos();">Escribir la cantidad de alumnos</button>
+      <button type="button" class="btn btn-danger" onclick="leerCalificaciones();">Escribir las calificaciones de los alumnos</button>
+      <button type="button" class="btn btn-primary" onclick="getPromedio();">Promedio del alumno</button>
+  </body>
+</html>

@@ -1,9 +1,5 @@
 package Metodo_Secante;
 
-/**
- *
- * @author clauded
- */
 public class Secante {
     
     public double raiz(Funcion f, double x0, double x1, int c, double e){
