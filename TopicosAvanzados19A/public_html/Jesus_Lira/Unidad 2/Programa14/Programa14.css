@@ -1,17 +1,24 @@
-
-body{
-  background-image: url(IMG/pista.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+/*DOCTYPE css
+Nombre: Jesus Alberto Lira Romero
+Profesor: Melquizedec Moo Medina
+Programa: Programa14.css
+          Hipodromos
+Description: Estilos de las diferentes clases y etiquetas de programa14.html
+Fecha: 18/mar/2019
+*/
+body{ /* estilos del body */
+  background-image: url(IMG/pista.png); /* imagen de fondo */
+  background-position: center center; /* indica que la imagen se centre al fondo */
+  background-repeat: no-repeat; /* si la imagen no es del tamaño de la pagina, hace que no se repita */
+  background-size: cover; /* tamaño de portada */
+  background-attachment: fixed; /* ajustando el tamaño de la imagen al fondo */
 }
 
 .titulo{
-  text-align: center;
+  text-align: center; /* class="titulo" alineada al centro*/
 }
 
-.subtitulo{
+.subtitulo{ /* class="subtitulo" alineada al centro*/
   text-align: center;
 }
 
@@ -25,14 +32,15 @@ body{
   position:absolute; left:20px;
   position:absolute; right:20px;
 }
-img:hover{
-  transform: scale(0.9);
+img:hover{ /* accion al poner el cursor sobre las etiquetas img  */
+  transform: scale(0.9); /* efecto de rebote de la imagen al poner el cursor sobre ella */
 }
 
-.separador{
+.separador{ /*tamaño del separado*/
   height: 160px;
 }
 
+/* fuente, tamaño y estilo de letras de las etuquetas <h>*/
 h1{
   font: oblique bold 300% cursive;
 }

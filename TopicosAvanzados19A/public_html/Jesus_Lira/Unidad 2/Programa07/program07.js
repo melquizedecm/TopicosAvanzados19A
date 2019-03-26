@@ -1,4 +1,4 @@
-/*
+/* DOCTYPE JavaScript
 * Sourse: Programa07.js
 * Description: Funciones en JS para obtener cantidad de alumnos, leer sus
 calificaciones y para obtener el promedio, todas las funciones estan enlasadas.

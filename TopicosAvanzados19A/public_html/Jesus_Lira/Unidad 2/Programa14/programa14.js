@@ -1,6 +1,14 @@
+/*DOCTYPE JavaScript
+Nombre: Jesus Alberto Lira Romero
+Profesor: Melquizedec Moo Medina
+Programa: Programa14.js
+          Hipodromos
+Description: funciones de programa14.html
+Fecha: 18/mar/2019
+*/
+    /*Funcion para el recorrido de los caballos*/
+      function caballo(nombreCaballos,metros, fin){ //(nobreDelCaballo/metros contando/final del recorrifdo)
 
-      function caballo(nombreCaballos,metros, fin){
-        var contador=0;
         var i=0;
         while(i<=fin){
             nombre=document.getElementById(nombreCaballos).value;
@@ -12,7 +20,7 @@
 
 
       }
-
+      /*Reorrido individual de los caballos*/
     function ejecutar(){
       Concurrent.Thread.create(caballo,"inputCaballo1","metrosRecorridos1",100000);
       Concurrent.Thread.create(caballo,"inputCaballo2","metrosRecorridos2",100000);
