@@ -1,10 +1,20 @@
 <!DOCTYPE html>
+<!--
+Nombre: Francisco Montalvo Hidalgo
+Profesor:Melquizedec Moo Medina
+Programa: Trabajando con hilos de programación en JS
+Fecha:11/mar/2019
+-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="Concurrent.Thread.Compile.js"></script>
+    <link rel="stylesheet" href="Programa14.css">
     <script type="text/javascript">
+    //Creamos una función la cual va indicando cuantos "metros" recorrera nuestro caballo
     function caballo(nombre,etiqueta,fin){
       var i=0;
       while(i<=fin){
@@ -14,6 +24,7 @@
     nombre=document.getElementById(nombre).value;
     alert("Llego el caballo "+nombre);
   }
+  //En esta función estan los hilos a los cuales se les inserta la función caballo para que se vayan ejecutando parcialmente
   function ejecutar(){
     document.getElementById('labelcaballo1').innerHTML=document.getElementById('inputCaballo1').value;
     document.getElementById('labelcaballo2').innerHTML=document.getElementById('inputCaballo2').value;
@@ -28,8 +39,10 @@
 
   </head>
   <body>
-
+    <div class="titulo">
       <h1>Nombra a tus caballos</h1>
+    </div>
+
       <label>Nombre del primer Caballo: </label>
       <input type="text" id="inputCaballo1"><br>
       <label>Nombre del segundo Caballo: </label>
@@ -61,5 +74,6 @@
       </table>
 
     <button type="button" onclick="ejecutar()">Iniciar Arrancones</button>
+    <img class="caballos" src="img/caballos.gif" alt="La imagen no se ha podido Cargar :(">
   </body>
 </html>
