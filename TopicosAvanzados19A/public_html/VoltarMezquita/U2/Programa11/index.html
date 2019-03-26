@@ -1,0 +1,36 @@
+<!--
+  Nombre: Francisco Montalvo Hidalgo
+  Profesor:Melquizedec Moo Medina
+  Programa: Llamando una documento de texto con ajax
+  Fecha:13/mar/2019
+ -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h1>The XMLHttpRequest Object</h1>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+//Cargamos un documento creando una petición que es pasada a una variable
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  //Indicamos que nuestra petición esta lista para un cambio y se le añade una función en la cual hay valores que indican cuando la petición esta lista y todo en orden
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      //Si cumple las condiciones se le pasa a un elemento del documento el valor de un archivo de texto
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  //Aqui abrimos el archivo de texto indicando los parametros de obtener el nombre del archivo y diciendole verdadero
+  xhttp.open("GET", "ajax_info.txt", true);
+  //Se envia el documento a el html
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
