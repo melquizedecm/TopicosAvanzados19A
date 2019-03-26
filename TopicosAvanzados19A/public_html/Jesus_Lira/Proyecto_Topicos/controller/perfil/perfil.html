@@ -2,24 +2,89 @@
 <html lang="en" >
 
 <head>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){ //JQuery
+
+      var datos={
+        type: "pie", //definiendo el tipo de grafica
+        data:{
+          datasets:[{
+            data:[ //porcentajes que le corresponde a cada dato
+            5, //primer dato
+            10, //segundo dato
+            40, //tercer dato
+            12, //cuarto dato
+            23 //quinto dato
+                //la suma debe de dar el 100%
+            ],
+            backgroundColor:[ //colores correspondientes a cada dato en orden
+            "#ABEBC6",
+            "#ABEBE6",
+            "#008080",
+            "#ABB0EB",
+            "#C6ABEB"
+            ],
+
+          }],
+          labels:[ //nombre de los datos en orden
+          "Dato1",
+          "Dato2",
+          "Dato3",
+          "Dato4",
+          "Dato5"
+          ]
+        },
+          otions:{
+            responsive: true,//indicamos que queremos que querwmos que sea responsiva
+          }
+      };
+      var canvas = document.getElementById('chart').getContext('2d');
+      window.pier = new Chart(canvas, datos);
+
+      setInterval(function(){ //colores del intervalo despues de un timepo de espera
+        datos.data.datasets.splice(0);
+        var newData={
+          backgroundColor:[
+            "#ABEBC6",
+            "#ABEBE6",
+            "#008080",
+            "#ABB0EB",
+            "#C6ABEB"
+          ],
+          data: [getRandom(),getRandom(),getRandom(),getRandom(),getRandom()]
+        };
+        datos.data.datasets.push(newData);
+        window.pie.update();
+      },5000); //5 segundos de espera
+      function getRandom(){
+        return Math.round(Math.random()=100);
+      }
+    });
+  </script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.4.js" integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=" crossorigin="anonymous"></script>
   <script src="jspdf.min.js"></script>
+  <script type="text/javascript" src="dist/jquery-1.12.0.min.js"> </script>
+  <script type="text/javascript" src="dist/Chart.bundle.min.js"> </script>
   <meta charset="UTF-8">
   <title>Bootstrap User Profile</title>
-
-
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-
       <link rel="stylesheet" href="css/style.css">
+
+
 
 
 </head>
 
 <body>
+
+
 
   <script>
 
@@ -96,6 +161,10 @@
 								<i class="ace-icon fa fa-envelope-o bigger-110"></i>
 								<span class="bigger-110">Generar Constancia</span>
                 		<center><input type="button" class="btn btn-warning" id="button" value="Descargar"/></center>
+							</a>
+
+              <a href="grafica.html" class="btn btn-sm btn-block btn-primary">
+                		<center><input type="button" class="btn btn-warning" id="button" value="Ver Criterios"/></center>
 							</a>
 						</div><!-- /.col -->
 
@@ -1098,7 +1167,6 @@
 	</div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
 
 
 </body>
