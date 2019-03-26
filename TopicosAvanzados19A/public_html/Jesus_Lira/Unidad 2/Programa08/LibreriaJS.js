@@ -1,8 +1,11 @@
 /*
 Nombre: Jesus Alberto Lira Romero
-Profesor:Melquizedec Moo Medina
+Profesor: Melquizedec Moo Medina
 Programa: Librerias
-Fecha:10/mar/2019
+Description: Librerias propias para validacion de numeros en varios tipos al
+            igual que letras, que retornan TRUE o FALSE sea el caso.
+            Todas validadas.
+Fecha: 10/mar/2019
 */
 
 function valEntero(){ //Validacion Enteros

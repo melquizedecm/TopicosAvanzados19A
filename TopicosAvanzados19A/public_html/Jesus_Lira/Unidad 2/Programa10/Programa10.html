@@ -1,24 +1,34 @@
-<!DOCTYPE html><!-- Crear Grafica -->
+<!DOCTYPE html>
+<!--
+* Sourse: Programa07.html
+* Description: Creacion para la elaboracion de una grafica interactiva
+              de pastel, mediante la libreria Chart.bundle.min.js
+* Date: 13/03/2019
+*Programa: Ejemplo del equipo #2
+* Autor: Jesus Lira Romero.
+-->
 <html lang="en" dir="ltr">
   <head>
+    <!-- Librerias Utilizadas-->
     <script type="text/javascript" src="dist/jquery-1.12.0.min.js"> </script>
     <script type="text/javascript" src="dist/Chart.bundle.min.js"> </script>
     <script type="text/javascript">
 
-      $(document).ready(function(){
+      $(document).ready(function(){ //JQuery
 
         var datos={
-          type: "pie",
+          type: "pie", //definiendo el tipo de grafica
           data:{
             datasets:[{
-              data:[
-              5,
-              10,
-              40,
-              12,
-              23
+              data:[ //porcentajes que le corresponde a cada dato
+              5, //primer dato
+              10, //segundo dato
+              40, //tercer dato
+              12, //cuarto dato
+              23 //quinto dato
+                  //la suma debe de dar el 100%
               ],
-              backgroundColor:[
+              backgroundColor:[ //colores correspondientes a cada dato en orden
               "#ABEBC6",
               "#ABEBE6",
               "#008080",
@@ -27,7 +37,7 @@
               ],
 
             }],
-            labels:[
+            labels:[ //nombre de los datos en orden
             "Dato1",
             "Dato2",
             "Dato3",
@@ -36,13 +46,13 @@
             ]
           },
             otions:{
-              responsive: true,
+              responsive: true,//indicamos que queremos que querwmos que sea responsiva
             }
         };
         var canvas = document.getElementById('chart').getContext('2d');
         window.pier = new Chart(canvas, datos);
 
-        setInterval(function(){
+        setInterval(function(){ //colores del intervalo despues de un timepo de espera
           datos.data.datasets.splice(0);
           var newData={
             backgroundColor:[
@@ -56,7 +66,7 @@
           };
           datos.data.datasets.push(newData);
           window.pie.update();
-        },5000);
+        },5000); //5 segundos de espera
         function getRandom(){
           return Math.round(Math.random()=100);
         }
@@ -68,6 +78,7 @@
   </head>
   <body>
 
+    <!-- Definieno el tamaño del canvas (lienso) en el que van a estar los elemntos y la tabla-->
   <div id="canvas-container" style="width:50%;">
         <canvas id="chart" width="500" hwight="350"></canvas>
   </div>
