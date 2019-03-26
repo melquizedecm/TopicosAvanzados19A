@@ -1,26 +1,32 @@
+//Autor : Cosme MAgaña
+//Libreria de Validaciones
+//16/03/19
 
-
+var x;
+var y;
+var z;
+var zz;
 //Validar Enteros
-function validarEntero(valor){
+function  Entero(valor){
   //Validamos si es un número
      if(isNaN(valor)){
        return NaN;
-       //Si es un número validamos si es entero si no retornara falso
+       // validamos si es entero si no retornara falso
      }else if(valor%1==0){
             return true;
      }else{
        return false;
-       alert("No es entero");
+
      }
 }
 
 //Validar Flotantes
-function validarFlotante(valor){
+function Flotante(valor){
 
   //Validamos si es un número
   if(isNaN(valor)){
     return NaN;
-    //Si es número validamos que sea flotante de lo contrario retorna falso
+    //validamos que sea flotante de lo contrario retorna falso
   }else if(valor%1!=0){
           return true;
    }else{
@@ -28,7 +34,7 @@ function validarFlotante(valor){
    }
 }
 //Validar Mayusculas
-function validarMayusculas(letras){
+function Mayusculas(letras){
   //Variable para retornar valor true or false segun el caso
   var band=false;
   //Ciclo for para recorrer toda la cadena
@@ -45,7 +51,7 @@ function validarMayusculas(letras){
   return band;
 }
 //Validar Minusculas
-function validarMinusculas(letras){
+function Minusculas(letras){
   //Variable para retornar valor true or false segun el caso
   var band=false;
   //Ciclo for para recorrer toda la cadena
@@ -62,7 +68,7 @@ function validarMinusculas(letras){
   return band;
 }
 //Validar Rango
-function validarRango(valor, x,y){
+function Rango(valor, x,y){
   //Validamos si alguno de los valores no es número
   if(isNaN(valor) || isNaN(x) || isNaN(y)){
     return NaN;
@@ -75,11 +81,60 @@ function validarRango(valor, x,y){
     }else{
       return false;
     }
-  }else if(y<x){
+  }else{ if(y<x){
     if(valor <=x && valor>=y){
       return true;
     }else{
       return false;
     }
   }
+}
+}
+//funcion  la cual segun el caso pedira valores y llamara a los metodos asignados
+function pedirnum(opcion){
+
+  switch (opcion) {
+    case 'a':
+    x=prompt("Ingresa un valor entero");
+     zz=Entero(x);
+     comparar(zz);
+      break;
+      case 'b':
+      x=prompt("Ingresa un valor float");
+       zz=Flotante(x);
+       comparar(zz);
+        break;
+        case 'c':
+        x=prompt("Ingresa una palabra en mayusculas");
+         zz=Mayusculas(x);
+         comparar(zz);
+          break;
+          case 'd':
+          x=prompt("Ingresa una palabra en minusculas");
+           zz=Minusculas(x);
+           comparar(zz);
+            break;
+            case 'e':
+            x=prompt("Ingresa rango superior");
+            y=prompt("Ingresa rango inferior");
+            z=prompt("Ingresa numero dentro del rango");
+             zz=Rango(z,x,y);
+             comparar(zz);
+              break;
+
+    default:
+
+  }
+
+}
+
+//Metodo el cual compara los resultados booleanos y arroja un mensaje
+function comparar(result){
+
+if (result){
+  alert("Dato correcto");
+}else{
+  alert("dato incorrecto");
+}
+
 }
