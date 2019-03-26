@@ -4,7 +4,9 @@
         var i=0;
         while(i<=fin){
             nombre=document.getElementById(etiquetaNombre).value;
+            //seleccion de un elemento en el documento mediante el ID
         document.getElementById(metros).value= nombre + " " + i + "mts";
+//seleccion de un elemento en el documento mediante el ID y visualizarlo.
         i++;
         }
         nombre=document.getElementById(etiquetaNombre).value;
