@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="Concurrent.Thread.Compile.js"></script>
+    <script type="text/javascript">
+    function caballo(nombre,etiqueta,fin){
+      var i=0;
+      while(i<=fin){
+        document.getElementById(etiqueta).value =i+" mts";
+        i++;
+    }
+    nombre=document.getElementById(nombre).value;
+    alert("Llego el caballo "+nombre);
+  }
+  function ejecutar(){
+    document.getElementById('labelcaballo1').innerHTML=document.getElementById('inputCaballo1').value;
+    document.getElementById('labelcaballo2').innerHTML=document.getElementById('inputCaballo2').value;
+    document.getElementById('labelcaballo3').innerHTML=document.getElementById('inputCaballo3').value;
+
+
+    Concurrent.Thread.create(caballo,"inputCaballo1","caballo1",1000000);
+    Concurrent.Thread.create(caballo,"inputCaballo2","caballo2",1000000);
+    Concurrent.Thread.create(caballo,"inputCaballo3","caballo3",1000000);
+  }
+    </script>
+
+  </head>
+  <body>
+
+      <h1>Nombra a tus caballos</h1>
+      <label>Nombre del primer Caballo: </label>
+      <input type="text" id="inputCaballo1"><br>
+      <label>Nombre del segundo Caballo: </label>
+      <input type="text" id="inputCaballo2"><br>
+      <label>Nombre del tercer Caballo: </label>
+      <input type="text" id="inputCaballo3">
+      <table style="border: solid 1px black;">
+        <thead>
+          <th colspan="2" >Carreras</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Nombre del Caballo:</th>
+            <th>Resultados:</th>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo1"></label></td>
+            <td><input type="text" id="caballo1" readonly="readonly"></td>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo2"></label></td>
+            <td><input type="text" id="caballo2" readonly="readonly"><br></td>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo3"></label></td>
+            <td><input type="text" id="caballo3" readonly="readonly"><br></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <button type="button" onclick="ejecutar()">Iniciar Arrancones</button>
+  </body>
+</html>

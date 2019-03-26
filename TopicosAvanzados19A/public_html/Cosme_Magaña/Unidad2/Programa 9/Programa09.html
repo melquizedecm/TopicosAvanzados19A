@@ -1,3 +1,7 @@
+<!--Autor: Cosme Magaña-->
+<!--libreria jspdf la cual nos permite generar pdfs-->
+<!--13/03/2019-->
+
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,6 +26,9 @@
 		<center><input type="button" class="btn btn-warning" id="button" value="Descargar"/></center>
 
 	<script>
+
+
+  //funcion donde tomaremos los valores llamando a los diferentes input para rellenar el formulario
 	$('#button').click(function() {
 
 		 var doc = new jsPDF();
@@ -35,9 +42,10 @@
 		doc.setFontSize(15);
 
 
-		doc.text(15, 20, "Por este medio se le informa que el alumno "+name+"\rcon matricula "+matricula+" de la carrea de "+carrera+"\rcursando actualmente el "+semestre+" semestre no pudo asistir a clases\ren la fecha "+fecha+" por cuestiones ajenas a el.\rEsperemos considere la asistencia en la fecha emitida.");
-    doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
-    doc.save('justificacion.pdf');
+    		doc.text(15, 20, "Por este medio se le informa que el alumno "+name+"\rcon matricula "+matricula+" de la carrea de "+carrera+"\rcursando actualmente el "+semestre+" semestre es alumno regular \ren la fecha "+fecha+"");
+        doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
+        doc.save('justificacion.pdf');
+
 
 
 	});
