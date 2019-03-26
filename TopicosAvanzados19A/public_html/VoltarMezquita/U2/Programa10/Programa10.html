@@ -1,0 +1,88 @@
+<!DOCTYPE html><!--
+
+  Nombre: Francisco Montalvo Hidalgo
+  Profesor:Melquizedec Moo Medina
+  Programa: Generando Graficas en un html
+  Fecha:13/mar/2019
+ -->
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src="dist/jquery-1.12.0.min.js"> </script>
+    <script type="text/javascript" src="dist/Chart.bundle.min.js"> </script>
+    <script type="text/javascript">
+    //Le decimos a el programa que cuando el documento este cargado completamente ejecute la función
+      $(document).ready(function(){
+        //Se crea una variable de tipo arreglo para despues enviarla a la grafica
+        var datos={
+          type: "pie",
+          data:{
+            datasets:[{
+              data:[
+              5,
+              10,
+              40,
+              12,
+              23
+              ],
+              backgroundColor:[
+              "#ABEBC6",
+              "#ABEBE6",
+              "#008080",
+              "#ABB0EB",
+              "#C6ABEB"
+              ],
+
+            }],
+            labels:[
+            "Dato1",
+            "Dato2",
+            "Dato3",
+            "Dato4",
+            "Dato5"
+            ]
+          },
+            otions:{
+              responsive: true,
+            }
+        };
+        //Aqui en una variable indicamos que se pondra una grafica en 2d para el documento
+        var canvas = document.getElementById('chart').getContext('2d');
+        //Pasamos los parametros a nuestra grafica
+        window.pier = new Chart(canvas, datos);
+
+        setInterval(function(){
+          datos.data.datasets.splice(0);
+          var newData={
+            backgroundColor:[
+              "#ABEBC6",
+              "#ABEBE6",
+              "#008080",
+              "#ABB0EB",
+              "#C6ABEB"
+            ],
+            //Se añaden valores random para graficar
+            data: [getRandom(),getRandom(),getRandom(),getRandom(),getRandom()]
+          };
+          //Le decimos a la variable datos que obtenga los valores random
+          datos.data.datasets.push(newData);
+          //Se crea un ciclo para que la grafica se vaya actualizando en tiempo real cada 5 segundos
+          window.pie.update();
+        },5000);
+        //Funcion que genera los numeros random
+        function getRandom(){
+          return Math.round(Math.random()=100);
+        }
+      });
+    </script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <div id="canvas-container" style="width:50%;">
+        <canvas id="chart" width="500" hwight="350"></canvas>
+  </div>
+
+  </body>
+</html>
