@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <!--Las directivas AngularJS son atributos HTML extendidos con el prefijo ng-. -->
+        <div ng-app="myApp" ng-controller="namesCtrl">
+            <table border="1" width="100%">
+                <tr>
+                    <!--Al agregar la ng-click directiva en los encabezados de tabla, podemos ejecutar una función que cambia el orden de la matriz -->
+                    <th ng-click="orderByMe('nombre')">Nombres</th>
+                    <th ng-click="orderByMe('edad')">Edades</th>
+                </tr>
+                <!--La ng-repeat directiva repite un elemento HTML -->
+                <tr ng-repeat="x in Nombres| orderBy:myOrderBy">
+                    <td>{{x.nombre}}</td>
+                    <td>{{x.edad}}</td>
+                </tr>
+            </table>
+        </div>
+        <!-- aqui se va formando la tabla y en donde el encabezo al darle clik se orden la clasificacion de edades y nombres-->
+        <script>
+            angular.module('myApp', []).controller('namesCtrl', function ($scope) {
+                $scope.Nombres = [
+                    {nombre: 'Diani', edad: '2'},
+                    {nombre: 'Wendy', edad: '35'},
+                    {nombre: 'Steven', edad: '10'},
+                    {nombre: 'Haru', edad: '50'},
+                    {nombre: 'Joe', edad: '11'},
+                    {nombre: 'Ash', edad: '20'},
+                    {nombre: 'Elder', edad: '30'},
+                    {nombre: 'Mary', edad: '8'},
+                    {nombre: 'Kai', edad: '18'}
+                ];
+            //<!--orderBy: Ordena una matriz por una expresión. -->
+                $scope.orderByMe = function (x) {
+                    $scope.myOrderBy = x;
+                }
+            });
+        </script>
+    </body>
+</html>

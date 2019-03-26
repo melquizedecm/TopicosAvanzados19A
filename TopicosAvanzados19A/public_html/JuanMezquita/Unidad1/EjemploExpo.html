@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+  // se utiliza un div para mostra informacion del servidor
+<div id="demo">
+<h1>The XMLHttpRequest Object</h1>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  // 1. Instanciamos el objeto XMLHttpRequest
+  var xhttp = new XMLHttpRequest();
+  // 2. Indicamos un manejador de eventos para cuando llegue la información
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  // 3. Hacemos la llamada
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
