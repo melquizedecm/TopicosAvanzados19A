@@ -6,63 +6,35 @@
 	<script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		var datos = {
-			type: "pie",
-			data : {
-				datasets :[{
-					data : [
-						5,
-						10,
-						40,
-						12,
-						23,
-					],
-					backgroundColor: [
-						"#F7464A",
-						"#46BFBD",
-						"#FDB45C",
-						"#949FB1",
-						"#4D5360"
-					],
-				}],
-				labels : [
-					"Datos 1",
-					"Datos 2",
-					"Datos 3",
-					"Datos 4",
-					"Datos 5"
-				]
-			},
-			options : {
-				responsive : true,
-			}
-		};
+		var oilCanvas = document.getElementById("oilChart");
 
-		var canvas = document.getElementById('chart').getContext('2d');
-		window.pier = new Chart(canvas, datos);
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
 
-		setInterval(function(){
-			datos.data.datasets.splice(0);
-			var newData = {
-				backgroundColor : [
-					"#F7464A",
-					"#46BFBD",
-					"#FDB45C",
-					"#949FB1",
-					"#4D5360"
-				],
-				data : [getRandom(), getRandom(), getRandom(), getRandom(), getRandom()]
-			};
+var oilData = {
+    labels: [
+        "Saudi Arabia",
+        "Russia",
+        "Iraq",
+        "United Arab Emirates",
+        "Canada"
+    ],
+    datasets: [
+        {
+            data: [133.3, 86.2, 52.2, 51.2, 50.2],
+            backgroundColor: [
+                "#FF6384",
+                "#63FF84",
+                "#84FF63",
+                "#8463FF",
+                "#6384FF"
+            ]
+        }]
+};
 
-			datos.data.datasets.push(newData);
-
-			window.pie.update();
-
-		}, 5000);
-
-		function getRandom(){
-			return Math.round(Math.random() * 100);
-		}
+var pieChart = new Chart(oilCanvas, {
+  type: 'pie',
+  data: oilData
 
 	});
 	</script>

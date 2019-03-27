@@ -9,7 +9,7 @@ var mayuscula;
 function getEnteros(){
   while(true){
    entero=prompt("Ingrese un número");
-    if(entero %1===0){
+    if(entero %1===0){//if para validar si el número es entero.
       break;
     }else{
       alert("No es un número entero, intentelo de nuevo");
@@ -20,7 +20,7 @@ function getEnteros(){
 function getValidarFlotantes(){
   while(true){
     numero= Number.parseFloat(prompt("Ingrese un valor"));
-    if(!/^([0-9])*[.]?[0-9]*$/.test(numero)){
+    if(!/^([0-9])*[.]?[0-9]*$/.test(numero)){//validacion para flotantes
       break;
     }else{
       alert("No es un número flotante")
@@ -31,7 +31,7 @@ function getValidarFlotantes(){
 function getMinusculas(){
   while(true){
     palabra= prompt("Ingrese una letra");
-    if(/^[a-z]*$/.test(palabra)){
+    if(/^[a-z]*$/.test(palabra)){//valida si se ingresa una minuscula.
       break;
     }else{
       alert("Tiene que ingresar una letra en minúscula");
@@ -42,7 +42,7 @@ function getMinusculas(){
 function getMayusculas(){
   while(true){
   mayuscula= prompt("Ingrese una letra");
-      if(/^[A-Z]*$/.test(mayuscula)){
+      if(/^[A-Z]*$/.test(mayuscula)){//validacion para mayusculas.
         break;
       }else{
         alert("Ingrese una letra en mayúscula");
