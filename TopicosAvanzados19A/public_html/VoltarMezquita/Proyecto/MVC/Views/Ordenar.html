@@ -13,24 +13,24 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style type="text/css">
     body {
-        color: #000000;    <!--color de la captura de datos-->
-		background: #00D3BC;    <!--del fondo de la pagina-->
+        color: #000000;    //<!--color de la captura de datos-->
+		background: #00D3BC;    //<!--del fondo de la pagina-->
 		font-family: 'Varela Round', sans-serif;
-		font-size: 13px;    <!--tamaño de las letras de la cabeza-->
+		font-size: 13px;    //<!--tamaño de las letras de la cabeza-->
 	}
 	.table-wrapper {
         background: #fff;
-        padding: 20px 25px; <!--Tamaño del titulo la tabla-->
+        padding: 20px 25px; //<!--Tamaño del titulo la tabla-->
         margin: 30px 0;
 		border-radius: 3px;
         box-shadow: 0 1px 1px rgba(0,0,0,.05);
     }
-	.table-title {       <!--tamaño del cuadro princiapal-->
+	.table-title {       //<!--tamaño del cuadro princiapal-->
 		padding-bottom: 15px;
 		background: #00D3BC;
-		color: #fff;  <!--color del titulo del cuadro-->
+		color: #fff;  //<!--color del titulo del cuadro-->
 		padding: 160px 30px;
-		margin: -20px -25px 10px;  <!--ancho del cuadro-->
+		margin: -20px -25px 10px;  //<!--ancho del cuadro-->
 		border-radius: 3px 3px 0 0;
     }
     .table-title h2 {
@@ -40,27 +40,27 @@
 	.table-title .btn-group {
 		float: right;
 	}
-	.table-title .btn {   <!--tamaño del cuadro de agregar y eliminar-->
+	.table-title .btn {   //<!--tamaño del cuadro de agregar y eliminar-->
 		color: #fff;
 		float: right;
 		font-size: 13px;
 		border: none;
 		min-width: 50px;
-		border-radius: 2px;
+		border-radius: 5px;
 		border: none;
 		outline: none !important;
 		margin-left: 10px;
 	}
-	.table-title .btn i {      <!--tamaño del + --->
-		float: left;
-		font-size: 21px;
+	.table-title .btn i {
+		float: left;      //<!--´posicion de los - + -->
+		font-size: 0px;   //<!--tamaño del + --->
 		margin-right: 5px;
 	}
 	.table-title .btn span {
 		float: left;
 		margin-top: 2px;
 	}
-    table.table tr th, table.table tr td {    <!--espacio entre los productos-->
+    table.table tr th, table.table tr td {    //<!-- espacio entre los productos-->
         border-color: #e9e9e9;
 		padding: 12px 15px;
 		vertical-align: middle;
@@ -265,12 +265,11 @@ $(document).ready(function(){
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-						<h2>Productos de la tienda</h2>   <!--subtitulo de la pagina-->
+						<h2>Ordenar compra</h2>   <!--subtitulo de la pagina-->
 					</div>
 					<div class="col-sm-6">
-<!--PDF-->  <a href="#PDF" class="btn btn-success" > <span>PDF</span></a>
-						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Agregar</span></a>   <!--botones de eliminar y agregar-->
-						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Eliminar</span></a>
+						<a href="vista.html" class="btn btn-success" ><i class="material-icons">&#xE147;</i> <span>Enviar</span></a>   <!--botones de eliminar y agregar-->
+						<a href="vista.html" class="btn btn-danger" ><i class="material-icons">&#xE15C;</i> <span>Cancelar</span></a>
 					</div>
                 </div>
             </div>
@@ -289,7 +288,7 @@ $(document).ready(function(){
                         <th>Existencia</th>
                         <th>Precio de compra</th>
                         <th>Categoria</th>
-                        <th>eliminar o editar</th>
+                        <th>Cantidad a ordenar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -307,8 +306,7 @@ $(document).ready(function(){
                         <td>$2</td>
                         <td>Oficina</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                          <input type="number" name="" value="">
                         </td>
                     </tr>
                     <tr>
@@ -325,8 +323,7 @@ $(document).ready(function(){
                         <td>$3</td>
                         <td>Oficina</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                          <input type="number" name="" value="">
                         </td>
                     </tr>
 					<tr>
@@ -343,8 +340,7 @@ $(document).ready(function(){
                         <td>$2</td>
                         <td>Oficina</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                          <input type="number" name="" value="">
                         </td>
                     </tr>
                     <tr>
@@ -361,8 +357,7 @@ $(document).ready(function(){
                         <td>$45</td>
                         <td>Oficina</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                          <input type="number" name="" value="">
                         </td>
                     </tr>
 					<tr>
@@ -379,8 +374,7 @@ $(document).ready(function(){
                         <td>$5</td>
                         <td>Oficina</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                          <input type="number" name="" value="">
                         </td>
                     </tr>
                 </tbody>
@@ -399,139 +393,5 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-	<!-- Edit Modal HTML -->
-	<div id="addEmployeeModal" class="modal fade">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form>
-					<div class="modal-header">
-						<h4 class="modal-title">Agregr produccto</h4>
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<label>Nombre del producto</label>
-							<input type="text" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Codigo de barra</label>
-							<input type="text" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Precio de venta</label>
-							<input type="text" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Existencia inicial</label>
-							<input type="text" class="form-control" required>
-						</div>
-            <div class="form-group">
-							<label>Precio de compra</label>
-							<input type="text" class="form-control" required>
-						</div>
-            <div class="form-group">
-							<label>Categoria</label>
-              <select name="Categoria">
-<option>Oficina</option>
-<option>Tienda</option>
-</select>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-						<input type="submit" class="btn btn-success" value="Agregar">
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- Edit Modal HTML -->
-	<div id="editEmployeeModal" class="modal fade">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form>
-					<div class="modal-header">
-						<h4 class="modal-title">Editar datos del producto</h4>
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<label>Nombre del producto</label>
-							<input type="text" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Codigo de barra</label>
-							<input type="text" class="form-control" required>
-						</div>
-            <div class="form-group">
-							<label>Precio de venta</label>
-							<input type="text" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Existencia inicial</label>
-							<input type="text" class="form-control" required>
-						</div>
-            <div class="form-group">
-							<label>Precio de compra</label>
-							<input type="text" class="form-control" required>
-						</div>
-            <div class="form-group">
-							<label>Categoria</label>
-              <select name="Categoria">
-<option>Oficina</option>
-<option>Tienda</option>
-</select>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-						<input type="submit" class="btn btn-info" value="Guardar">
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- Delete Modal HTML -->
-	<div id="deleteEmployeeModal" class="modal fade">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form>
-					<div class="modal-header">
-						<h4 class="modal-title">Elimar</h4>
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-					<div class="modal-body">
-						<p>¿Estas seguro de que quieres eliminar este producto?</p>
-						<p class="text-warning"><small>Esta accion no se puede deshacer</small></p>
-					</div>
-					<div class="modal-footer">
-						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-						<input type="submit" class="btn btn-danger" value="Eliminar">
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-  <!--PDF-->
-  <div id="PDF">
-    <script>
-
-  	$('#btn btn-success').click(function() {
-
-  		 var doc = new jsPDF();
-
-  		doc.setFontSize(15);
-
-  		doc.text(15, 20, "Inventario");
-      doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
-       doc.save('Inventario.pdf');
-  	});
-  </script>
-  </div>
-
-  <center>
-  <button type="submit"><a href="vista.html">Regresar</a></button>
-</center>
-
 </body>
 </html>
