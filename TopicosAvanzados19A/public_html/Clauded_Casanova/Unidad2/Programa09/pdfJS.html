@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -11,6 +16,7 @@
   </head>
   <body>
     <center><div id="navbar"><font size=26 face="Singlet">Control de Justificaciones</font></div></center>
+
     <div id="wrapper">
       <input type="text" id="name" class="form-control form-control-success" placeholder="Nombre"><br>
       <input type="text" id="carrera" class="form-control form-control-success" placeholder="Carrera"><br>
@@ -19,19 +25,29 @@
       <input type="date" id="fecha" class="form-control form-control-success"><br>
       <center><input type="button" class="btn btn-warning" value="Generar Solicitud" id="button" ></center>
     </div>
+
     <script>
+    //Con esta función mediante el id le decimos al boton que tome los valores escritos en los campospara asignarlos a una variable
   	  $('#button').click(function() {
+        //Aqui generamos nuestro pdf
   		var doc = new jsPDF();
   		var name = $('#name').val();
   		var carrera = $('#carrera').val();
   		var semestre = $('#semestre').val();
   		var matricula = $('#matricula').val();
       var fecha = $('#fecha').val();
+      //le asignamos un tamaño a la fuente de el pdf
   		doc.setFontSize(15);
+      //Escribimos texto en el pdf
   		doc.text(15, 20, "Por este medio se le informa que el alumno "+name+"\rcon matricula "+matricula+" de la carrea de "+carrera+"\rcursando actualmente el "+semestre+" semestre no pudo asistir a clases\ren la fecha "+fecha+" por cuestiones ajenas a el.\rEsperemos considere la asistencia en la fecha emitida.");
       doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
+      //Guardamos el pdf con un nombre para que pueda ser generado
        doc.save('justificacion.pdf');
+
+
   	});
   </script>
-</body>
+
+  </body>
 </html>
+
