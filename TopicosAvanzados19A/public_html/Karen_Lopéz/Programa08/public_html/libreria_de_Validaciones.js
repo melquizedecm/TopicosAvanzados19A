@@ -12,23 +12,25 @@ function Vacio(val){  //función que permitira al usuario registrar los valores
 
 //validacion de Enteros
 function validarEntero(valor) {     //hará la validacion si es numero entero
-    if (isNaN(valor)) {     //retornara true o false dependiendo del caso
-        return NaN;
-    } else if (valor % 1 === 0) {
-        return true;
-    } else {
-        return false;
+    valor=$("#entero").val();
+    if(isNaN(valor)){
+     document.getElementById("validacionentero").innerHTML=false;     //retornara true o false dependiendo del caso
+    }else if(valor%1==0 && valor!=""){ 
+            document.getElementById("validacionentero").innerHTML=true;
+    }else{
+     document.getElementById("validacionentero").innerHTML=false;
     }
 }
 
 //validacion de Float
 function validarFloat(valor) {
+    valor=$("#float").val();
     if (isNaN(valor)) {
-        return NaN;
-    } else if (valor % 1 !== 0) {
-        return true;
+        document.getElementById("validacionfloat").innerHTML=false;
+    } else if (valor%1==0 && valor!="") {
+        document.getElementById("validacionflaot").innerHTML=true;
     } else {
-        return false;
+        document.getElementById("validacionfloat").innerHTML=false;
     }
 }
 
