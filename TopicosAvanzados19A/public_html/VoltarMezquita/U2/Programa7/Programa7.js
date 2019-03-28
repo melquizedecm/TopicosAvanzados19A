@@ -1,3 +1,7 @@
+/*Nombre: Voltar Mezquita Correa
+  Profesor:Melquizedec Moo Medina
+  Programa: Sacar, Leer y Visualizar calificaciones
+
 /*1- Leer la calificcion (0-100) de un grupo.
   2- Conservarlas. Calcular el promedio.
   3- Imprimir Calif y Prom.*/

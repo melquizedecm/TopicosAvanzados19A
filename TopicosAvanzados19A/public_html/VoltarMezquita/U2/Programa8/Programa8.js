@@ -1,4 +1,6 @@
-<!--programa8-->
+//Nombre: Voltar Mezquita Correa
+  //Profesor:Melquizedec Moo Medina
+  //Programa: Validaciones de datos
 
 var N;
 var N2;
