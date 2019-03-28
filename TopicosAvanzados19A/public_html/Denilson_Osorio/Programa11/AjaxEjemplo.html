@@ -1,5 +1,12 @@
+<!--
+Nombre: Denilson Eloy Osorio Braga
+Profesor: Melquizedec Moo Medina
+Programa: Programa11
+Description: Creacion de un programa que sea capaz de usar ajax con un host local y jale datos desde esta.
+Fecha: 20/mar/2019
+-->
 <!DOCTYPE html><html><head><title>Cursos aprende a programar</title><meta charset="utf-8">
-
+<!-- Se muestra el los datos que se pusieron anteriormente -->
 <script>
 
 function mostrarSugerencia(str) {
@@ -19,7 +26,7 @@ xmlhttp.onreadystatechange = function() {
     }
 
 }
-
+<!-- Se guardan los datos en el php por medio de xampp  -->
 xmlhttp.open("GET","listadoDatos.php?q="+str,true);
 
 xmlhttp.send();

@@ -1,0 +1,46 @@
+
+body{
+  background-image: url(IMG/pista.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.titulo{
+  text-align: center;
+}
+
+.subtitulo{
+  text-align: center;
+}
+
+.caballos{
+  wide:60;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position:absolute; top: 200px;
+  position:absolute; bottom:20px;
+  position:absolute; left:20px;
+  position:absolute; right:20px;
+}
+img:hover{
+  transform: scale(0.9);
+}
+
+.separador{
+  height: 160px;
+}
+
+h1{
+  font: oblique bold 300% cursive;
+}
+
+h3{
+  font: oblique bold 200% cursive;
+}
+
+h4{
+  font: oblique bold 100% cursive;
+}

@@ -75,6 +75,7 @@ function validarFlotante(){
              break;
       }else{
         alert("No es un numero flotante");
+        break;
       }
   }
 
@@ -103,6 +104,7 @@ function Mayusculas(){
         break;
       }else{
         alert("Error no es una letra mayuscula");
+        break;
       }
     }
   }
