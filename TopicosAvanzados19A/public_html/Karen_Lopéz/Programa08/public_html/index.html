@@ -11,6 +11,7 @@ autor: Karen Janett López Lozano
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--llamamos a la librería-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="libreria_de_Validaciones.js" type="text/javascript"></script>
     <br>
     <input type="text" id="valor" value=""/>
@@ -19,12 +20,21 @@ autor: Karen Janett López Lozano
     <br>
 </head>
 <body>
-    <div></div>
+    <div>
     <!--con estos botones se podra producir las validaciones segun la accion escogida del usuario-->
-    <input type="button" onclick="validarEntero();" id="boton" value="Entero"/>
-    <input type="button" onclick="validarFloat();" id="boton2" value="Float"/>
-    <input type="button" onclick="validarMayus();" id="boton3" value="Mayuscula"/>
-    <input type="button" onclick="validarMinus();" id="boton4" value="Minuscula"/>
-    <input type="button" onclick="validarRango();" id="boton5" value="Rango"/>
+    <button type="button" onclick="validarEntero();" name="botton" id="button" value="entero">Validar Entero</button><br>
+      <h4 id="validacionentero"></h4>
+      </div>
+      <button type="button" onclick="validarFloat();" name="" id="boton2" value="Float"></button>
+      <div>
+      <button type="button" onclick="convertir(1);" id="boton3" value="Mayuscula">Validar Mayusculas</button><br>
+      <h4 id="validacionmayuscula"></h4>
+      </div>
+      <div>
+        <button type="button" onclick="convertir(2);" id="boton4" value="Minuscula">Validar Minusculas</button><br>
+        <h4 id="validacionminuscula"></h4>
+        </div>
+    <button type="button" onclick="validarRango();" id="boton5" value="Rango"></button>
+    
 </body>
 </html>

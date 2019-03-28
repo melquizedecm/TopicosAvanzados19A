@@ -1,11 +1,19 @@
+<!--
+Nombre: Denilson Eloy Osorio Braga
+Profesor: Melquizedec Moo Medina
+Programa: Programa10
+Description: Creacion de graficas para html
+Fecha: 15/mar/2019
+-->
 <html>
 <head>
 	<title></title>
+	<!-- Se crea el script externo -->
 	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-
+<!-- Se insertan lso datos de las graficas -->
 		var datos = {
 			labels : ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
 			datasets : [{
@@ -27,7 +35,7 @@
 			]
 		};
 
-
+<!-- Se le da animacion -->
 		var canvas = document.getElementById('chart').getContext('2d');
 		window.bar = new Chart(canvas, {
 			type : "bar",
@@ -47,7 +55,7 @@
 				}
 			}
 		});
-
+<!-- Animacion que cambia los intervalos cada 5 segundos -->
 		setInterval(function(){
 			var newData = [
 				[getRandom(),getRandom(),getRandom(),getRandom()*-1,getRandom()],
