@@ -26,9 +26,9 @@ function validarEntero(valor) {     //hará la validacion si es numero entero
 function validarFloat(valor) {
     valor=$("#float").val();
     if (isNaN(valor)) {
-        document.getElementById("validacionfloat").innerHTML=false;
+        document.getElementById("validacionfloat").innerHTML=false;  //retorna, verdadero o falso segun el caso
     } else if (valor%1==0 && valor!="") {
-        document.getElementById("validacionflaot").innerHTML=true;
+        document.getElementById("validacionfloat").innerHTML=true;
     } else {
         document.getElementById("validacionfloat").innerHTML=false;
     }
