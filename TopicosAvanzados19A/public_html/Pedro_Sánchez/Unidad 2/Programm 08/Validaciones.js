@@ -9,20 +9,22 @@
 var entrada;
 
 /*Funcion que se encarga de pedir el dato*/
-function Pedir(){
+function Pedir(entrada){
 	entrada = prompt("Ingrese un dato:");
   return entrada;
 }
 
 /*funciones para validar*/
 function Entero(entrada){
-     if(isNaN(valor)){
+     if(isNaN(entrada)){
        return NaN;
-
-     }else if(valor%1==0){
-            return true;
+       alert("El Valor no es númerico");
+     }else if(entrada%1==0){
+        return true;
+        alert("Es numero");
      }else{
        return false;
+       alert("No es numero");
      }
 }
 
@@ -30,10 +32,10 @@ function Entero(entrada){
 function Flotante(entrada){
   
   //Validamos si es un número
-  if(isNaN(valor)){
+  if(isNaN(entrada)){
     return NaN;
 
-  }else if(valor%1!=0){
+  }else if(entrada%1!=0){
           return true;
    }else{
      return false;
