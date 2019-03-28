@@ -35,18 +35,20 @@ function validarFloat(valor) {
 }
 
 //validacion de Mayuscula
-function validarMayus(letras) {
+function validarMayus() {
+    valor=$("#mayus").val();
     var band = false;
-    for (var index = 0; index < letras.length; index++) {       //ciclo for
-        var letraB = letras.charAt(index);
-        if (letraB !== letraB.toUpperCase()) {     //cuando algun valor es minuscula se vuelve falso y se sale del ciclo for, el toUpperCase sirve para convertir las variables en mayusculas
-            band = false;
-            break;
+     for(var index = 0; index < letras.length; index++){
+    var letraB = letras.charAt(index);       //ciclo for
+    //cuando algun valor es minuscula se vuelve falso y se sale del ciclo for, el toUpperCase sirve para convertir las variables en mayusculas
+        if(letraActual!=letraActual.toUpperCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
+        band=false;
+        break;
         } else {
-            band = true;
-        }
+            band=true;
     }
-    return band;
+  }
+  document.getElementById("validacionmayus").innerHTML=band;
 }
 
 //validacion Minuscula
