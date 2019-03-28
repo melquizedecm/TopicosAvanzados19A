@@ -8,14 +8,14 @@ Fecha: 18/mar/2019
 */
     /*Funcion para el recorrido de los caballos*/
       function caballo(nombreCaballos,metros, fin){ //(nobreDelCaballo/metros contando/final del recorrifdo)
-
+        var nombre="";
         var i=0;
         while(i<=fin){
             nombre=document.getElementById(nombreCaballos).value;
         document.getElementById(metros).value= nombre + " " + i + "mts";
         i++;
         }
-        nombre=document.getElementById(nombreCaballos).vanlue;
+
         alert("Gano el caballo: "+nombre);
 
 
