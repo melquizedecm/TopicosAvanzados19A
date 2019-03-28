@@ -1,10 +1,3 @@
-/*
-Nombre: Jesus Alberto Lira Romero
-Profesor:Melquizedec Moo Medina
-Programa: Librerias
-Fecha:10/mar/2019
- */
-
 function valEntero() { // Validacion Enteros
 	valor = $("#entero").val(); // pasamos el id del input donde insertamos
 	// nuestro numero a una variable
@@ -12,13 +5,9 @@ function valEntero() { // Validacion Enteros
 		// avisara que es falso
 		alert(false)
 	} else if (valor % 1 == 0 && valor != "") { // si el valor es modulo de 1
-		// igual a 0, retornara
-		// verdadero ya que esto
-		// significa que es un numero
-		// entero
+		/* si es igual a 0, retorna true */
 		alert(true)
-	} else { // si no es ni una de las otras dos opciones, nos retornara
-		// falso
+	} else {
 		alert(false)
 	}
 }
@@ -26,15 +15,10 @@ function valEntero() { // Validacion Enteros
 // Validar Flotantes
 function validarFlotante() {
 	valor = $("#flotante").val();
-	// Validamos si es un número
-	if (isNaN(valor)) { // verificamos si la variable esta vacia, si es asi, nos
-		// avisara que es falso
+	if (isNaN(valor)) { /* Valida si tiene datos */
 		alert(false)
-	} else if (valor % 1 != 0 && valor != "") { // si el valor es modulo de 1
-		// diferente de 0, retornara
-		// verdadero ya que esto
-		// significa que NO es un numero
-		// entero
+	} else if (valor % 1 != 0 && valor != "") {
+		/* Si es modulo de 1 retorna true */
 		alert(true)
 	} else {
 		alert(false) // si no es ni una de las otras dos opciones, nos
@@ -45,22 +29,21 @@ function validarFlotante() {
 function validarMayusculas() {
 	letras = $('#mayusculas').val();
 	// Variable para retornar valor true or false segun el caso
-	var bandera = false;
-	// Ciclo for para recorrer toda la cadena
+	var b = false;
+	// for para leer string
 	for (var index = 0; index < letras.length; index++) {
-		var letraActual = letras.charAt(index);
+		var charA = letras.charAt(index);
 		// Si algun valor es minuscula se vuelve falso y se sale del ciclo for
-		if (letraActual != letraActual.toUpperCase() || letraActual == 0
-				|| letraActual == 1 || letraActual == 2 || letraActual == 3
-				|| letraActual == 4 || letraActual == 5 || letraActual == 6
-				|| letraActual == 7 || letraActual == 8 || letraActual == 9) {
-			bandera = false;
+		if (charA != charA.toUpperCase() || charA == 0 || charA == 1
+				|| charA == 2 || charA == 3 || charA == 4 || charA == 5
+				|| charA == 6 || charA == 7 || charA == 8 || charA == 9) {
+			b = false;
 			break;
 		} else {
-			bandera = true;
+			b = true;
 		}
 	}
-	alert(bandera)
+	alert(b)
 }
 // Validar Minusculas
 function validarMinusculas() {
@@ -69,12 +52,11 @@ function validarMinusculas() {
 	var bandera = false;
 	// Ciclo for para recorrer toda la cadena
 	for (var index = 0; index < letras.length; index++) {
-		var letraActual = letras.charAt(index);
+		var charA = letras.charAt(index);
 		// Si algun valor es mayusucla se vuelve falso y se sale del ciclo for
-		if (letraActual != letraActual.toLowerCase() || letraActual == 0
-				|| letraActual == 1 || letraActual == 2 || letraActual == 3
-				|| letraActual == 4 || letraActual == 5 || letraActual == 6
-				|| letraActual == 7 || letraActual == 8 || letraActual == 9) {
+		if (charA != charA.toLowerCase() || charA == 0 || charA == 1
+				|| charA == 2 || charA == 3 || charA == 4 || charA == 5
+				|| charA == 6 || charA == 7 || charA == 8 || charA == 9) {
 			bandera = false;
 			break;
 		} else {
@@ -92,8 +74,7 @@ function validarRango(valor, x, y) {
 		document.getElementById("validacionrango").innerHTML = false;
 	}
 	/*
-	 * Comparamos los 2 parametros del rango para saber cual es mayor o cual es
-	 * menor y en función de eso comparamos los valores con el rango
+	 * comprobando cual es mayor o menor
 	 */
 	if (x < y) {
 		if (valor <= y && valor >= x) {

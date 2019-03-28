@@ -1,71 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-<meta charset="utf-8">
-<!-- Librerias utilizadas -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="LibreriaJS.js">
-	
-</script>
-<title></title>
-</head>
-<body>
-
-	<center>
-		<h1>Validaciones</h1>
-	</center>
-
-	<!--Div Enetros -->
-	<div class="ENTERO">
-		<h2>Enteros</h2>
-		<input type="text" class="form-control form-control-success" id="entero" placeholder="Ingresa Numero ENTERO"><br>
-		<center>
-			<button type="button" onclick="valEntero()" class="btn btn-warning" name="button">Validar</button>
-		</center>
-		<br>
-	</div>
-	<!--Div Flotante -->
-	<div class="FLOTANTE">
-		<h2>Flotante</h2>
-		<input type="text" id="flotante" class="form-control form-control-success" placeholder="Ingresa Numero FLOTANTE"><br>
-		<center>
-			<button type="button" onclick="validarFlotante()" name="button" class="btn btn-danger">Validar</button>
-		</center>
-		<br>
-	</div>
-	<!--Div Mayusculas -->
-	<div class="MAYUSCULAS">
-		<h2>Mayúsculas</h2>
-		<input type="text" id="mayusculas" class="form-control form-control-success" placeholder="Ingresa PALABRAS CON MAYUSCULAS"><br>
-		<center>
-			<button type="button" onclick="validarMayusculas()" name="button" class="btn btn-success">Validar</button>
-		</center>
-		<br>
-		<h4 id="validacionmayus"></h4>
-	</div>
-	<!--Div Minusculas -->
-	<div class="MINUSCULAS">
-		<h2>Letras Minúsculas</h2>
-		<input type="text" id="minusculas" class="form-control form-control-success" placeholder="Ingresa PALABRAS CON MINUSCULAS"><br>
-		<center>
-			<button type="button" onclick="validarMinusculas()" name="button" class="btn btn-dark">Validar</button>
-		</center>
-		<br>
-		<h4 id="validacionmin"></h4>
-	</div>
-	<!--Div Rango -->
-	<div class="Rango">
-		<h2>Rango</h2>
-		<label for="Entero">Rangos</label> <input type="text" id="Rango1" placeholder="Ingresa el extremo inferior"> <input type="text" id="Rango2" placeholder="Ingresa el extremo superior"><br> <br> <label for="Entero">Valor</label> <input type="text" id="Rango" class="form-control form-control-success" placeholder="Ingresa el numero a examinar"><br>
-		<center>
-			<button type="button" onclick="validarRango()" name="button" class="btn btn-primary">Validar</button>
-		</center>
-		<br>
-		<h4 id="validacionrango"></h4>
-	</div>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="Libreria.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <head>
+      <h1>Validaciones</h1>
+    </head>
+    <!--Div for Integer -->
+    <div class="ENTERO">
+      <h2>Enteros</h2>
+      <label for="Entero">Número Entero</label>
+      <input type="text" id="entero"><br>
+      <button type="button" onclick="validarEntero()" name="button">Validar</button><br>
+      <h4 id="validacionentero"></h4>
+    </div>
+    <!--Div for Float -->
+    <div class="FLOTANTE">
+      <h2>Flotante</h2>
+      <label for="Entero">Número flotante</label>
+      <input type="text" id="flotante"><br>
+      <button type="button" onclick="validarFlotante()" name="button">Validar</button><br>
+      <h4 id="validacionflotante"></h4>
+    </div>
+    <!--Div for UpperCase -->
+    <div class="MAYUSCULAS">
+      <h2>Mayúsculas</h2>
+      <label for="Entero">Letras Mayúsculas</label>
+      <input type="text" id="mayusculas"><br>
+      <button type="button" onclick="validarMayusculas()" name="button">Validar</button><br>
+      <h4 id="validacionmayus"></h4>
+    </div>
+    <!--Div for LowerCase -->
+    <div class="MINUSCULAS">
+      <h2>Minúsculas</h2>
+      <label for="Entero">Letras Minúsculas</label>
+      <input type="text" id="minusculas"><br>
+      <button type="button" onclick="validarMinusculas()" name="button">Validar</button><br>
+      <h4 id="validacionmin"></h4>
+    </div>
+    <!--Div for Range-->
+    <div class="Rango">
+      <h2>Rango</h2>
+      <label for="Entero">Valor</label>
+      <input type="text" id="Rango"><br>
+      <label for="Entero">Rangos</label>
+      <input type="text" id="Rango1"><input type="text" id="Rango2"><br>
+      <button type="button" onclick="validarRango()" name="button">Validar</button><br>
+      <h4 id="prueba"></h4>
+      <h4 id="validacionrango"></h4>
+    </div>
+  </body>
 </html>
