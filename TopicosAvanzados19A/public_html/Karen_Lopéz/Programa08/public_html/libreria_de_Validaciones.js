@@ -18,6 +18,8 @@ function Vacio(val) {  //función que permitira al usuario registrar los valores
 function validarEntero(valor) {     //hará la validacion si es numero entero
     valor = $("#entero").val();
     if (isNaN(valor)) {
+        //<--el innerHTML es la propiedad que accede a lo que va entre las etiquetas de un elemento HTML
+        //en este caso sería los datos que el usuario ingresa-->
         document.getElementById("validacionentero").innerHTML = false;     //retornara true o false dependiendo del caso
     } else if (valor % 1 == 0 && valor != "") {
         document.getElementById("validacionentero").innerHTML = true;

@@ -8,6 +8,7 @@ Date: 12/03/19
 -->
 <html>
     <head>
+        <!--librerias-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
@@ -18,7 +19,7 @@ Date: 12/03/19
 
     <center><div id="navbar" ><font size=26 face="Sniglet">Control de Justificaciones</font></div></center>
     <div id="wrapper">
-
+        <!--aquí se ingresan los datos del usuario-->
         <input type="text" id="name" class="form-control form-control-success" placeholder="Nombre"><br>
         <input type="text" id="carrera" class="form-control form-control-success" value="" placeholder="Carrera" /><br>
         <input type="text" id="semestre" class="form-control form-control-success" value="" placeholder="Semestre" /><br>
@@ -27,6 +28,7 @@ Date: 12/03/19
         <center><input type="button" class="btn btn-warning" id="button" value="Descargar"/></center>
 
         <script>
+            //<!--funcion que permitira capturas la información ingresada del usuario-->
         $('#button').click(function() {
                 var doc = new jsPDF();
                 var name = $('#name').val();

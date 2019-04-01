@@ -1,13 +1,10 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
+    Source: Programa14
     Created on : 28/03/2019, 01:20:15 PM
-    Author     : jesus
+    Author     : Karen Janett López Lozano
 */
 body{
+    /*variables del cuerpo de la pág.*/
   background-image: url(IMG/pista.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -23,6 +20,7 @@ body{
   text-align: center;
 }
 
+/*posicion y estructura de los caballos*/
 .caballos{
   wide:60;
   margin-left: auto;
@@ -40,7 +38,7 @@ img:hover{
 .separador{
   height: 160px;
 }
-
+/*aquí se declara los tipos de letras*/
 h1{
   font: oblique bold 300% cursive;
 }

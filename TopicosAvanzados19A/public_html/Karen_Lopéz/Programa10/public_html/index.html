@@ -12,6 +12,7 @@ Date: 13/03/19
 	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
 	<script type="text/javascript">
+            //<--funcion que especifica que tipo de grafica sera-->
 	$(document).ready(function(){
 		var datos = {
 			type: "pie",
@@ -24,6 +25,7 @@ Date: 13/03/19
 						12,
 						23,
 					],
+                                        //<--aquí se especifica el color de cada dato en la grafica-->
 					backgroundColor: [
 						"#F7464A",
 						"#46BFBD",
@@ -32,6 +34,7 @@ Date: 13/03/19
 						"#4D5360",
 					],
 				}],
+                            //<--aquí se agrega el nombre de los datos-->
 				labels : [
 					"Datos 1",
 					"Datos 2",
@@ -44,10 +47,9 @@ Date: 13/03/19
 				responsive : true,
 			}
 		};
-
+                //<--variable que dicta que colores y valores obtendra la grafica-->
 		var canvas = document.getElementById('chart').getContext('2d');
 		window.pier = new Chart(canvas, datos);
-
 		setInterval(function(){
 			datos.data.datasets.splice(0);
 			var newData = {
@@ -58,28 +60,21 @@ Date: 13/03/19
 					"#949FB1",
 					"#4D5360",
 				],
+                                //<--recompilara datos aleatorios-->
 				data : [getRandom(), getRandom(), getRandom(), getRandom(), getRandom()]
 			};
-
 			datos.data.datasets.push(newData);
-
 			window.pie.update();
-
 		}, 5000);
-
-
-
+                //<--el getrandom nos dara variables aleatorias ya que no tenemos cantidad ingresada-->
 		function getRandom(){
 			return Math.round(Math.random() * 100);
 		}
-
-
 	});
 	</script>
 </head>
 <body>
 	<!--El <canvas>elemento HTML se utiliza para dibujar gráficos sobre la marcha, a través de JavaScript.-->
-
 	<div id="canvas-container" style="width:50%;">
 		<canvas id="chart" width="500" height="350"></canvas>
 	</div>

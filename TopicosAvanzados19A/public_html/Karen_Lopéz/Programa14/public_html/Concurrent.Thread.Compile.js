@@ -1,3 +1,4 @@
+/*en el concurrent se puede ver como se unen los hilos. la funcion toma los tados y aplica la funcion correspondiente*/
 (function(){
     if ( !this.Data || (typeof this.Data != 'object' && typeof this.Data != 'function') ) this.Data = new Object();
     if ( this.Data.Stack === undefined ) this.Data.Stack = undefined;
@@ -49,8 +50,7 @@ with ( Data ) {
 NAMESPACE = 'Data';
 
 
-
-
+/*aqui se especifica lo que el caballo hara, todo el recorrido se hará por medio de un Array*/
 function Stack ( )
 {
     this.length = 0;
