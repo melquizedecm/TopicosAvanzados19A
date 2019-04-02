@@ -33,7 +33,7 @@ function leerCalificaciones() {
         }else{
           alert("Escribe un entero positivo")
         }
-
+        
       }
       suma = suma + cal[i];
   }
