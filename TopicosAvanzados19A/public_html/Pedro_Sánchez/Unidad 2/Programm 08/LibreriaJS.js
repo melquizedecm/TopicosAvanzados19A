@@ -1,5 +1,5 @@
 /*
-Nombre: Jesus Alberto Lira Romero
+Nombre: Pedro Adrián Sánchez Cárdenas
 Profesor: Melquizedec Moo Medina
 Programa: Librerias
 Description: Librerias propias para validacion de numeros en varios tipos al
@@ -8,67 +8,65 @@ Description: Librerias propias para validacion de numeros en varios tipos al
 Fecha: 10/mar/2019
 */
 
-function valEntero(){ //Validacion Enteros
-  valor=$("#entero").val(); //pasamos el id del input donde insertamos nuestro numero a una variable
-    if(isNaN(valor)){ //verificamos si la variable esta vacia, si es asi, nos avisara que es falso
+function Entero(){ //Validacion Enteros
+  valor=$("#entero").val();
+    if(isNaN(valor)){ 
     alert(false)
-  }else if(valor%1==0 && valor!=""){ // si el valor es modulo de 1 igual a 0, retornara verdadero ya que esto significa que es un numero entero
-            alert(true)
-    }else{ // si no es ni una de las otras dos opciones, nos retornara falso
-     alert(false)
+  }else if(valor%1==0 && valor!=""){
+            alert("Es entero")
+    }else{
+     alert("No es entero")
     }
 }
 
 //Validar Flotantes
-function validarFlotante(){
+function Flotante(){
   valor=$("#flotante").val();
   //Validamos si es un número
-  if(isNaN(valor)){ //verificamos si la variable esta vacia, si es asi, nos avisara que es falso
+  if(isNaN(valor)){
     alert(false)
-  }else if(valor%1!=0 &&valor!=""){ // si el valor es modulo de 1 diferente de 0, retornara verdadero ya que esto significa que NO es un numero entero
-          alert(true)
+  }else if(valor%1!=0 &&valor!=""){
+          alert("Es Flotante")
    }else{
-     alert(false) // si no es ni una de las otras dos opciones, nos retornara falso
+     alert("No es Flotante")
    }
 }
 //Validar Mayusculas
-function validarMayusculas(){
+function Mayusculas(){
   letras=$('#mayusculas').val();
-  //Variable para retornar valor true or false segun el caso
-  var bandera=false;
-  //Ciclo for para recorrer toda la cadena
+  var aux="";
   for(var index = 0; index < letras.length; index++){
     var letraActual = letras.charAt(index);
     //Si algun valor es minuscula se vuelve falso y se sale del ciclo for
     if(letraActual!=letraActual.toUpperCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
-        bandera=false;
+        aux="No Cumple";
         break;
     }else{
-      bandera=true;
+      aux="Cumple";
     }
   }
-  alert(bandera)
+  alert(aux)
 }
 //Validar Minusculas
-function validarMinusculas(){
+function Minusculas(){
   letras=$('#minusculas').val();
   //Variable para retornar valor true or false segun el caso
-  var bandera=false;
+  var aux="";
   //Ciclo for para recorrer toda la cadena
   for(var index = 0; index < letras.length; index++){
     var letraActual = letras.charAt(index);
     //Si algun valor es mayusucla se vuelve falso y se sale del ciclo for
     if(letraActual!=letraActual.toLowerCase() || letraActual==0 || letraActual==1 || letraActual==2 || letraActual==3 || letraActual==4 || letraActual==5 || letraActual==6 || letraActual==7 || letraActual==8 || letraActual==9){
-        bandera=false;
+        aux="No Cumple";
         break;
     }else{
-      bandera=true;
+      aux="Cumple";
     }
   }
-  alert(bandera)
+  alert(aux)
 }
 //Validar Rango
-function validarRango(valor, x,y){
+function Rango(valor, x,y){
   valor=$('#Rango').val();
   x=$('#Rango1').val();
   y=$('#Rango2').val();
