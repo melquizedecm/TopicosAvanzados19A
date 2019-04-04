@@ -1,6 +1,5 @@
 /*DOCTYPE JavaScript
 Nombre: Jesus Lira Romero
-=======
 /*
 DOCTYPE JavaScript
 Nombre: Jesus Alberto Lira Romero
@@ -24,7 +23,9 @@ Fecha: 18/mar/2019
         document.getElementById(metros).value= nombre + " " + i + "mts";
         i++;
         }
+
         nombre=document.getElementById(Caballos).value;
+
 
         alert("Gano el caballo: "+nombre);
 
