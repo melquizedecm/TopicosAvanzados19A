@@ -1,5 +1,5 @@
 /*DOCTYPE JavaScript
-Nombre: Jesus Lira Romero
+Nombre: Voltar Mezquita
 Profesor: Melquizedec Moo Medina
 Programa: Programa14.js
           Hipodromos
