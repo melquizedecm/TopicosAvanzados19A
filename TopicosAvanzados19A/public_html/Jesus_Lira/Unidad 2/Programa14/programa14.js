@@ -1,5 +1,10 @@
 /*DOCTYPE JavaScript
 Nombre: Jesus Lira Romero
+=======
+/*
+DOCTYPE JavaScript
+Nombre: Jesus Alberto Lira Romero
+>>>>>>> 6c08f4ce391acf706e2463f1ffa84802f255de7c
 Profesor: Melquizedec Moo Medina
 Programa: Programa14.js
           Hipodromos
@@ -9,6 +14,10 @@ Fecha: 18/mar/2019
     //Funcion para el recorrido de los caballos*/
       function caballo(Caballos,metros, fin){ //(nobreDelCaballo/metros contando/final del recorrifdo)
 
+
+    /*Funcion para el recorrido de los caballos*/
+      function caballo(nombreCaballos,metros, fin){ //(nobreDelCaballo/metros contando/final del recorrifdo)
+        nombre=null;
         var i=0;
         while(i<=fin){
             nombre=document.getElementById(Caballos).value;
@@ -16,6 +25,7 @@ Fecha: 18/mar/2019
         i++;
         }
         nombre=document.getElementById(Caballos).value;
+
         alert("Gano el caballo: "+nombre);
 
 
