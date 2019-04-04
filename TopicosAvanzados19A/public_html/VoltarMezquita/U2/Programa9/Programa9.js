@@ -1,3 +1,8 @@
+//Nombre: Voltar Mezquita Correa
+//Profesor:Melquizedec Moo Medina
+//Programa: Generando Un PDF
+//Fecha:13/mar/2019
+
 var nombre = "";
 var semestre = "";
 var carrera = "";

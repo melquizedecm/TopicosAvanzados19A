@@ -1,4 +1,6 @@
-<!--programa8-->
+//Nombre: Voltar Mezquita Correa
+  //Profesor:Melquizedec Moo Medina
+  //Programa: Validaciones de datos
 
 var N;
 var N2;
@@ -11,9 +13,11 @@ var Resultado;
 var  F=false;
 
 function Rango(){
+  //valor de las variables
   N=prompt('Ingresa el rango minimo');
   N2=prompt('Ingresa el rango maximo');
   N3=prompt('Numero a comparar en el rango');
+  //if comparador
   if(N>=N3 && N2<=N3){
   alert("El numero esta en el rango");
   boolean(N);
@@ -26,12 +30,14 @@ function Rango(){
 
 function MAYUSCULAS() {
   T=prompt('Ingrese texto');
+  //compara si es mayuscula
   var T2=T.toUpperCase();
 boolean(T==T2);
 }
 
 function minusculas(){
   T3=prompt('Ingrese texto');
+  //compara si es
   var T4=T3.toLowerCase();
   boolean(T3==T4);
 }

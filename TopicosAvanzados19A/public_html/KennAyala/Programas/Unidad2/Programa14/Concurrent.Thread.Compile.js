@@ -8,41 +8,39 @@ with ( Data ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Stack module.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006 the Initial Developer. All
+ * Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -95,41 +93,39 @@ with ( Math ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Math.ToInteger module.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006 the Initial Developer. All
+ * Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -137,7 +133,7 @@ NAMESPACE = 'Math';
 
 
 
-// This module provides functions emulating the integral type 
+// This module provides functions emulating the integral type
 // conversions defined in ECMA-262 3rd.
 
 
@@ -191,46 +187,44 @@ with ( function(){
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Error module.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2006
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2006 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 NAMESPACE = 'Data.Error';
 
-// We declare `Error' in this namespace, while we need to access 
+// We declare `Error' in this namespace, while we need to access
 // ECMAScript's native `Error' object.
 // That's why we don't use @namespace here.
 
@@ -347,41 +341,39 @@ with ( Data.Functional ) {
             var VERSION = '0.5.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -545,41 +537,39 @@ with ( Data.Cons ) {
             var VERSION = '0.2.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Cons code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -709,41 +699,39 @@ with ( Data.Error ) {
             var VERSION = '0.1.2';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Error.NotImplementedError.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2006
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2006 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -797,41 +785,39 @@ with ( Data.Error ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Error.IllegalStateError module.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006 the Initial Developer. All
+ * Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -868,41 +854,39 @@ with ( Data.Iterator ) {
             var VERSION = '0.2.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Iterator code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006 the Initial Developer. All
+ * Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -943,41 +927,39 @@ with ( Data.Iterator ) {
             var VERSION = '0.2.1';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Iterator code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006 the Initial Developer. All
+ * Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -1021,27 +1003,27 @@ proto.isTail = function ( ) {
 };
 
 
-// Returns value of the element which is just after the position 
+// Returns value of the element which is just after the position
 // this iterator points to.
 // The default implementation merely throws NotImplementedError.
-// Sub-classes must implement their own version of this method, 
+// Sub-classes must implement their own version of this method,
 // which may throws Data.Iterator.NoSuchElementError.
 proto.value = function ( ) {
     mustImplement("value");
 };
 
 
-// Returns a new iterator that points to the next position to the 
+// Returns a new iterator that points to the next position to the
 // one which this iterator points to.
 // The default implementation merely throws NotImplementedError.
-// Sub-classes must implement their own version of this method, 
+// Sub-classes must implement their own version of this method,
 // which may throws Data.Iterator.NoSuchElementError.
 proto.next = function ( ) {
     mustImplement("next");
 };
 
 
-// Returns true if and only if this iterator is associated with the 
+// Returns true if and only if this iterator is associated with the
 // object specified by the argument, false otherwise.
 // The default implementation just returns false.
 proto.isBoundTo = function ( list ) {
@@ -1086,41 +1068,39 @@ with ( Data.Functional ) {
             var VERSION = '0.5.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -1264,41 +1244,39 @@ with ( Data.Iterator ) {
             var VERSION = '0.2.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Iterator code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006 the Initial Developer. All
+ * Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -1345,7 +1323,7 @@ proto.isHead = function ( ) {
 };
 
 
-// Returns a new iterator that points to the previous position to 
+// Returns a new iterator that points to the previous position to
 // the one which this iterator points to.
 // The default implementation merely throws NotImplementedError.
 // Sub-classes must implement their own version of this method.
@@ -1382,41 +1360,39 @@ with ( Data.Functional ) {
             var VERSION = '0.5.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -1580,41 +1556,39 @@ with ( Data.Functional ) {
             var VERSION = '0.5.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 // This module should not be required directly.
 // Require Data.Functional.List instead.
@@ -1644,10 +1618,10 @@ proto.constructor = List;
 
 // Iterator methods.
 // Return an iterator pointing to just before the n'th element
-// (the first element is the 0th one). If there are only n elements 
+// (the first element is the 0th one). If there are only n elements
 // in this list, return an iterator pointing to the tail.
-// If n is negative, it is treated as size+n, where size is the length 
-// of this list. Thus, if n is negative, the result of head(n) and 
+// If n is negative, it is treated as size+n, where size is the length
+// of this list. Thus, if n is negative, the result of head(n) and
 // the one of tail(-n) should be equivalent.
 // These methods can throw RangeError.
 proto.head = function ( n ) {
@@ -1747,7 +1721,7 @@ proto.get = function ( it ) {
     else               return it.value();
 };
 
-// Assigns the second argument to the container indexed by the first 
+// Assigns the second argument to the container indexed by the first
 // argument.
 // The argument can be either number or iterator.
 proto.set = function ( it, v ) {
@@ -1757,11 +1731,11 @@ proto.set = function ( it, v ) {
     return it.assign(v);
 };
 
-// Inserts a new container at the position indexed by the first 
-// argument, and sets the second argument to the container, then, 
+// Inserts a new container at the position indexed by the first
+// argument, and sets the second argument to the container, then,
 // returns the value of the container.
 // The argument can be either number or iterator.
-// The position which this iterator points to after insertion is 
+// The position which this iterator points to after insertion is
 // implementation-dependent.
 proto.insertAt = function ( it, v ) {
     if ( !(it instanceof List.Iterator  &&  it.isBoundTo(this)) ) {
@@ -1770,10 +1744,10 @@ proto.insertAt = function ( it, v ) {
     return it.insert(v);
 };
 
-// Removes the container indexed by the argument, then, returns the 
+// Removes the container indexed by the argument, then, returns the
 // value of the container.
 // The argument can be either number or iterator.
-// The position which this iterator points to after removal is 
+// The position which this iterator points to after removal is
 // implementation-dependent.
 proto.removeAt = function ( it ) {
     if ( !(it instanceof List.Iterator  &&  it.isBoundTo(this)) ) {
@@ -1832,7 +1806,11 @@ proto.slice = function ( start, end ) {
     if ( !(    start instanceof List.Iterator
             &&   end instanceof List.Iterator
             && start.isBoundTo(this) && end.isBoundTo(this)
-            && start.constructor === end.constructor ) )  // one might be reverse-iterator even though the other is iterator.
+            && start.constructor === end.constructor ) )  // one might be
+															// reverse-iterator
+															// even though the
+															// other is
+															// iterator.
     {
         try {
             start = this.head(start);
@@ -1950,41 +1928,39 @@ with ( Data.Functional ) {
             var VERSION = '0.4.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -2108,41 +2084,39 @@ with ( Data.Functional.List ) {
             var VERSION = '0.5.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -2175,10 +2149,10 @@ proto.toString = function ( ) {
 };
 
 
-// Assign the argument to the element which is just after the position 
-// this iterator points to, then returns the new value of the element, 
+// Assign the argument to the element which is just after the position
+// this iterator points to, then returns the new value of the element,
 // which can be defferent from the argument.
-// The effect of assignment at the tail of a list should be identical 
+// The effect of assignment at the tail of a list should be identical
 // to the one of insertion.
 // The default implementation merely throws NotImplementedError.
 proto.assign = function ( v ) {
@@ -2186,10 +2160,10 @@ proto.assign = function ( v ) {
 };
 
 
-// Inserts a new container at the position which this iterator points 
-// to and sets the argument to the container, then, returns the value 
+// Inserts a new container at the position which this iterator points
+// to and sets the argument to the container, then, returns the value
 // of the container, which can be defferent from the argument.
-// The position which the iterator points to after insertion is 
+// The position which the iterator points to after insertion is
 // implementation-dependent.
 // The default implementation merely throws NotImplementedError.
 proto.insert = function ( v ) {
@@ -2197,9 +2171,9 @@ proto.insert = function ( v ) {
 };
 
 
-// Removes the container just after the position which this iterator 
+// Removes the container just after the position which this iterator
 // points, then, returns the value of the container.
-// The position which the iterator points to after removal is 
+// The position which the iterator points to after removal is
 // implementation-dependent.
 // The default implementation merely throws NotImplementedError.
 proto.remove = function ( ) {
@@ -2207,7 +2181,8 @@ proto.remove = function ( ) {
 };
 
 
-// Returns true if both this iterator and the argument points to the same position,
+// Returns true if both this iterator and the argument points to the same
+// position,
 // false otherwise.
 // The default implementation is based on `compareTo' method.
 proto.equals = function ( that ) {
@@ -2218,7 +2193,7 @@ proto.equals = function ( that ) {
 // Returns the distance of this iterator and the argument,
 // or undefined if the iterators seem to point to defferent list.
 // A negative return value means the arguments succeeds this iterator
-// and its magnitude represents the distance of them. Thus, this can be 
+// and its magnitude represents the distance of them. Thus, this can be
 // used as comparison-function.
 // The default implementation is based on `next', `equals' and `isTail' method.
 proto.distance  = 
@@ -2255,41 +2230,39 @@ with ( function(){
             var VERSION = '0.5.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -2318,41 +2291,39 @@ with ( Data.Functional.List ) {
             var VERSION = '0.4.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -2363,7 +2334,7 @@ NAMESPACE = 'Data.Functional.List';
 
 
 
-// This module provides convinient wrapper to construct 
+// This module provides convinient wrapper to construct
 // reverse iterator from normal list iterator.
 
 
@@ -2466,41 +2437,39 @@ with ( Data ) {
             var VERSION = '0.3.1';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.LinkedList module.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -2768,7 +2737,8 @@ function dist ( top, l, r ) {
 
 function Iterator ( l, c ) {
     this._top = l;  // LinkedList object which this iterator belongs to.
-    this._pos = c;  // Current position; abstractly iterator points to just before this container
+    this._pos = c;  // Current position; abstractly iterator points to just
+					// before this container
 }
 
 var proto = Iterator.prototype = new List.Iterator();
@@ -2856,7 +2826,8 @@ proto.remove = function ( ) {
 
 function ReverseIterator ( l, c ) {
     this._top = l;  // LinkedList object which this iterator belongs to.
-    this._pos = c;  // Current position; abstractly iterator points to just before this container
+    this._pos = c;  // Current position; abstractly iterator points to just
+					// before this container
 }
 
 var proto = ReverseIterator.prototype = new List.Iterator();
@@ -2965,41 +2936,39 @@ with ( Data.Functional ) {
             var VERSION = '0.5.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Functional code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2005-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2005-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -3414,41 +3383,39 @@ with ( Data.Cons ) {
             var VERSION = '0.2.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Cons code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2007 the Initial Developer. All
+ * Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -3910,41 +3877,39 @@ with ( Concurrent ) {
             var VERSION = '0.1.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -3993,7 +3958,8 @@ function Thread ( ) {
 }
 
 function THREAD ( t ) {
-    this._triplet      = t;  // {continuation:{...}, timeout:int|undefined, ret_val:any}
+    this._triplet      = t;  // {continuation:{...}, timeout:int|undefined,
+								// ret_val:any}
     this._is_ended     = 0;  // 0:running, -1:throw, 1:return
     this._join_thread  = null;
     this._joined_list  = new Data.LinkedList();
@@ -4025,7 +3991,7 @@ function standBy ( t ) {
     var self = this;
     this._timerID = setTimeout(
         function(){ doNext.call(self); },
-        Number(t) || 2  // some version of IE occationally fails to 
+        Number(t) || 2  // some version of IE occationally fails to
                         // context-switch with timeout interval less than 2.
     );
 }
@@ -4077,7 +4043,9 @@ function doNext ( ) {
                     this._result      = e;
                     if ( !joined_list.isEmpty() ) {
                         while ( !joined_list.isEmpty() ) {
-                            joined_list.head().value().notify(e);  // "notify" implies "unjoin".
+                            joined_list.head().value().notify(e);  // "notify"
+																	// implies
+																	// "unjoin".
                         }
                     } else if ( !(e instanceof KillException) ) {
                         throw e;
@@ -4118,10 +4086,12 @@ proto.join = function ( ) {
 };
 
 proto.join.$Concurrent_Thread_compiled = function ( this_val, args, cont ) {
-    //!TODO: check cyclic-join
-    if ( this_val._is_ended > 0 ) {  // this thread has already ended normally
+    // !TODO: check cyclic-join
+    if ( this_val._is_ended > 0 ) {  // this thread has already ended
+										// normally
         return { continuation:cont, ret_val:this_val._result, timeout:undefined };
-    } else if ( this_val._is_ended < 0 ) {  // this thread has already ended by exception
+    } else if ( this_val._is_ended < 0 ) {  // this thread has already ended by
+											// exception
         throw this_val._result;
     } else {
         this_val._joined_list.add(current_thread);
@@ -4208,7 +4178,10 @@ proto.call.$Concurrent_Thread_compiled = function ( this_val, args, cont ) {
 
 proto.async = function ( this_val, args ) {
     if ( typeof this.$Concurrent_Thread_compiled != "function" ) throw new Error("this is not a compiled function");
-    if ( args === void 0 ) args = [];  // IE6 does not allow null or undefined-value as the second argument of Function.prototype.apply. That does not conform to ECMA262-3!
+    if ( args === void 0 ) args = [];  // IE6 does not allow null or
+										// undefined-value as the second
+										// argument of Function.prototype.apply.
+										// That does not conform to ECMA262-3!
     return new THREAD(
         this.$Concurrent_Thread_compiled(
             this_val,
@@ -4248,41 +4221,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -4330,9 +4301,9 @@ function isHexDigit  ( c )
 
 function isLineTerminator ( c ) {
     switch ( c.charCodeAt(0) ) {
-    case 0x000A:  // Line Feed           <LF>
-    case 0x000D:  // Carriage Return     <CR>
-    case 0x2028:  // Line separator      <LS>
+    case 0x000A:  // Line Feed <LF>
+    case 0x000D:  // Carriage Return <CR>
+    case 0x2028:  // Line separator <LS>
     case 0x2029:  // Paragraph separator <PS>
         return true;
     default:
@@ -4347,10 +4318,10 @@ function isSpace ( c )
     c = c.charCodeAt(0);
     if ( c <= 255 ) {
         switch ( c ) {
-        case 0x0009:  // Tab            <TAB>
-        case 0x000B:  // Vertical Tab   <VT>
-        case 0x000C:  // Form Feed      <FF>
-        case 0x0020:  // Space          <SP>
+        case 0x0009:  // Tab <TAB>
+        case 0x000B:  // Vertical Tab <VT>
+        case 0x000C:  // Form Feed <FF>
+        case 0x0020:  // Space <SP>
         case 0x00A0:  // No-break space <NBSP>
             return true;
         default:
@@ -4428,7 +4399,8 @@ function isIdentifierStart ( c ) {
     case 0x5F:  // '_'
         return true;
     }
-    // the following code is derived from the Unicode category Lu, Ll, Lt, Lm, Lo, and Nl based on:
+    // the following code is derived from the Unicode category Lu, Ll, Lt, Lm,
+	// Lo, and Nl based on:
     // http://www.unicode.org/Public/UNIDATA/extracted/DerivedGeneralCategory.txt
     // #generated# Last update: Tue, 01 Aug 2006 01:47:30 +0900
     return c <= 0x1731 ?
@@ -5164,7 +5136,8 @@ function isIdentifierPart ( c ) {
     case 0x5F:  // '_'
         return true;
     }
-    // the following code is derived from the Unicode category Lu, Ll, Lt, Lm, Lo, Nl, Mn, Mc, Nd, and Pc based on:
+    // the following code is derived from the Unicode category Lu, Ll, Lt, Lm,
+	// Lo, Nl, Mn, Mc, Nd, and Pc based on:
     // http://www.unicode.org/Public/UNIDATA/extracted/DerivedGeneralCategory.txt
     // #generated# Last update: Tue, 01 Aug 2006 02:00:01 +0900
     return c <= 0x12B0 ?
@@ -6112,41 +6085,39 @@ with ( Concurrent.Thread.Http ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -6206,7 +6177,8 @@ send.$Concurrent_Thread_compiled = function ( $this, $args, $cont ) {
             if ( !cache_hit ) self.notify(LoadedException);
         }
     };
-    req.send(body);  // Firefox occasionally causes "onload" event here. Maybe, it occurs in case of cache-hit.
+    req.send(body);  // Firefox occasionally causes "onload" event here.
+						// Maybe, it occurs in case of cache-hit.
     cache_hit = false;
     if ( loaded ) {
         return {
@@ -6224,7 +6196,8 @@ send.$Concurrent_Thread_compiled = function ( $this, $args, $cont ) {
                         timeout     : undefined
                     };
                 } else {
-                    try{ req.abort(); }catch(_){}  // IE less than 7 does not support "abort".
+                    try{ req.abort(); }catch(_){}  // IE less than 7 does not
+													// support "abort".
                     return {
                         continuation: $cont.exception,
                         ret_val     : e,
@@ -6234,7 +6207,8 @@ send.$Concurrent_Thread_compiled = function ( $this, $args, $cont ) {
             },
             this_val : null
         };
-        ex_handler.exception = ex_handler;  // Cyclic reference assures to abort request.
+        ex_handler.exception = ex_handler;  // Cyclic reference assures to abort
+											// request.
         return {
             timeout     : -1,
             continuation: {
@@ -6327,41 +6301,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 NAMESPACE = 'Concurrent.Thread.Compiler';
@@ -6513,41 +6485,39 @@ with ( Data.Cons.Util ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Data.Cons code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2007 the Initial Developer. All
+ * Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -6628,42 +6598,37 @@ with ( Concurrent.Thread.Compiler.Kit ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Rhino code, released
- * May 6, 1999.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1997-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Igor Bukanov, igor@fastmail.fm
- *   Daisuke Maki
- *
- * Alternatively, the contents of this file may be used under the terms of
- * the GNU General Public License Version 2 or later (the "GPL"), in which
- * case the provisions of the GPL are applicable instead of those above. If
- * you wish to allow use of your version of this file only under the terms of
- * the GPL and not to allow others to use your version of this file under the
- * MPL, indicate your decision by deleting the provisions above and replacing
- * them with the notice and other provisions required by the GPL. If you do
- * not delete the provisions above, a recipient may use your version of this
- * file under either the MPL or the GPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
+ * The Original Code is Rhino code, released May 6, 1999.
+ * 
+ * The Initial Developer of the Original Code is Netscape Communications
+ * Corporation. Portions created by the Initial Developer are Copyright (C)
+ * 1997-1999 the Initial Developer. All Rights Reserved.
+ * 
+ * Contributor(s): Igor Bukanov, igor@fastmail.fm Daisuke Maki
+ * 
+ * Alternatively, the contents of this file may be used under the terms of the
+ * GNU General Public License Version 2 or later (the "GPL"), in which case the
+ * provisions of the GPL are applicable instead of those above. If you wish to
+ * allow use of your version of this file only under the terms of the GPL and
+ * not to allow others to use your version of this file under the MPL, indicate
+ * your decision by deleting the provisions above and replacing them with the
+ * notice and other provisions required by the GPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under either
+ * the MPL or the GPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 /**
  * This file is based on the file Kit.java in Rhino 1.6R5.
@@ -6718,42 +6683,37 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Rhino code, released
- * May 6, 1999.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1997-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Norris Boyd
- *   Daisuke Maki
- *
- * Alternatively, the contents of this file may be used under the terms of
- * the GNU General Public License Version 2 or later (the "GPL"), in which
- * case the provisions of the GPL are applicable instead of those above. If
- * you wish to allow use of your version of this file only under the terms of
- * the GPL and not to allow others to use your version of this file under the
- * MPL, indicate your decision by deleting the provisions above and replacing
- * them with the notice and other provisions required by the GPL. If you do
- * not delete the provisions above, a recipient may use your version of this
- * file under either the MPL or the GPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
+ * The Original Code is Rhino code, released May 6, 1999.
+ * 
+ * The Initial Developer of the Original Code is Netscape Communications
+ * Corporation. Portions created by the Initial Developer are Copyright (C)
+ * 1997-1999 the Initial Developer. All Rights Reserved.
+ * 
+ * Contributor(s): Norris Boyd Daisuke Maki
+ * 
+ * Alternatively, the contents of this file may be used under the terms of the
+ * GNU General Public License Version 2 or later (the "GPL"), in which case the
+ * provisions of the GPL are applicable instead of those above. If you wish to
+ * allow use of your version of this file only under the terms of the GPL and
+ * not to allow others to use your version of this file under the MPL, indicate
+ * your decision by deleting the provisions above and replacing them with the
+ * notice and other provisions required by the GPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under either
+ * the MPL or the GPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 /**
  * This file is based on the file ErrorReporter.java in Rhino 1.6R5.
@@ -6767,9 +6727,9 @@ NAMESPACE = 'Concurrent.Thread.Compiler';
 
 
 /**
- * This is interface defines a protocol for the reporting of
- * errors during JavaScript translation or execution.
- *
+ * This is interface defines a protocol for the reporting of errors during
+ * JavaScript translation or execution.
+ * 
  * @author Norris Boyd
  */
 
@@ -6784,33 +6744,38 @@ var proto = ErrorReporter.prototype;
 
 /**
  * Report a warning.
- *
- * The implementing class may choose to ignore the warning
- * if it desires.
- *
- * @param message a String describing the warning
- * @param line the line number associated with the warning
- * @param lineSource the text of the line (may be null)
- * @param lineOffset the offset into lineSource where problem was detected
+ * 
+ * The implementing class may choose to ignore the warning if it desires.
+ * 
+ * @param message
+ *            a String describing the warning
+ * @param line
+ *            the line number associated with the warning
+ * @param lineSource
+ *            the text of the line (may be null)
+ * @param lineOffset
+ *            the offset into lineSource where problem was detected
  */
 proto.warning = function ( message, line, lineSource, lineOffset ) { };
 
 
 /**
  * Report an error.
- *
- * The implementing class is free to throw an exception if
- * it desires.
- *
- * If execution has not yet begun, the JavaScript engine is
- * free to find additional errors rather than terminating
- * the translation. It will not execute a script that had
- * errors, however.
- *
- * @param message a String describing the error
- * @param line the line number associated with the error
- * @param lineSource the text of the line (may be null)
- * @param lineOffset the offset into lineSource where problem was detected
+ * 
+ * The implementing class is free to throw an exception if it desires.
+ * 
+ * If execution has not yet begun, the JavaScript engine is free to find
+ * additional errors rather than terminating the translation. It will not
+ * execute a script that had errors, however.
+ * 
+ * @param message
+ *            a String describing the error
+ * @param line
+ *            the line number associated with the error
+ * @param lineSource
+ *            the text of the line (may be null)
+ * @param lineOffset
+ *            the offset into lineSource where problem was detected
  */
 proto.error   = function ( message, line, lineSource, lineOffset ) { };
 
@@ -6836,41 +6801,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 NAMESPACE = 'Concurrent.Thread.Compiler';
@@ -7001,41 +6964,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 NAMESPACE = 'Concurrent.Thread.Compiler';
@@ -7051,9 +7012,10 @@ NAMESPACE = 'Concurrent.Thread.Compiler';
 
 function Statement ( labels, lineno, source ) {
     // This is kind of abstract class.
-    this.labels = labels;  // array of Identifier  # labels directly qualifying this statement
-    this.lineno = lineno;  // Number (optional)    # line no. 
-    this.source = source;  // String (optional)    # file-name, URL, ...etc
+    this.labels = labels;  // array of Identifier # labels directly qualifying
+							// this statement
+    this.lineno = lineno;  // Number (optional) # line no.
+    this.source = source;  // String (optional) # file-name, URL, ...etc
 }
 
 Statement.prototype.toString = function ( ) {
@@ -7124,7 +7086,8 @@ proto.containsFunctionCall = function ( ) {
 
 function VarStatement ( labels, decls, lineno, source ) {
     Statement.call(this, labels, lineno, source);
-    this.decls = decls;  // array of {id: Identifier,  exp: Expression or null}
+    this.decls = decls;  // array of {id: Identifier, exp: Expression or
+							// null}
 }
 
 var proto = VarStatement.prototype = new Statement();
@@ -7269,7 +7232,8 @@ proto.toString = function ( ) {
 
 function ForVarStatement ( labels, decls, cond, incr, body, lineno, source ) {
     Statement.call(this, labels, lineno, source);
-    this.decls = decls;  // array of {id: Identifier,  exp: Expression or null}
+    this.decls = decls;  // array of {id: Identifier, exp: Expression or
+							// null}
     this.cond  = cond;   // Expression or null
     this.incr  = incr;   // Expression or null
     this.body  = body;   // Statement
@@ -7312,7 +7276,7 @@ proto.toString = function ( ) {
 
 function ForInVarStatement ( labels, decl, exp, body, lineno, source ) {
     Statement.call(this, labels, lineno, source);
-    this.decl = decl;  // {id: Identifier,  exp: Expression or null}
+    this.decl = decl;  // {id: Identifier, exp: Expression or null}
     this.exp  = exp;   // Expression
     this.body = body;  // Statement
 }
@@ -7356,7 +7320,7 @@ proto.toString = function ( ) {
 
 function ForEachVarStatement ( labels, decl, exp, body, lineno, source ) {
     Statement.call(this, labels, lineno, source);
-    this.decl = decl;  // {id: Identifier,  exp: Expression or null}
+    this.decl = decl;  // {id: Identifier, exp: Expression or null}
     this.exp  = exp;   // Expression
     this.body = body;  // Statement
 }
@@ -7616,7 +7580,8 @@ proto.toString = function ( ) {
 
 function CatchGuard ( variable, cond, block, lineno, source ) {
     this.variable = variable;  // Identifier
-    this.cond     = cond;      // Expression or null (null means this is default catch clause)
+    this.cond     = cond;      // Expression or null (null means this is
+								// default catch clause)
     this.block    = block;     // Block
     this.lineno   = lineno;    // Number (optional)
     this.source   = source;    // String (optional)
@@ -7775,41 +7740,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 NAMESPACE = 'Concurrent.Thread.Compiler';
@@ -8120,7 +8083,8 @@ proto.hasSideEffect = function ( ) {
 
 
 function ObjectInitializer ( v ) {
-    this.pairs = v;  // array of {prop: Identifier or Literal,  exp: Expression}
+    this.pairs = v;  // array of {prop: Identifier or Literal, exp:
+						// Expression}
 }
 
 var proto = ObjectInitializer.prototype = new Expression();
@@ -9030,45 +8994,38 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Rhino code, released
- * May 6, 1999.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1997-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Roger Lawrence
- *   Mike McCabe
- *   Igor Bukanov
- *   Milen Nankov
- *   Daisuke Maki
- *
- * Alternatively, the contents of this file may be used under the terms of
- * the GNU General Public License Version 2 or later (the "GPL"), in which
- * case the provisions of the GPL are applicable instead of those above. If
- * you wish to allow use of your version of this file only under the terms of
- * the GPL and not to allow others to use your version of this file under the
- * MPL, indicate your decision by deleting the provisions above and replacing
- * them with the notice and other provisions required by the GPL. If you do
- * not delete the provisions above, a recipient may use your version of this
- * file under either the MPL or the GPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
+ * The Original Code is Rhino code, released May 6, 1999.
+ * 
+ * The Initial Developer of the Original Code is Netscape Communications
+ * Corporation. Portions created by the Initial Developer are Copyright (C)
+ * 1997-1999 the Initial Developer. All Rights Reserved.
+ * 
+ * Contributor(s): Roger Lawrence Mike McCabe Igor Bukanov Milen Nankov Daisuke
+ * Maki
+ * 
+ * Alternatively, the contents of this file may be used under the terms of the
+ * GNU General Public License Version 2 or later (the "GPL"), in which case the
+ * provisions of the GPL are applicable instead of those above. If you wish to
+ * allow use of your version of this file only under the terms of the GPL and
+ * not to allow others to use your version of this file under the MPL, indicate
+ * your decision by deleting the provisions above and replacing them with the
+ * notice and other provisions required by the GPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under either
+ * the MPL or the GPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 /**
  * This file is based on the file Token.java in Rhino 1.6R5.
@@ -9164,9 +9121,9 @@ Token.RETURN_RESULT  = 62; // to return prevoisly stored return result
 Token.ARRAYLIT       = 63; // array literal
 Token.OBJECTLIT      = 64; // object literal
 Token.GET_REF        = 65; // *reference
-Token.SET_REF        = 66; // *reference    : something
+Token.SET_REF        = 66; // *reference : something
 Token.DEL_REF        = 67; // delete reference
-Token.REF_CALL       = 68; // f(args)    = something or f(args)++
+Token.REF_CALL       = 68; // f(args) = something or f(args)++
 Token.REF_SPECIAL    = 69; // reference for special properties like __proto
 
 // For XML support:
@@ -9192,7 +9149,7 @@ Token.LP             = 83;  // left and right parentheses
 Token.RP             = 84;
 Token.COMMA          = 85;  // comma operator
 
-Token.ASSIGN         = 86;  // simple assignment  (=)
+Token.ASSIGN         = 86;  // simple assignment (=)
 Token.ASSIGN_BITOR   = 87;  // |=
 Token.ASSIGN_BITXOR  = 88;  // ^=
 Token.ASSIGN_BITAND  = 89;  // |=
@@ -9237,8 +9194,8 @@ Token.RESERVED       = 123; // reserved keywords
 
 Token.EMPTY          = 124;
 
-/* types used for the parse tree - these never get returned
- * by the scanner.
+/*
+ * types used for the parse tree - these never get returned by the scanner.
  */
 
 Token.BLOCK          = 125; // statement block
@@ -9467,41 +9424,39 @@ with ( Concurrent.Thread.Compiler.IntermediateLanguage ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -9736,47 +9691,38 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Rhino code, released
- * May 6, 1999.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1997-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Roger Lawrence
- *   Mike McCabe
- *   Igor Bukanov
- *   Ethan Hugg
- *   Terry Lucas
- *   Milen Nankov
- *   Daisuke Maki
- *
- * Alternatively, the contents of this file may be used under the terms of
- * the GNU General Public License Version 2 or later (the "GPL"), in which
- * case the provisions of the GPL are applicable instead of those above. If
- * you wish to allow use of your version of this file only under the terms of
- * the GPL and not to allow others to use your version of this file under the
- * MPL, indicate your decision by deleting the provisions above and replacing
- * them with the notice and other provisions required by the GPL. If you do
- * not delete the provisions above, a recipient may use your version of this
- * file under either the MPL or the GPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
+ * The Original Code is Rhino code, released May 6, 1999.
+ * 
+ * The Initial Developer of the Original Code is Netscape Communications
+ * Corporation. Portions created by the Initial Developer are Copyright (C)
+ * 1997-1999 the Initial Developer. All Rights Reserved.
+ * 
+ * Contributor(s): Roger Lawrence Mike McCabe Igor Bukanov Ethan Hugg Terry
+ * Lucas Milen Nankov Daisuke Maki
+ * 
+ * Alternatively, the contents of this file may be used under the terms of the
+ * GNU General Public License Version 2 or later (the "GPL"), in which case the
+ * provisions of the GPL are applicable instead of those above. If you wish to
+ * allow use of your version of this file only under the terms of the GPL and
+ * not to allow others to use your version of this file under the MPL, indicate
+ * your decision by deleting the provisions above and replacing them with the
+ * notice and other provisions required by the GPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under either
+ * the MPL or the GPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 /**
  * This file is based on the file TokenStream.java in Rhino 1.6R5.
@@ -9795,11 +9741,9 @@ NAMESPACE = 'Concurrent.Thread.Compiler';
 
 
 /*
- * For chars - because we need something out-of-range
- * to check.  (And checking EOF by exception is annoying.)
- * Fortunatelly, U+FFFF is guaranteed not to be assigned 
- * for any character.
- * Note distinction from EOF token type!
+ * For chars - because we need something out-of-range to check. (And checking
+ * EOF by exception is annoying.) Fortunatelly, U+FFFF is guaranteed not to be
+ * assigned for any character. Note distinction from EOF token type!
  */
 var EOF_CHAR = String.fromCharCode(0xFFFF);
 
@@ -9836,9 +9780,10 @@ function TokenStream( parser, sourceString, lineno )
 var proto = TokenStream.prototype;
 
 
-/* This function uses the cached op, string and number fields in
- * TokenStream; if getToken has been called since the passed token
- * was scanned, the op or string printed may be incorrect.
+/*
+ * This function uses the cached op, string and number fields in TokenStream; if
+ * getToken has been called since the passed token was scanned, the op or string
+ * printed may be incorrect.
  */
 proto.tokenToString = function ( token )
 {
@@ -10063,11 +10008,10 @@ retry:
             } else {
                 while ( isDigit(c) ) {
                     /*
-                     * We permit 08 and 09 as decimal numbers, which
-                     * makes our behavior a superset of the ECMA
-                     * numeric grammar.  We might not always be so
-                     * permissive, so we warn about it.
-                     */
+					 * We permit 08 and 09 as decimal numbers, which makes our
+					 * behavior a superset of the ECMA numeric grammar. We might
+					 * not always be so permissive, so we warn about it.
+					 */
                     if ( base === 8  &&  (c==='8' || c==='9') ) {
                         this.parser.addWarning("msg.bad.octal.literal", c == '8' ? "8" : "9");
                         base = 10;
@@ -10124,7 +10068,8 @@ retry:
                     if ( c === '\n' ) {
                         // Remove line terminator after escape to follow
                         // SpiderMonkey and C/C++
-                        // But, issue warning since ECMA262-3 does not allow that.
+                        // But, issue warning since ECMA262-3 does not allow
+						// that.
                         this.parser.addWarning("msg.unsafe.string.lit");
                     } else {
                         this.addToString(c);
@@ -10446,7 +10391,8 @@ proto.getNextXMLToken = function ( )
                 break;
             case 0x20:  // ' '
             case 0x09:  // '\t'
-            // case 0x0D:  // '\r'  CR never comes here because of the implementation of getChar().
+            // case 0x0D: // '\r' CR never comes here because of the
+			// implementation of getChar().
             case 0x0A:  // '\n'
                 this.addToString(c);
                 break;
@@ -10558,9 +10504,9 @@ proto.readXmlComment = function ( )
                 return true;
             } else {
                 // Strictly, XMLComment MUST NOT include the sequence "--".
-                // So, if the program execution is here, the source is 
-                // syntactically wrong, according to ECMA367. However, we 
-                // allow the sequence here, so that our syntax is super-set 
+                // So, if the program execution is here, the source is
+                // syntactically wrong, according to ECMA367. However, we
+                // allow the sequence here, so that our syntax is super-set
                 // of the specification.
                 c = '-';
                 continue;
@@ -10748,41 +10694,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 NAMESPACE = 'Concurrent.Thread.Compiler';
@@ -10971,7 +10915,8 @@ TryCatchListStatement.prototype[Css] = function ( ) {
         var block = this.tryBlock[Css]();
         block.labels = this.labels;
         return block;
-    } else if ( this.catchList.car.cond ) {  // one or more qualified catch-guard
+    } else if ( this.catchList.car.cond ) {  // one or more qualified
+												// catch-guard
         var guard = this.catchList.car;
         return new TryCatchStatement(
             this.labels,
@@ -11112,48 +11057,38 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Rhino code, released
- * May 6, 1999.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1997-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Mike Ang
- *   Igor Bukanov
- *   Yuh-Ruey Chen
- *   Ethan Hugg
- *   Terry Lucas
- *   Mike McCabe
- *   Milen Nankov
- *   Daisuke Maki
- *
- * Alternatively, the contents of this file may be used under the terms of
- * the GNU General Public License Version 2 or later (the "GPL"), in which
- * case the provisions of the GPL are applicable instead of those above. If
- * you wish to allow use of your version of this file only under the terms of
- * the GPL and not to allow others to use your version of this file under the
- * MPL, indicate your decision by deleting the provisions above and replacing
- * them with the notice and other provisions required by the GPL. If you do
- * not delete the provisions above, a recipient may use your version of this
- * file under either the MPL or the GPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
+ * The Original Code is Rhino code, released May 6, 1999.
+ * 
+ * The Initial Developer of the Original Code is Netscape Communications
+ * Corporation. Portions created by the Initial Developer are Copyright (C)
+ * 1997-1999 the Initial Developer. All Rights Reserved.
+ * 
+ * Contributor(s): Mike Ang Igor Bukanov Yuh-Ruey Chen Ethan Hugg Terry Lucas
+ * Mike McCabe Milen Nankov Daisuke Maki
+ * 
+ * Alternatively, the contents of this file may be used under the terms of the
+ * GNU General Public License Version 2 or later (the "GPL"), in which case the
+ * provisions of the GPL are applicable instead of those above. If you wish to
+ * allow use of your version of this file only under the terms of the GPL and
+ * not to allow others to use your version of this file under the MPL, indicate
+ * your decision by deleting the provisions above and replacing them with the
+ * notice and other provisions required by the GPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under either
+ * the MPL or the GPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 /**
  * This file is based on the file Parser.java in Rhino 1.6R5.
@@ -11214,7 +11149,7 @@ function Parser ( errorReporter )
     this.errorReporter       = errorReporter instanceof ErrorReporter
                                  ?  errorReporter  :  defaultReporter;
     this.ts                  = undefined;  // TokenStream
-    this.source              = undefined;  // String       # file-name, URL, ...etc
+    this.source              = undefined;  // String # file-name, URL, ...etc
     this.flaggedTokenBuffer  = null;       // Stack
     this.syntaxErrorCount    = 0;
     this.nestingOfFunction   = 0;
@@ -11223,7 +11158,8 @@ function Parser ( errorReporter )
     this.nestingOfLoop   = 0;
     this.nestingOfSwitch = 0;
     this.allLabelSet     = null;  // contains all labels in current scope
-    this.loopLabelSet    = null;  // contains only labels qualifying IterationStatement in current scope
+    this.loopLabelSet    = null;  // contains only labels qualifying
+									// IterationStatement in current scope
 }
 
 var proto = Parser.prototype;
@@ -11231,7 +11167,7 @@ var proto = Parser.prototype;
 
 proto.getMessage = function ( messageId  /* optional args */ )
 {
-    //!! fake implementation
+    // !! fake implementation
     return messageId;
 };
 
@@ -11391,7 +11327,7 @@ proto.parse = function ( sourceString, lineno, source )
             // Ignore it.
         } else {
             // Maybe stack overflow.
-            //!!fake implementation
+            // !!fake implementation
             throw e;
         }
     }
@@ -11701,7 +11637,8 @@ proto.statementHelper = function ( labels )
                 if ( isForEach ) return new ForEachVarStatement(labels, init[0], cond, body, lineno, this.source);
                 else             return new ForInVarStatement(labels, init[0], cond, body, lineno, this.source);
             } else {
-                // Check if init (an expression left-hand-side of "in") has lvalue.
+                // Check if init (an expression left-hand-side of "in") has
+				// lvalue.
                 if ( !init.hasLvalue() ) this.reportError("msg.bad.for.in.lhs");
                 if ( isForEach ) return new ForEachStatement(labels, init, cond, body, lineno, this.source);
                 else             return new ForInStatement(labels, init, cond, body, lineno, this.source);
@@ -11713,8 +11650,10 @@ proto.statementHelper = function ( labels )
         this.consumeToken();
         var lineno = this.ts.getLineno();
 
-        // Although ECMA262-3 requires a block here, Rhino1.6R5 allows any kind of statement.
-        // We follow Rhino's style, but issue warning when a statement is not a block.
+        // Although ECMA262-3 requires a block here, Rhino1.6R5 allows any kind
+		// of statement.
+        // We follow Rhino's style, but issue warning when a statement is not a
+		// block.
         var tryBlock = this.statement();
         if ( !(tryBlock instanceof Block) ) {
             this.addWarning("msg.no.brace.tryblock");
@@ -12519,41 +12458,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 NAMESPACE = 'Concurrent.Thread.Compiler';
@@ -12790,41 +12727,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION ;
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 NAMESPACE = 'Concurrent.Thread.Compiler';
@@ -13014,29 +12949,22 @@ IL.NewBlock.prototype[Cz] = function ( ) {
         return it[Cz]();
     });
     body = cons(null, body);
-    /*  // Construct the following code-tree.
-        if ( CONSTRUCTOR && typeof CONSTRUCTOR.$Concurrent_Thread_compiled == "function" ) {
-        $Concurrent_Thread_null_function.prototype = CONSTRUCTOR.prototype;
-        $Concurrent_Thread_this = new $Concurrent_Thread_null_function();
-        return CONSTRUCTOR.$Concurrent_Thread_compiled(
-                   $Concurrent_Thread_this,
-                   [ARG1, ARG2, ...],
-                   { procedure: function($Concurrent_Thread_intermediate){
-                    if ( !($Concurrent_Thread_intermediate && (typeof $Concurrent_Thread_intermediate === "object" || typeof $Concurrent_Thread_intermediate === "function") )
-                      $Concurrent_Thread_intermediate = $Concurrent_Thread_this;
-                    $Concurrent_Thread_this = null;  // encourages GC
-                       return { continuation: CONTINUATION,
-                                ret_val     : $Concurrent_Thread_intermediate,
-                                timeout     : void 0                          };
-                   }, this_val: this, exception: EXCEPTION }
-               );
-        } else {
-            return { continuation: CONTINUATION,
-                     ret_val     : new CONSTRUCTOR(ARG1, ARG2...),
-                     timeout     : void 0
-                   };
-        } 
-     */
+    /*
+	 * // Construct the following code-tree. if ( CONSTRUCTOR && typeof
+	 * CONSTRUCTOR.$Concurrent_Thread_compiled == "function" ) {
+	 * $Concurrent_Thread_null_function.prototype = CONSTRUCTOR.prototype;
+	 * $Concurrent_Thread_this = new $Concurrent_Thread_null_function(); return
+	 * CONSTRUCTOR.$Concurrent_Thread_compiled( $Concurrent_Thread_this, [ARG1,
+	 * ARG2, ...], { procedure: function($Concurrent_Thread_intermediate){ if (
+	 * !($Concurrent_Thread_intermediate && (typeof
+	 * $Concurrent_Thread_intermediate === "object" || typeof
+	 * $Concurrent_Thread_intermediate === "function") )
+	 * $Concurrent_Thread_intermediate = $Concurrent_Thread_this;
+	 * $Concurrent_Thread_this = null; // encourages GC return { continuation:
+	 * CONTINUATION, ret_val : $Concurrent_Thread_intermediate, timeout : void 0 }; },
+	 * this_val: this, exception: EXCEPTION } ); } else { return { continuation:
+	 * CONTINUATION, ret_val : new CONSTRUCTOR(ARG1, ARG2...), timeout : void 0 }; }
+	 */
     adder(body)( new IfElseStatement([],
         new AndExpression(
             this.func,
@@ -13152,41 +13080,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -13399,41 +13325,39 @@ with ( Concurrent.Thread.Compiler ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -13552,7 +13476,9 @@ function CsStatements ( stmts, follows, ctxt, sttop ) {
     return stmts.car[Cs](follows, ctxt, sttop);
 }
 
-function CsReference ( exp, ctxt, sttop, rest ) {  // Expression -> Context -> Int -> (Expression -> <Block>) -> <Block>
+function CsReference ( exp, ctxt, sttop, rest ) {  // Expression -> Context ->
+													// Int -> (Expression ->
+													// <Block>) -> <Block>
     if ( exp instanceof DotAccessor ) {
         var e = new DotAccessor(ctxt.getStackVar(sttop), exp.prop);
         var follows = rest(e, sttop+1);
@@ -14146,41 +14072,39 @@ with ( Concurrent.Thread ) {
             var VERSION = '0.0.0';
             var NAMESPACE;
             
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
+/*******************************************************************************
+ * ***** BEGIN LICENSE BLOCK Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
  * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
+ * 1.1 (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ * 
  * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+ * the specific language governing rights and limitations under the License.
+ * 
  * The Original Code is Concurrent.Thread code.
- *
- * The Initial Developer of the Original Code is
- * Daisuke Maki.
- * Portions created by the Initial Developer are Copyright (C) 2006-2007
- * the Initial Developer. All Rights Reserved.
- *
+ * 
+ * The Initial Developer of the Original Code is Daisuke Maki. Portions created
+ * by the Initial Developer are Copyright (C) 2006-2007 the Initial Developer.
+ * All Rights Reserved.
+ * 
  * Contributor(s):
- *
+ * 
  * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+ * either the GNU General Public License Version 2 or later (the "GPL"), or the
+ * GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which
+ * case the provisions of the GPL or the LGPL are applicable instead of those
+ * above. If you wish to allow use of your version of this file only under the
+ * terms of either the GPL or the LGPL, and not to allow others to use your
+ * version of this file under the terms of the MPL, indicate your decision by
+ * deleting the provisions above and replace them with the notice and other
+ * provisions required by the GPL or the LGPL. If you do not delete the
+ * provisions above, a recipient may use your version of this file under the
+ * terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK *****
+ */
 
 
 
@@ -14229,7 +14153,9 @@ function prepare ( f ) {
     var c = prepare_cache[f];
     if ( c ) return c;
     c = prepareTree(parseFunction(f)).toString();
-    while ( cache_history.length >= CACHE_LIMIT  &&  cache_history.length > 0 ) {  // avoid endless loop
+    while ( cache_history.length >= CACHE_LIMIT  &&  cache_history.length > 0 ) {  // avoid
+																					// endless
+																					// loop
         delete prepare_cache[cache_history.shift()];
     }
     if ( CACHE_LIMIT >= 1 ) {
@@ -14266,14 +14192,13 @@ function prepareTree ( f ) {
         )),
         []
     );
-    /* Constructs the following structure:
-        "(function(){",
-        "  var $Concurrent_Thread_self = ", f, ";",
-        name  ?  "var " + name + " = " + "$Concurrent_Thread_self;"  :  "",
-        "  $Concurrent_Thread_self.$Concurrent_Thread_compiled = ", func, ";",
-        "  return $Concurrent_Thread_self;",
-        "})()"
-    */
+    /*
+	 * Constructs the following structure: "(function(){", " var
+	 * $Concurrent_Thread_self = ", f, ";", name ? "var " + name + " = " +
+	 * "$Concurrent_Thread_self;" : "", "
+	 * $Concurrent_Thread_self.$Concurrent_Thread_compiled = ", func, ";", "
+	 * return $Concurrent_Thread_self;", "})()"
+	 */
 }
 
 

@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crud</title> <!--Titulo de la pagina-->
+<!--librerias-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--librerias-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -268,6 +269,7 @@ $(document).ready(function(){
 						<h2>Productos de la tienda</h2>   <!--subtitulo de la pagina-->
 					</div>
 					<div class="col-sm-6">
+<!--PDF-->  <a href="#PDF" class="btn btn-success" > <span>PDF</span></a>
 						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Agregar</span></a>   <!--botones de eliminar y agregar-->
 						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Eliminar</span></a>
 					</div>
@@ -510,9 +512,27 @@ $(document).ready(function(){
 				</form>
 			</div>
 		</div>
-
 	</div>
+  <!--PDF-->
+  <div id="PDF">
+    <script>
+
+  	$('#btn btn-success').click(function() {
+
+  		 var doc = new jsPDF();
+
+  		doc.setFontSize(15);
+
+  		doc.text(15, 20, "Inventario");
+      doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
+       doc.save('Inventario.pdf');
+  	});
+  </script>
+  </div>
+
+  <center>
   <button type="submit"><a href="vista.html">Regresar</a></button>
+</center>
 
 </body>
 </html>

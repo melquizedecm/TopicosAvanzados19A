@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Source: Programa08
+Description: libreria
+Date: 09/04/19
+autor: Karen Janett López Lozano
+-->
+<html>
+    <head>
+        <title>Mi Libreria</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--llamamos a la librería-->
+        <script src="libreria_de_Validaciones.js" type="text/javascript"></script>
+    <br>
+    <input type="text" id="valor" value=""/>
+    <!--con esta accion se llamara a la funcion vacio que capturara el dato ingresado del usuario-->
+    <button onclick="Vacio()">Ingresar Dato</button>
+    <br>
+</head>
+<body>
+    <div></div>
+    <!--con estos botones se podra producir las validaciones segun la accion escogida del usuario-->
+    <input type="button" onclick="validarEntero();" id="boton" value="Entero"/>
+    <input type="button" onclick="validarFloat();" id="boton2" value="Float"/>
+    <input type="button" onclick="validarMayus();" id="boton3" value="Mayuscula"/>
+    <input type="button" onclick="validarMinus();" id="boton4" value="Minuscula"/>
+    <input type="button" onclick="validarRango();" id="boton5" value="Rango"/>
+</body>
+</html>

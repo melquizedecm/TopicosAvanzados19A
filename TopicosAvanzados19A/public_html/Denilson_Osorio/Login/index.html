@@ -5,10 +5,12 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
 <head>
-    <title>Bienvenidos
+  <script type="text/javascript" src="jspdf.min.js"></script>
+  <script src="pdf.js" charset="utf-8"></script>
+    <title>Bienvenidos</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </title>
+
 
     <!-- meta -->
     <meta charset="utf-8">
@@ -25,12 +27,206 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Kreon:300,400,700'>
 
     <!-- js -->
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-</head>
+    <script>
+
+    //aqui comeinza ajax
+    function mostrarSugerencia(str) {
+    var xmlhttp;
+    if (str.length==0) { document.getElementById("txtSugerencia").innerHTML=""; return; }
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+        document.getElementById("txtSugerencia").innerHTML=xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET","MENU.php?q="+str,true);
+    xmlhttp.send();
+    }
+    //aqui termian ajax
+    </script>
+  </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="120" >
+
+  <h3 style="color:grey";>BUSQUE SU COMIDA O BEBIDA FAVORITA</h3>
+
+  <form action="">
+
+  Nombre: <input type="text" id="txt1" onkeyup="mostrarSugerencia(this.value)" />
+
+  </form>
+
+  <p>Sugerencias: <span id="txtSugerencia"></span></p>
+  <!--AQUI TERMINA AJAX-->
+
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <script id="Lol">
+
+      var doc = new jsPDF();
+      doc.setTextColor(50);
+      doc.text(90, 10, 'Menú "La lupita"');
+
+    doc.setTextColor(50);
+    doc.text(20, 20, 'Ceviches');
+
+    doc.setTextColor(50);
+    doc.text(20, 30, 'Camaron...........100');
+    doc.setTextColor(50);
+    doc.text(20, 35, 'Pescado............100');
+    doc.setTextColor(50);
+    doc.text(20, 40, 'Pulpo.................100');
+    doc.setTextColor(50);
+    doc.text(20, 45, 'Mixto..................100');
+    doc.setTextColor(50);
+    doc.text(20, 50, 'surimi.................100');
+    doc.setTextColor(50);
+    doc.text(20, 55, 'Nolon.................100');
+
+    doc.setTextColor(50);
+    doc.text(20, 65, 'Cocteles/Cocktails');
+
+    doc.setTextColor(50);
+    doc.text(20, 75, 'Camaron...........100');
+    doc.setTextColor(50);
+    doc.text(20, 80, 'Pulpo.................100');
+    doc.setTextColor(50);
+    doc.text(20, 85, 'Mixto..................100');
+    doc.setTextColor(50);
+    doc.text(20, 90, 'Nolon.................100');
+
+    doc.setTextColor(50);
+    doc.text(20, 100, 'Camarones/Shrimps');
+
+    doc.setTextColor(50);
+    doc.text(20, 110, 'Empanizado.......100');
+    doc.setTextColor(50);
+    doc.text(20, 115, 'Empanizado con spaguetti.......100');
+    doc.setTextColor(50);
+    doc.text(20, 120, 'AL mojo de ajo.....100');
+    doc.setTextColor(50);
+    doc.text(20, 125, 'A la parrilla...........100');
+    doc.setTextColor(50);
+    doc.text(20, 130, 'Con spaguetti.......100');
+
+    doc.setTextColor(50);
+    doc.text(20, 140, 'Orden de pollo y puerco al gusto/');
+    doc.setTextColor(50);
+    doc.text(20, 145, 'Order chicken and pork to taste');
+
+    doc.setTextColor(50);
+    doc.text(20, 150, 'Filetes/Steaks');
+
+    doc.setTextColor(50);
+    doc.text(20, 160, 'Empanizado...........100');
+    doc.setTextColor(50);
+    doc.text(20, 165, 'Relleno J/Q............100');
+    doc.setTextColor(50);
+    doc.text(20, 170, 'AL mojo de ajo........100');
+    doc.setTextColor(50);
+    doc.text(20, 175, 'Relleno de mariscos....100');
+    doc.setTextColor(50);
+    doc.text(20, 180, 'A la veracruzana.......100');
+
+    doc.setTextColor(50);
+    doc.text(20, 190, 'Otros/Others');
+
+    doc.setTextColor(50);
+    doc.text(20, 200, 'Sopa de mariscos...........100');
+    doc.setTextColor(50);
+    doc.text(20, 205, 'Arroz blanco...................100');
+    doc.setTextColor(50);
+    doc.text(20, 210, 'Papas fritas....................100');
+    doc.setTextColor(50);
+    doc.text(20, 215, 'Platanos fritos.................100');
+    doc.setTextColor(50);
+    doc.text(20, 220, 'Frijol......................100');
+    doc.setTextColor(50);
+    doc.text(20, 225, 'Pan de cazón................100');
+
+    doc.setTextColor(50);
+    doc.text(120, 20, 'Bebidas');
+
+    doc.setTextColor(50);
+    doc.text(120, 30, 'Cerveza/Beer');
+
+    doc.setTextColor(50);
+    doc.text(120, 40, 'Sol...........................100');
+    doc.setTextColor(50);
+    doc.text(120, 45, 'Tecate Light............100');
+    doc.setTextColor(50);
+    doc.text(120, 50, 'XX Laguer...............100');
+    doc.setTextColor(50);
+    doc.text(120, 55, 'Chelada..................100');
+    doc.setTextColor(50);
+    doc.text(120, 60, 'Michelada Clasica......100');
+    doc.setTextColor(50);
+    doc.text(120, 65, 'Ojo Rojo................100');
+    doc.setTextColor(50);
+    doc.text(120, 70, 'Michelada de sabores......100');
+    doc.setTextColor(50);
+    doc.text(120, 75, 'Chamochela.............100');
+    doc.setTextColor(50);
+    doc.text(120, 80, 'Chamoychela............100');
+
+    doc.setTextColor(50);
+    doc.text(120, 90, 'Preparados/Preparedr');
+
+    doc.setTextColor(50);
+    doc.text(120, 100, 'Margarita...........100');
+    doc.setTextColor(50);
+    doc.text(120, 105, 'Piña colada.........100');
+    doc.setTextColor(50);
+    doc.text(120, 110, 'Piñada...............100');
+    doc.setTextColor(50);
+    doc.text(120, 115, 'Daiquiris............100');
+
+    doc.setTextColor(50);
+    doc.text(120, 125, 'Ron');
+
+    doc.setTextColor(50);
+    doc.text(120, 135, 'Bacardi Blanco...........100');
+    doc.setTextColor(50);
+    doc.text(120, 140, 'Bacardi añejo.............100');
+    doc.setTextColor(50);
+    doc.text(120, 145, 'Bacardi solera............100');
+
+    doc.setTextColor(50);
+    doc.text(120, 155, 'Vodka');
+
+    doc.setTextColor(50);
+    doc.text(120, 165, 'Smirnoff...........100');
+
+    doc.setTextColor(50);
+    doc.text(120, 175, 'Brandy');
+
+    doc.setTextColor(50);
+    doc.text(120, 185, 'Azteca de Oro...........100');
+    doc.setTextColor(50);
+    doc.text(120, 190, 'Presidente.................100');
+
+    doc.setTextColor(50);
+    doc.text(120, 200, 'Aguas o refrescos/');
+    doc.setTextColor(50);
+    doc.text(120, 205, 'Sodas or Natural Juice');
+
+    doc.setTextColor(50);
+    doc.text(120, 215, 'Jamaica................100');
+    doc.setTextColor(50);
+    doc.text(120, 220, 'Limonada...............100');
+    doc.setTextColor(50);
+    doc.text(120, 225, 'Horchata................100');
+    doc.setTextColor(50);
+    doc.text(120, 230, 'Coca Cola...............100');
+    doc.setTextColor(50);
+    doc.text(120, 235, 'Coca Cola Light.........100');
+    doc.setTextColor(50);
+    doc.text(120, 240, 'Cristal...................100');
+
+
+
+    doc.save('Menú "La Lupita".pdf');
+    </script>
 
     <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -106,11 +302,6 @@
         <!-- /.container -->
         <section class="ss-style-bottom"></section>
     </div><!-- #story -->
-
-
-
-
-
 
     <div id="food-menu" class="light-wrapper">
         <section class="ss-style-top"></section>
@@ -283,18 +474,6 @@
     </div><!--/#food-menu-->
 
 <button>Comidas mas solicitadas</button>
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer id="footer" class="dark-wrapper">
         <section class="ss-style-top"></section>

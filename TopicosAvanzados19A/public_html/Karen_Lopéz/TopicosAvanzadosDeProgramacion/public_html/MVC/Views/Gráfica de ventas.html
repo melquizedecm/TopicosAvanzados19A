@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+        <script src="../../Librerías/dist/Chart.bundle.min.js" type="text/javascript"></script>
+        <script src="../../Librerías/jquery-1.12.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var datos = {
+			type: "pie",
+			data : {
+				datasets :[{
+					data : [5, 10, 40, 12, 23, 80, 22, 8, 45, 50, 1, 55],
+					backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#A93226", "#F1948A", "#D7BDE2", "#BA4A00", "#48C9B0", "#9A7D0A", "#76448A"],
+				}],
+				labels : ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+			},
+			options : {
+				responsive : true,
+			}
+		};
+
+		var canvas = document.getElementById('chart').getContext('2d');
+		window.pier = new Chart(canvas, datos);
+	});
+	</script>
+</head>
+<body style="background-color: #00D3BC;">
+	<!--El <canvas>elemento HTML se utiliza para dibujar gráficos sobre la marcha, a través de JavaScript.-->
+
+	<div id="canvas-container" style="width:50%;">
+		<canvas id="chart" width="500" height="350"></canvas>
+	</div>
+</body>
+</html>
