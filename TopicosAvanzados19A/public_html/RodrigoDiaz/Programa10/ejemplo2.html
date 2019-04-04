@@ -62,6 +62,7 @@
 			$.each(datos.datasets, function(i, dataset){
 				dataset.data = newData[i];
 			});
+			//Aqui es para que la grafica se actualiza cada 5 segundos
 			window.bar.update();
 		}, 5000);
 
