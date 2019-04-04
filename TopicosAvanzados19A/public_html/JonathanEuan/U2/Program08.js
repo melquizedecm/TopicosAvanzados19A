@@ -5,6 +5,9 @@ var palabra;
 var entero=0;
 var numero=0;;
 var mayuscula;
+var x1;
+var x2;
+var x3;
 
 function getEnteros(){
   while(true){
@@ -49,6 +52,31 @@ function getMayusculas(){
       }
     }
   }
+
+  function getRango(){
+    while(true){
+      x1=prompt("Ingrese un número: ");
+      x2=prompt("Ingrese otro un número: ");
+      x3=prompt("Ingrese otro número:");
+        if(x1 %1===0){
+            if(x2 %1===0){
+                if(x3 %1===0){//if para validar si el número es entero.
+            if(x3<=x1 && x3>x2){
+              break;
+            }else{
+              alert("su número esta fuera del rango");
+            }
+    }else{
+      alert("Ingrese otro número");
+    }
+  } else{
+
+  } alert("No es un rango valido");
+    }else{
+        alert("No es un rango valido");
+    }
+  }
+}
 
 /* Funcion que imprimime los valores ingresados
 function getImprimir(){

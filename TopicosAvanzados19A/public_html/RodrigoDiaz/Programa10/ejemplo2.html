@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title></title>
+	<!--librerias importadas -->
 	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		
+		//ingresamos los datos que queremos poryectar en la grafica
 		var datos = {
 			labels : ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
 			datasets : [{
@@ -15,7 +16,7 @@
 				data : [4, 12, 9, 7, 5]
 			},
 			{
-
+//Aqui se ponen los colores que va a mostrar la grafica
 				label : "datos 2",
 				backgroundColor : "rgba(151,187,205,0.5)",
 				data : [10,7,-5,6,5]
@@ -28,9 +29,10 @@
 			]
 		};
 
-
+//utilizacomo la variable canvas para darle un permiso a la pagina de usar animaciones
 		var canvas = document.getElementById('chart').getContext('2d');
 		window.bar = new Chart(canvas, {
+			//Aqui se pone el tipo de grafica que queremos proyectar
 			type : "bubble",
 			data : datos,
 			options : {
@@ -41,6 +43,7 @@
 						borderSkipped : 'bottom'
 					}
 				},
+				//Aqui es para que la grafica se vulva responsiva cada cuando la grafica se vuelva responsiva
 				responsive : true,
 				title : {
 					display : true,
@@ -59,6 +62,7 @@
 			$.each(datos.datasets, function(i, dataset){
 				dataset.data = newData[i];
 			});
+			//Aqui es para que la grafica se actualiza cada 5 segundos
 			window.bar.update();
 		}, 5000);
 
@@ -74,6 +78,7 @@
 	</script>
 </head>
 <body>
+	<!--Aqui ya colocamos la grafica en la pagina web -->
 	<div id="canvas-container" style="width:50%;">
 		<canvas id="chart" width="500" height="350"></canvas>
 	</div>

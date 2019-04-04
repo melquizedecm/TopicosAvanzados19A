@@ -1,5 +1,13 @@
+
+<!--
+  Nombre: Voltar Mezquita Correa
+  Profesor:Melquizedec Moo Medina
+  Programa: Generando Un PDF
+  Fecha:13/mar/2019
+ -->
 <html>
 <head>
+  <!--Librerias-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
@@ -7,10 +15,10 @@
   <script src="jspdf.min.js"></script>
 </head>
 <body>
-
+<!--Titulo centrado de la pagina-->
 <center><div id="navbar" ><font size=26 face="Sniglet">Control de Justificaciones</font></div></center>
 <div id="wrapper">
-
+<!--Registro de datos que el usuario debe de ingresar-->
 		<input type="text" id="name" class="form-control form-control-success" placeholder="Nombre"><br>
 		<input type="text" id="carrera" class="form-control form-control-success" value="" placeholder="Carrera" /><br>
 		<input type="text" id="semestre" class="form-control form-control-success" value="" placeholder="Semestre" /><br>
@@ -19,11 +27,10 @@
 		<center><input type="button" class="btn btn-warning" id="button" value="Descargar"/></center>
 
 	<script>
-
 	$('#button').click(function() {
-
+    <!--crea el pdf-->
 		 var doc = new jsPDF();
-
+<!--las variables que se sustitullen en los registros  para que se pongan en el pdf-->
 		var name = $('#name').val();
 		var carrera = $('#carrera').val();
 		var semestre = $('#semestre').val();
@@ -31,12 +38,10 @@
     var fecha = $('#fecha').val();
 
 		doc.setFontSize(15);
-
+<!--informacion que se imprimira en el pdf con los registros cambiados con los datos que el usuario ingreso-->
 		doc.text(15, 20, "Por este medio se le informa que el alumno "+name+"\rcon matricula "+matricula+" de la carrea de "+carrera+"\rcursando actualmente el "+semestre+" semestre no pudo asistir a clases\ren la fecha "+fecha+" por cuestiones ajenas a el.\rEsperemos considere la asistencia en la fecha emitida.");
     doc.text('Atentamente: \rServicios Escolares\r________________________\rFirma de responsable.',150,120,'center');
-     doc.save('justificacion.pdf');
-
-
+     doc.save('justificacion.pdf');   <!-- nombre con el que se guarda al descargar el pdf-->
 	});
 </script>
 </body>

@@ -1,52 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="Concurrent.Thread.Compile.js"></script>
-<script src="programa14.js"></script>
-<link rel="stylesheet" href="Programa14.css">
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="Concurrent.Thread.Compile.js"></script>
+    <link rel="stylesheet" href="Programa14.css">
+    <script type="text/javascript">
+    //Creamos una función la cual va indicando cuantos "metros" recorrera nuestro caballo
+    function caballo(nombre,etiqueta,fin){
+      var i=0;
+      while(i<=fin){
+        document.getElementById(etiqueta).value =i+" mts";
+        i++;
+    }
+    nombre=document.getElementById(nombre).value;
+    alert("Llego el caballo "+nombre);
+  }
+  //En esta función estan los hilos a los cuales se les inserta la función caballo para que se vayan ejecutando parcialmente
+  function ejecutar(){
+    document.getElementById('labelcaballo1').innerHTML=document.getElementById('inputCaballo1').value;
+    document.getElementById('labelcaballo2').innerHTML=document.getElementById('inputCaballo2').value;
+    document.getElementById('labelcaballo3').innerHTML=document.getElementById('inputCaballo3').value;
 
-<body>
-	<div class="titulo">
-		<h1>Carrera de Caballos</h1>
-	</div>
 
-	<div class="subtitulo">
-		<h3>Hipodromo</h3>
-	</div>
+    Concurrent.Thread.create(caballo,"inputCaballo1","caballo1",1000000);
+    Concurrent.Thread.create(caballo,"inputCaballo2","caballo2",1000000);
+    Concurrent.Thread.create(caballo,"inputCaballo3","caballo3",1000000);
+  }
+    </script>
 
-	<div class="nombreCaballos">
-		<h4>Inserta Nombres de los Caballos</h4>
-		<div class="col-xs-2"  align="center">
-			<!-- tamaño del input -->
-			<input type="text" id="inputCaballo1" name="" value="" class="form-control" placeholder="Inserta Nombre" ><br> 
-                        <input type="text" id="inputCaballo2" name="" value="" class="form-control" placeholder="Inserta Nombre" align="center"><br> 
-                        <input type="text" id="inputCaballo3" name="" value="" class="form-control" placeholder="Inserta Nombre" align="center"><br>
-		</div>
-		<button class="btn btn-success" onclick="ejecutar();">Iniciar Carrera</button>
-	</div>
+  </head>
+  <body>
+    <div class="titulo">
+      <h1>Nombra a tus caballos</h1>
+    </div>
 
-	<div class="separador"></div>
-
-	<h4>Carrera en curso</h4>
-	<div class="metros">
-		<div class="col-xs-4">
-			<input type="text" id="metrosRecorridos1" class="form-control" name="" value="" readonly="readonly"><br> 
-                        <input type="text" id="metrosRecorridos2" class="form-control" name="" value="" readonly="readonly" ><br> 
-                        <input type="text" id="metrosRecorridos3" class="form-control" name="" value="" readonly="readonly"><br>
-		</div>
-	</div> 
-        
+      <label>Nombre del primer Caballo: </label>
+      <input type="text" id="inputCaballo1"><br>
+      <label>Nombre del segundo Caballo: </label>
+      <input type="text" id="inputCaballo2"><br>
+      <label>Nombre del tercer Caballo: </label>
+      <input type="text" id="inputCaballo3">
+      <br>
+        <thead>
+          <th colspan="2" >Carreras</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Nombre del Caballo:</th>
+            <th>Resultados:</th>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo1"></label></td>
+            <td><input type="text" id="caballo1" readonly="readonly"></td>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo2"></label></td>
+            <td><input type="text" id="caballo2" readonly="readonly"><br></td>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo3"></label></td>
+            <td><input type="text" id="caballo3" readonly="readonly"><br></td>
+          </tr>
+        </tbody>
      
-                 <img class="caballos" src="IMG/caballo3.gif" alt="La imagen no se ha podido Cargar" >
-                <img class="caballos" src="IMG/caballo2.gif" alt="La imagen no se ha podido Cargar" >
-                               <img class="caballo" src="IMG/caballo2.gif" alt="La imagen no se ha podido Cargar"  >
-  
 
-      
-
-
-</body>
+    <button type="button" onclick="ejecutar()">Iniciar</button>
+    <img class="caballos" src="caballos.gif" alt="La imagen no se ha podido Cargar :(">
+  </body>
 </html>
