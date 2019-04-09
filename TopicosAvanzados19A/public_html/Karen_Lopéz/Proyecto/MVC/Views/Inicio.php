@@ -48,8 +48,8 @@ if (isset($_POST['inputUsername'])) {
                 <label>Password:</label>
                 <input name="inputPassword" type="=text" placeholder="Contraseña">
                 <br>
-				<button type="submit"><a href="Registro.php">Registrarse</a></button>
-				<button type="submit"><a href="vista.php">Entrar</a></button>
+                <button type="submit"><a href="Registro.php">Registrarse</a></button>
+		<button type="submit"><a href="vista.php">Entrar</a></button>
             </form>
         </div>
         <div class="reset-password">
