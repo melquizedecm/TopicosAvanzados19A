@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Source: Programa14
+Description: hilos de programacion en JS
+Date: 11/03/19
+autor: Karen Janett López Lozano
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+   <!--librerias--> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="Concurrent.Thread.Compile.js"></script>
+    <link rel="stylesheet" href="Programa14.css">
+    <script type="text/javascript">
+    //Creamos una función la cual va indicando cuantos "metros" recorrera nuestro caballo
+    function caballo(nombre,etiqueta,fin){
+      var i=0;
+      while(i<=fin){
+        document.getElementById(etiqueta).value =i+" mts";
+        i++;
+    }
+    nombre=document.getElementById(nombre).value;
+    alert("Llego el caballo "+nombre);
+  }
+  //En esta función estan los hilos a los cuales se les inserta la función caballo para que se vayan ejecutando parcialmente
+  function ejecutar(){
+    document.getElementById('labelcaballo1').innerHTML=document.getElementById('inputCaballo1').value;
+    document.getElementById('labelcaballo2').innerHTML=document.getElementById('inputCaballo2').value;
+    document.getElementById('labelcaballo3').innerHTML=document.getElementById('inputCaballo3').value;
+
+
+    Concurrent.Thread.create(caballo,"inputCaballo1","caballo1",1000000);
+    Concurrent.Thread.create(caballo,"inputCaballo2","caballo2",1000000);
+    Concurrent.Thread.create(caballo,"inputCaballo3","caballo3",1000000);
+  }
+    </script>
+
+  </head>
+  <body>
+    <div class="titulo">
+      <h1>Nombra a tus caballos</h1>
+    </div>
+      <!--captura de datos del usuario-->
+      <label>Nombre del primer Caballo: </label>
+      <input type="text" id="inputCaballo1"><br>
+      <label>Nombre del segundo Caballo: </label>
+      <input type="text" id="inputCaballo2"><br>
+      <label>Nombre del tercer Caballo: </label>
+      <input type="text" id="inputCaballo3">
+      <table style="border: solid 1px black;">
+        <thead>
+          <th colspan="2" >Carreras</th>
+        </thead>
+        <tbody>
+            <!--resultados de la carrera-->
+          <tr>
+            <th>Nombre del Caballo:</th>
+            <th>Resultados:</th>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo1"></label></td>
+            <td><input type="text" id="caballo1" readonly="readonly"></td>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo2"></label></td>
+            <td><input type="text" id="caballo2" readonly="readonly"><br></td>
+          </tr>
+          <tr>
+            <td><label id="labelcaballo3"></label></td>
+            <td><input type="text" id="caballo3" readonly="readonly"><br></td>
+          </tr>
+        </tbody>
+      </table>
+      <!--boton para comenzar la carrera-->
+    <button type="button" onclick="ejecutar()">Iniciar Arrancones</button>
+    <img class="caballos" src="img/caballos.gif" alt="La imagen no se ha podido Cargar :(">
+  </body>
+</html>
