@@ -12,8 +12,6 @@ $sql = "SELECT * FROM users";
 //se genera la consulta por medio de la base de datos, la consulta me la dara usuarios
 //ejecutar una consulta y obtener la tabla
 $tablaUsers = $conexion->query($sql);
-//Obtener la primera fila de la tabla
-$fileUsers = $tablaUsers->fetch_array(MYSQLI_BOTH);
 //cuando registre el usuario se ira aquí
 if (isset($_POST['inputUsername'])) {
     $inputUsername = $_POST['inputUsername'];

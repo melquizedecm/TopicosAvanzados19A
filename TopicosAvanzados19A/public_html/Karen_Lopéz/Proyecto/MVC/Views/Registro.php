@@ -16,6 +16,7 @@ $fileUsers = $tablaUsers->fetch_array(MYSQLI_BOTH);
 //cuando registre el usuario se ira aquí
 if (isset($_POST['inputUsername'])) {
     $inputUsername = $_POST['inputUsername'];
+    //validar para que no cree un usuario vacio
     $inputPassword = md5($_POST['inputPassword']);
     $sql = "INSERT INTO users (username, password) VALUES ('" . $inputUsername . "','" . $inputPassword . "')";
     //para poder ponerlo en conexion o marcha
