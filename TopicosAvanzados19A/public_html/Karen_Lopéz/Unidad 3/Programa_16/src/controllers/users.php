@@ -17,6 +17,17 @@ if (isset($_POST['id'])) {
     $username= $_POST['username'];
     $password= $_POST['password'];
     $status= $_POST['status'];
+    $sql = "UPDATE users SET username='".$username."',password='".md5($password)."' WHERE id='".$id."'";
+    $conexion->query($sql);
+}
+
+if (isset($_POST['action'])){
+    if ($_POST['action']='eliminar'){
+        $id=$_POST['id'];
+        $sql="UPDATE users SET status='0' WHERE id='".$id."'";
+            $conexion->query($sql);
+    }
+}
     //para poder ponerlo en conexion o marcha
     $conexion->query($sql);
 }

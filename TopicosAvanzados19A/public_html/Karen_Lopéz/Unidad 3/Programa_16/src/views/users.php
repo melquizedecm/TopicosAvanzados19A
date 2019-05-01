@@ -26,53 +26,70 @@ if (isset($_POST['inputUsername'])) {
 }
 ?>
 
-
 <html lang="es">
     <head>
+        <script src="../lib/js2/jquery-1.12.3.js" type="text/javascript"></script>
         <script>
-            function agregar(){
-                document.getElementById("form2").style.display="inline";
+
+            function agregar() {
+                document.getElementById("form2").style.display = "inline";
             }
-            function editar(form){
-                //recepcion de variable
-                alert(form.campo.value());
-                var id=form.campo0.value();
-                var username=form.campo1.value();
-                var passaword=form.campo2.value();
-                var status=form.campo3.value();
-                $.post('../controllers/user.php',
-                {   'id': id,
-                    'username': username,
-                    'password': passaword,
-                    'status': status
-                });
+
+            function editar(form) {
+                //recepcion de variables;
+                var id = form.campo0.value;
+                var username = form.campo1.value;
+                var password = form.campo2.value;
+                var status = form.campo3.value;
+
+                alert(username + " -- " + password);
+                ///llamar a la controlador de usuarios/////
+                $.post('../controllers/users.php',
+                        {
+                            'id': id,
+                            'username': username,
+                            'password': password,
+                            'action': "editar"
+                        },
+                        function(data, status){
+                            alert(data + " --- " + status);
+                        });
+                return false;   
+            }
+
+            function eliminar(id) {
+                $.post('../controllers/users.php',
+                        {
+                            'id': id,
+                            'action': 'eliminar'
+                        });
                 return false;
             }
+
+
         </script>
     </head>
-    
+
     <body>
-        <div id="form2" style="display: none;">
-            <h3>Ingreso de Usuario</h3>
+        <div id="form2" style="display:none;">            
+            <h3>Ingreso de Usuarios</h3>
             <br>
-            <!--significa que cera de forma oculta-->
             <form method="post">
-                <label>Username:</label>
-                <input name="inputUsername" type="=text" placeholder="Ingresa aqui tu nombre de usuario">
+                <label>username:</label>
+                <input type="text" name="inputUsername" placeholder="Ingresa aqui tu nombre de usuario">
                 <br>
-                <label>Password:</label>
-                <input name="inputPassword" type="=text" placeholder="ingresa aqui tu password">
+                <label>password</label>
+                <input type="text" name="inputPassword" placeholder="Ingresat tu password">
                 <br>
                 <input type="submit" value="Registrar">
             </form>
-        </div>   
-    </body>
-</html>
+        </div>
         <div class="content">
-            <button value="agregar usuario" onclick="agregar();">Agregar Usuario</button>
-            <table class="" border="1" width="100%">
+            <button value="agregar Usuario" onclick="agregar();">Agregar Usuario</button>
+            <table class="" border="1" width="80%">
+
                 <thead>
-                <th>ID</th>
+                <th>Id</th>
                 <th>Usuario</th>
                 <th>Password</th>
                 <th>Status</th>
@@ -80,20 +97,27 @@ if (isset($_POST['inputUsername'])) {
                 </thead>
                 <tbody>
                     <?php
-                    while ($fileUsers = $tablaUsers->fetch_array(MYSQLI_BOTH)) {
+                    while ($filaUsers = $tablaUsers->fetch_array(MYSQLI_BOTH)) {
                         ?>
                         <tr>
-                <form onsubmit="editar(this);">
-                    <td><input type="text" name="campo0" value="<?php echo $fileUsers[0]; ?>"></td>
-                        <td><input type="text" name="campo1" value="<?php echo $fileUsers[1]; ?>"></td>
-                        <td><input type="text" name="campo2" value="<?php echo $fileUsers[2]; ?>"></td>
-                        <td><input type="text" name="campo3" value="<?php echo $fileUsers[5]; ?>"></td>
-                        <td><input type="submit" value="editar"></td>
+                    <form onsubmit="editar(this);
+                            return false;" method="post">
+                        <td> <input type="text" name="campo0" value="<?php echo $filaUsers[0]; ?>">   </td>
+                        <td> <input type="text" name="campo1" value="<?php echo $filaUsers[1]; ?>">  </td>
+                        <td> <input type="text" name="campo2" value="<?php echo $filaUsers[2]; ?>"></td>
+                        <td> <input type="text" name="campo3" value="<?php echo $filaUsers[5]; ?>"></td>
+                        <td><button type="submit">Editar</button> </td>
+                        <td><button onclick="eliminar('<?php echo $filaUsers[0]; ?>');">eliminar</button></td>
                     </form>
                     </tr>
-                    <?php
-                }
-                ?>
+                <?php } ?>
                 </tbody>
             </table>
+
         </div>
+
+
+    </div>
+</div>
+</body>
+</html>
