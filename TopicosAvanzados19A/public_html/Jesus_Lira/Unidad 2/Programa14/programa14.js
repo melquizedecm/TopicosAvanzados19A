@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+=======
 /*DOCTYPE JavaScript
 Nombre: Jesus Lira Romero
+>>>>>>> d7da0281fb0cd596113510464742896b6940dbcc
 /*
 DOCTYPE JavaScript
 Nombre: Jesus Alberto Lira Romero
@@ -24,9 +27,12 @@ Fecha: 18/mar/2019
         i++;
         }
 
+<<<<<<< HEAD
+=======
         nombre=document.getElementById(Caballos).value;
 
 
+>>>>>>> d7da0281fb0cd596113510464742896b6940dbcc
         alert("Gano el caballo: "+nombre);
 
 
