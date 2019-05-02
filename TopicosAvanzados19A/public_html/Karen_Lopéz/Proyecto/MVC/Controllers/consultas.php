@@ -4,10 +4,7 @@
   $config= new Config();
   $link=$config->conectar();
   $sql="SELECT * FROM users";
-
   $tablaUsers=$link->query($sql);
-
-
   //Registro de usuario
   if(isset($_POST['inputName'])){
     $name=$_POST['inputName'];
