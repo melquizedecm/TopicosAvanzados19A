@@ -19,7 +19,27 @@ function mostrarEven() {
     document.getElementById("even").style.display = "inline";
 }
 
-                                      //Scripts de la tabla 
+function ocultarAlumn() {
+    document.getElementById("alumn").style.display = "none";
+}
+
+function ocultarMaes() {
+    document.getElementById("maes").style.display = "none";
+}
+
+function ocultarTrab() {
+    document.getElementById("trab").style.display = "none";
+}
+
+function ocultarPag() {
+    document.getElementById("pag").style.display = "none";
+}
+
+function ocultarEven() {
+    document.getElementById("even").style.display = "none";
+}
+
+                                      //Scripts de la tabla
 
 $(document).ready(function(){
 	// Activate tooltip
