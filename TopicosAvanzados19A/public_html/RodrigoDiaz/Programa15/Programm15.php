@@ -4,7 +4,7 @@
 *	Source: config.php
 *	Description: Conexion a base de datos
 *	Date: 01/05/2019
-*	Autor: Francisco Montalvo Hidalgo
+*	Autor: Rodrigo Diaz Serviran
 */
   //Configuraciòn de las variabes de conexiòn
   $DBuser="root";
@@ -39,7 +39,7 @@
       while($filaUsers= $tablaUsers->fetch_array(MYSQLI_BOTH)){
 
      ?>
-    <h1 align="center">WELCOME TO WEBSERVER <?php echo $filaUsers['user_name']; ?></h1>
+    <h1 align="center"> <?php echo $filaUsers['user_name']; ?></h1>
 
     <div class="content">
       <form>
