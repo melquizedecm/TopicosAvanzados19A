@@ -13,24 +13,24 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style type="text/css">
     body {
-        color: #000000;    //<!--color de la captura de datos-->
-		background: #00D3BC;    //<!--del fondo de la pagina-->
+        color: #000000;    /*<!--color de la captura de datos-->*/
+		background-image:url('../img/dobla-papeles.jpg'); -webkit-background-size: cover; /*<!--del fondo de la pagina-->*/
 		font-family: 'Varela Round', sans-serif;
-		font-size: 13px;    //<!--tamaño de las letras de la cabeza-->
+		font-size: 13px;    /*<!--tamaño de las letras de la cabeza-->*/
 	}
 	.table-wrapper {
         background: #fff;
-        padding: 20px 25px; //<!--Tamaño del titulo la tabla-->
+        padding: 20px 25px; /*<!--Tamaño del titulo la tabla-->*/
         margin: 30px 0;
 		border-radius: 3px;
         box-shadow: 0 1px 1px rgba(0,0,0,.05);
     }
-	.table-title {       //<!--tamaño del cuadro princiapal-->
+	.table-title {       /*<!--tamaño del cuadro princiapal-->*/
 		padding-bottom: 15px;
-		background: #00D3BC;
-		color: #fff;  //<!--color del titulo del cuadro-->
+		background-image:url('../img/dobla-papeles.jpg'); -webkit-background-size: cover;
+		color: #fff;  /*<!--color del titulo del cuadro-->*/
 		padding: 160px 30px;
-		margin: -20px -25px 10px;  //<!--ancho del cuadro-->
+		margin: -20px -25px 10px;  /*<!--ancho del cuadro-->*/
 		border-radius: 3px 3px 0 0;
     }
     .table-title h2 {
@@ -40,7 +40,7 @@
 	.table-title .btn-group {
 		float: right;
 	}
-	.table-title .btn {   //<!--tamaño del cuadro de agregar y eliminar-->
+	.table-title .btn {   /*<!--tamaño del cuadro de agregar y eliminar-->*/
 		color: #fff;
 		float: right;
 		font-size: 13px;
@@ -52,15 +52,15 @@
 		margin-left: 10px;
 	}
 	.table-title .btn i {
-		float: left;      //<!--´posicion de los - + -->
-		font-size: 0px;   //<!--tamaño del + --->
+		float: left;      /*<!--´posicion de los - + -->*/
+		font-size: 0px;   /*<!--tamaño del + --->*/
 		margin-right: 5px;
 	}
 	.table-title .btn span {
 		float: left;
 		margin-top: 2px;
 	}
-    table.table tr th, table.table tr td {    //<!-- espacio entre los productos-->
+    table.table tr th, table.table tr td {    /*<!-- espacio entre los productos-->*/
         border-color: #e9e9e9;
 		padding: 12px 15px;
 		vertical-align: middle;
@@ -257,7 +257,7 @@ $(document).ready(function(){
 	});
 });
 </script>
-<body style="background-color: #00D3BC;">
+<body style="background-image:url('../img/dobla-papeles.jpg'); -webkit-background-size: cover;">
 </head>
 <body>
     <div class="container">
@@ -268,8 +268,8 @@ $(document).ready(function(){
 						<h2>Ordenar compra</h2>   <!--subtitulo de la pagina-->
 					</div>
 					<div class="col-sm-6">
-						<a href="vista.html" class="btn btn-success" ><i class="material-icons">&#xE147;</i> <span>Enviar</span></a>   <!--botones de eliminar y agregar-->
-						<a href="vista.html" class="btn btn-danger" ><i class="material-icons">&#xE15C;</i> <span>Cancelar</span></a>
+						<a href="vista.php" class="btn btn-success" ><i class="material-icons">&#xE147;</i> <span>Enviar</span></a>   <!--botones de eliminar y agregar-->
+						<a href="vista.php" class="btn btn-danger" ><i class="material-icons">&#xE15C;</i> <span>Cancelar</span></a>
 					</div>
                 </div>
             </div>
@@ -284,7 +284,7 @@ $(document).ready(function(){
 						</th>     <!--encaebzado-->
                         <th>Producto</th>
                         <th>Codigo de barra</th>
-						            <th>Precio de venta</th>
+						<th>Precio de venta</th>
                         <th>Existencia</th>
                         <th>Precio de compra</th>
                         <th>Categoria</th>
@@ -301,7 +301,7 @@ $(document).ready(function(){
 						</td>
                         <td>Lapiz mirado #2</td>
                         <td>7584155587</td>
-						            <td>$4</td>
+						<td>$4</td>
                         <td>526</td>
                         <td>$2</td>
                         <td>Oficina</td>
@@ -318,7 +318,7 @@ $(document).ready(function(){
 						</td>
                         <td>Borrrador</td>
                         <td>9677134458</td>
-						            <td>$5</td>
+						<td>$5</td>
                         <td>230</td>
                         <td>$3</td>
                         <td>Oficina</td>
@@ -390,6 +390,9 @@ $(document).ready(function(){
                     <li class="page-item"><a href="#" class="page-link">5</a></li>
                     <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
                 </ul>
+                <center>
+                <input type="button" value="Volver" onclick="location='vista.php'"/>
+                </center>
             </div>
         </div>
     </div>

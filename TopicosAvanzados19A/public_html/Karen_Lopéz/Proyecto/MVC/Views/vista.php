@@ -1,38 +1,19 @@
 <!DOCTYPE html>
 <?php
-//configuracion de las variables del servidor de BD
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "proyecto";
-//conceta el gestor y la base de datos
-$conexion = mysqli_connect($host, $user, $password, $database);
-//con esta generamos una consulta
-$sql = "SELECT * FROM users";
-//se genera la consulta por medio de la base de datos, la consulta me la dara usuarios
-//ejecutar una consulta y obtener la tabla
-$tablaUsers = $conexion->query($sql);
-//cuando registre el usuario se ira aquí
-if (isset($_POST['inputUsername'])) {
-    $inputUsername = $_POST['inputUsername'];
-    $inputPassword = md5($_POST['inputPassword']);
-    $sql = "INSERT INTO users (username, password) VALUES ('" . $inputUsername . "','" . $inputPassword . "')";
-    //para poder ponerlo en conexion o marcha
-    $conexion->query($sql);
-}
+require_once '../core/configCR.php';
 ?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Papeleria y tienda "Hanabi"</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <!--librerias-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS/estilos.css">
-    <body style="background-color: #00D3BC;">
-</body>
+    <body style="background-image:url('../img/dobla-papeles.jpg'); -webkit-background-size: cover;">
 </head>
-<h1>Bienvenido, <?php echo $fileUsers['username']; ?></h1>
+<h1>Bienvenido de nuevo.</h1>
 <body class="text-center">
     <div class="contenedor-form">
         <div class="toggle">
@@ -40,11 +21,14 @@ if (isset($_POST['inputUsername'])) {
 <center>
     <div id="form2">
     <!--botones para ingresar a las otras opciones-->
-        <button type="submit"><a href="Inicio.php">Cerrar sesión</a></button>
+            <input type="button" value="Cerrar Sesión" onclick="location='Inicio.php'"/>
             <br><h2>¿Qué desea hacer hoy?</h2>
-			<button type="submit"><a href="Ordenar.html">Compra</a></button>
-			<button type="submit"><a href="Inventario.html">Inventario</a></button>
-            <button type="submit"><a href="Ventas.html">Venta</a></button>
+            <input type="button" value="Comprar" onclick="location='Ordenar.html'"/>
+            <input type="button" value="Inventario" onclick="location='Inventario.html'"/>
+            <input type="button" value="Ventas" onclick="location='Ventas.html'"/>
+            <input type="button" value="Crear Usuario" onclick="location='registro.php'"/>
+            <input type="button" value="Buscar Usuarios" onclick="location='Read.php'"/>
+            <input type="button" value="Modificar/Eliminar Usuario" onclick="location='Update-Delete.php'"/>
             </form>
         </div>
 
@@ -53,5 +37,6 @@ if (isset($_POST['inputUsername'])) {
     <script src="JS/jquery-3.1.1.min.js"></script>
     <script src="JS/main.js"></script>
 
+</body>
 </body>
 </html>
