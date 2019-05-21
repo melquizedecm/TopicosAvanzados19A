@@ -7,30 +7,27 @@ require_once '../core/Config.php';
 //Description: CRUD que permite gestionar los datos del usuario
 //
 
-//CONECTARME A LA BASE DE DATOS
-$config=new Config();
-$conexion=$config->conectar();
+////CONECTARME A LA BASE DE DATOS
+$config = new Config();
+$conexion = $config->conectar();
 
-//con esta generamos una consulta
-$sql = "SELECT * FROM users";
-//se genera la consulta por medio de la base de datos, la consulta me la dara usuarios
-//ejecutar una consulta y obtener la tabla
-$tablaUsers = $conexion->query($sql);
-//cuando registre el usuario se ira aquí
 if (isset($_POST['inputUsername'])) {
     $inputUsername = $_POST['inputUsername'];
     $inputPassword = md5($_POST['inputPassword']);
-    $sql = "INSERT INTO users (username, password) VALUES ('" . $inputUsername . "','" . $inputPassword . "')";
-    //para poder ponerlo en conexion o marcha
+    $sql = "INSERT INTO users(username,password) VALUES('" . $inputUsername . "','" . $inputPassword . "')";
     $conexion->query($sql);
 }
-?>
 
+////Realizar una consulta
+$sql = "SELECT*FROM users";
+////Ejecutar una consulta y obtener la tabla
+$tablaUsers = $conexion->query($sql);
+////Obtener la primera fila de la tabla
+?>
 <html lang="es">
     <head>
-        <script src="../lib/js2/jquery-1.12.3.js" type="text/javascript"></script>
-        <script>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
             function agregar() {
                 document.getElementById("form2").style.display = "inline";
             }
@@ -54,7 +51,7 @@ if (isset($_POST['inputUsername'])) {
                         function(data, status){
                             alert(data + " --- " + status);
                         });
-                return false;   
+                return false;
             }
 
             function eliminar(id) {
@@ -71,7 +68,7 @@ if (isset($_POST['inputUsername'])) {
     </head>
 
     <body>
-        <div id="form2" style="display:none;">            
+        <div id="form2" style="display:none;">
             <h3>Ingreso de Usuarios</h3>
             <br>
             <form method="post">
@@ -79,7 +76,7 @@ if (isset($_POST['inputUsername'])) {
                 <input type="text" name="inputUsername" placeholder="Ingresa aqui tu nombre de usuario">
                 <br>
                 <label>password</label>
-                <input type="text" name="inputPassword" placeholder="Ingresat tu password">
+                <input type="text" name="inputPassword" placeholder="Ingresa tu password">
                 <br>
                 <input type="submit" value="Registrar">
             </form>
