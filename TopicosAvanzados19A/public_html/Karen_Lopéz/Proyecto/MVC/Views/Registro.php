@@ -1,29 +1,30 @@
 <?php
-//configuracion de las variables del servidor de BD
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "proyecto";
-//conceta el gestor y la base de datos
-$conexion = mysqli_connect($host, $user, $password, $database);
-//con esta generamos una consulta
-$sql = "SELECT * FROM users";
-//se genera la consulta por medio de la base de datos, la consulta me la dara usuarios
-//ejecutar una consulta y obtener la tabla
-$tablaUsers = $conexion->query($sql);
-//Obtener la primera fila de la tabla
-$fileUsers = $tablaUsers->fetch_array(MYSQLI_BOTH);
-//cuando registre el usuario se ira aquí
-if (isset($_POST['inputUsername'])) {
-    $inputUsername = $_POST['inputUsername'];
-    //validar para que no cree un usuario vacio
-    $inputPassword = md5($_POST['inputPassword']);
-    $sql = "INSERT INTO users (username, password) VALUES ('" . $inputUsername . "','" . $inputPassword . "')";
-    //para poder ponerlo en conexion o marcha
-    $conexion->query($sql);
+require_once '../core/configCR.php';
+if (isset($_POST['submit'])){
+    echo $_POST['inputUsername']."--".$_POST['inputPassword']."--".$_POST['inputEmail'];
+    $nuevo_usuario=array(
+        $inputUsername=$_POST['inputUsername'],
+        $inputPassword=$_POST['inputPassword'],
+        $inputEmail=$_POST['inputEmail']
+    );
+     $sql="INSERT INTO users (username, password, email) VALUES ('".$inputUsername."',
+     '".$inputPassword."', '".$inputEmail."')";
+
+    try{
+        $statement=$conexion->prepare($sql);
+        $statement->execute($nuevo_usuario);
+    } catch(PDOException $error){
+        echo $error->getMessage();
+    }
 }
 ?>
-<html>
+
+<?php require_once "header.php"; ?>
+<?php if (isset($_POST['submit']) && $statement): ?>
+    <blockquote><?php echo $_POST['inputUsername']; ?> se ha añadido correctamente</blockquote>
+<?php endif; ?>
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Papeleria y tienda "Hanabi"</title>
@@ -31,9 +32,9 @@ if (isset($_POST['inputUsername'])) {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS/estilos.css">
-    <body style="background-color: #00D3BC;">
+    <body style="background-image:url('../img/dobla-papeles.jpg'); -webkit-background-size: cover;">
 </head>
-<body>
+<body class="text-center">
     <div class="contenedor-form">
         <div class="toggle">
         </div>
@@ -44,22 +45,25 @@ if (isset($_POST['inputUsername'])) {
             <!--significa que cera de forma oculta-->
             <form method="post">
                      <!--ingresar los datos del usuario para su registro-->
-    <!--botones para su registro-->
-                <label>Username:</label>
-                <input name="inputUsername" type="=text" placeholder="Ingresa tú usuario">
+                  <!--los datos se registrarán en la BD-->
+                <label for="username">Username:</label>
+                <input name="inputUsername" type="=text" placeholder="Usuario">
                 <br>
                 <label>Password:</label>
-                <input name="inputPassword" type="=text" placeholder="ingresa tú password">
+                <input name="inputPassword" type="=text" placeholder="Contraseña">
                 <br>
-                <input type="submit" value="Registrar">
-				<button type="submit"><a href="vista.php">Entrar</a></button>
+                <label>Email:</label>
+                <input type="text" name="inputEmail" id="email" placeholder="Email">
+                <br>
+                <input type="submit" name="submit" value="Registrar">
+                <input type="button" value="Volver" onclick="location='Inicio.php'"/>
             </form>
         </div>
 </div>
 </center>
-
     </div>
     <script src="JS/jquery-3.1.1.min.js"></script>
     <script src="JS/main.js"></script>
+</body>
 </body>
 </html>
