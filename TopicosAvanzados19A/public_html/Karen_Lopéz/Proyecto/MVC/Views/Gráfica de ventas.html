@@ -19,7 +19,7 @@
 	<canvas id="canvas1"></canvas>
 	<div id="leyenda1" class="leyenda"></div>
 </div>
-<div style="float:left;">
+<div style="float:center;">
 	<canvas id="canvas2"></canvas>
 	<div id="leyenda2" class="leyenda leyendaH"></div>
 </div>
@@ -31,7 +31,6 @@
 					data : [5, 10, 40, 12, 23, 80, 22, 8, 45, 50, 1, 55],
 					backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#A93226", "#F1948A", "#D7BDE2", "#BA4A00", "#48C9B0", "#9A7D0A", "#76448A"],
 				}],
-				labels : ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
 			},
 			options : {
 				responsive : true,
@@ -173,23 +172,23 @@ var valores={
 	"Abril":{valor:12,color:"Orange"},
 	"Mayo":{valor:30,color:"Cyan"},
 	"Junio":{valor:52,color:"black"},
-	"Julio":{valor:30,color:"pink"},
+	"Julio":{valor:30,color:"silver"},
 	"Agosto":{valor:30,color:"yellow"},
-	"Septiembre":{valor:30,color:"Cyan"},
-	"Octubre":{valor:30,color:"Cyan"},
-	"Noviembre":{valor:30,color:"Cyan"},
-	"Diciembre":{valor:30,color:"Cyan"}
+	"Septiembre":{valor:30,color:"brown"},
+	"Octubre":{valor:30,color:"fuchsia"},
+	"Noviembre":{valor:30,color:"purple"},
+	"Diciembre":{valor:30,color:"violet"}
 }
  
 // generamos el segundo pastel
 var pastel=new miPastel("canvas2",300,300,valores);
-pastel.dibujarDonut(0.5,"white");
+pastel.dibujarDonut(0.0,"white");
 pastel.ponerPorCiento("white");
 pastel.ponerLeyenda("leyenda2");
 </script>
+<center>
         <input type="button" value="Regresar a la vista principal" onclick="location='vista.php'"/>
+        </center>
 	</div>
 </body>
 </html>
-
-
