@@ -1,12 +1,5 @@
 <?php
 require_once '../core/Config.php';
-//
-//Sourse: user.php
-//Author: Karen López
-//Date: 11/04/19
-//Description: CRUD que permite gestionar los datos del usuario
-//
-
 //CONECTARME A LA BASE DE DATOS
 $config=new Config();
 $conexion=$config->conectar();
@@ -26,9 +19,16 @@ if (isset($_POST['inputUsername'])) {
 }
 ?>
 
-<html lang="es">
-    <head>
-        <script src="../lib/js2/jquery-1.12.3.js" type="text/javascript"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Papeleria y tienda "Hanabi"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <body style="background-image:url('../img/dobla-papeles.jpg'); -webkit-background-size: cover;">
+        <script src="../lib/js/jquery-3.2.1.min.js" type="text/javascript"></script>
         <script>
 
             function agregar() {
@@ -44,7 +44,7 @@ if (isset($_POST['inputUsername'])) {
 
                 alert(username + " -- " + password);
                 ///llamar a la controlador de usuarios/////
-                $.post('../controllers/users.php',
+                $.post('../Controllers/user.php',
                         {
                             'id': id,
                             'username': username,

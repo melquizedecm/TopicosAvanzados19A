@@ -1,13 +1,12 @@
 <?php
 
+require_once '../core/Config.php';
 //
 //Sourse: user.php
 //Author: Karen López
 //Date: 11/04/19
 //Description: CRUD que permite gestionar los datos del usuario
 //
-
-require_once '../core/Config.php';
 
 ////CONECTARME A LA BASE DE DATOS
 $config = new Config();
@@ -25,14 +24,12 @@ if (isset($_POST['action'])) {
         $sql = "UPDATE users SET username='" . $username . "',password='" . md5($password) . "' WHERE id='" . $id . "'";
         $conexion->query($sql);
     }
-    
-    ///////VERIFICAR SI LA ACCION ES ELIMINAR //////
 }
-
-//if (isset($_POST['action'])) {
-//    if ($_POST['action'] = 'eliminar') {
-//        $id = $_POST['id'];
-//        $sql = "UPDATE users SET status='0' WHERE id='" . $id . "'";
-//        $conexion->query($sql);
-//    }
-//}
+    ///////VERIFICAR SI LA ACCION ES ELIMINAR //////
+if (isset($_POST['action'])) {
+    if ($_POST['action'] = 'eliminar') {
+        $id = $_POST['id'];
+        $sql = "UPDATE users SET status='0' WHERE id='" . $id . "'";
+        $conexion->query($sql);
+    }
+}
