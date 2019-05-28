@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <script type="text/javascript" src="jspdf.min.js"></script>
+  <script src="pdf.js" charset="utf-8"></script>
+    <title>Bienvenidos</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- google font -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Kreon:300,400,700'>
+
+    <!-- js -->
+  <!--  <script>
+
+    //aqui comeinza ajax
+    function mostrarSugerencia(str) {
+    var xmlhttp;
+    if (str.length==0) { document.getElementById("txtSugerencia").innerHTML=""; return; }
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+        document.getElementById("txtSugerencia").innerHTML=xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET","MENU.php?q="+str,true);
+    xmlhttp.send();
+    }
+    //aqui termian ajax
+    </script>
+  </head>
+<body data-spy="scroll" data-target="#navbar" data-offset="120" >
+
+  <h3 style="color:grey";>BUSQUE SU COMIDA O BEBIDA FAVORITA</h3>
+
+  <form action="">
+
+  Nombre: <input type="text" id="txt1" onkeyup="mostrarSugerencia(this.value)" />
+
+  </form>
+
+  <p>Sugerencias: <span id="txtSugerencia"></span></p>
+  AQUI TERMINA AJAX-->
+
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><h2>La Lupita</h2></a>
+            </div><!-- navbar-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+            <div class="hidden-xs" id="logo"><a href="#header">
+                <img src="img/LOGO.png" alt="">
+            </a></div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!--fix for scroll spy active menu element-->
+                <li style="display:none;"><a href="#header"></a></li>
+
+            </ul>
+        </div><!--/.navbar-collapse -->
+        </div><!-- container -->
+    </div><!-- menu -->
+
+    <div id="header">
+        <div class="bg-overlay"></div>
+        <div class="center text-center">
+            <div class="banner">
+                <h1 class="">La Lupita</h1>
+            </div>
+            <div class="subtitle"><h4>Bar Restaurant</h4></div>
+<button onclick="location.href='login1.php'">Administración</button>
+<a href="./menu.pdf" class="btn" download="Manu La Lupita.pdf">Descargar</a>
+        </div>
+        <div class="bottom text-center">
+            <a id="scrollDownArrow" href="#"><i class="fa fa-chevron-down"></i></a>
+        </div>
+    </div>
+    <!-- /#header -->
+
+    <div id="story" class="light-wrapper">
+        <section class="ss-style-top"></section>
+        <div class="container inner">
+            <h2 class="section-title text-center">Un poco de nuestra historia</h2>
+            <p class="lead main text-center">Contamos Con 19 Años De Experiencia En Servicio y Calidad. </p>
+            <div class="row text-center story">
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper"> <i class="fa fa-anchor"></i> </div>
+                        <h3>Marisquería</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper"> <i class="fa  fa-cutlery"></i> </div>
+                        <h3></h3>
+                        <p>Nos Especializamos En Mariscos y Otra Variedad De Comidas. </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper"> <i class="fa fa-coffee"></i> </div>
+                        <h3>Sobre nosotros</h3>
+                        <p>Contamos Con Atencion Personal De Sus Propietarios Amada Guadalupe Novelo Adrian y Cresencio Jesus Sanchez Martinez.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.services -->
+        </div>
+        <!-- /.container -->
+        <section class="ss-style-bottom"></section>
+    </div><!-- #story -->
+
+    <div id="food-menu" class="light-wrapper">
+        <section class="ss-style-top"></section>
+        <div class="container inner">
+            <h2 class="section-title text-center">Menu</h2>
+            <p class="lead main text-center">Contamos con un extenso menu</p>
+
+                        <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/Ceviche.jpg" alt="Hot Drinks"></div>
+                    <div class="menu-titles"><h1 class="">Ceviches</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Pescado</li>
+                            <li>Pulpo</li>
+                            <li>Camaron</li>
+                            <li>Nolon</li>
+                            <li>Surimi</li>
+                            <li>Mixto</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/Coctel.jpg" alt="Ice Drinks"></div>
+                    <div class="menu-titles"><h1 class="">Cocteles/Cocktails</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Camaron</li>
+                            <li>Pulpo</li>
+                            <li>Nolon</li>
+                            <li>Mixto</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/CamaronesEMP.jpg" alt="Smoothies"></div>
+                    <div class="menu-titles"><h1 class="">Camarones/Shrimps</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Empanizado</li>
+                            <li>Empanizadon con spaguetti</li>
+                            <li>Al mojo de ajo</li>
+                            <li>A la parrilla</li>
+                            <li>Con Spaguetti</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/pollo.jpg" alt="Deserts"></div>
+                    <div class="menu-titles"><h1 class="">Orden de pollo y puerco al gusto/Order chicken and pork to taste</h1></div>
+                    <div class="menu-items ">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/Empanizado.jpg" alt="Hot Drinks"></div>
+                    <div class="menu-titles"><h1 class="">Filetes/Steaks</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Empanizado</li>
+                            <li>Al mojo de ajo</li>
+                            <li>Relleno J/Q</li>
+                            <li>Relleno de mariscos</li>
+                            <li>A la veracruzana</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/sopa.jpg" alt="Ice Drinks"></div>
+                    <div class="menu-titles"><h1 class="">Otros/Others</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Sopa de mariscos</li>
+                            <li>Arroz blanco</li>
+                            <li>Papas fritas</li>
+                            <li>Platanos fritos</li>
+                            <li>Frijol</li>
+                            <li>Pan de cazón</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/beer.png" alt="Smoothies"></div>
+                    <div class="menu-titles"><h1 class="">Cerveza/Beer</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Sol</li>
+                            <li>Tecate Light</li>
+                            <li>XX Laguer</li>
+                            <li>Chelada</li>
+                            <li>Michelada Clasica</li>
+                            <li>Ojo rojo</li>
+                            <li>Michelada de mango/tamarindo...</li>
+                            <li>Chamochela</li>
+                            <li>Chamoychela</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/cocktails.png" alt="Deserts"></div>
+                    <div class="menu-titles"><h1 class="">Preparados/Prepared</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Margarita</li>
+                            <li>Piña Colada</li>
+                            <li>Piñada</li>
+                            <li>Daiquiris</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+                <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/ron.jpg" alt="Deserts"></div>
+                    <div class="menu-titles"><h1 class="">Ron</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Bacardi Blanco</li>
+                            <li>Bacardi añejo</li>
+                            <li>Bacardi solera</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/vodka.jpg" alt="Deserts"></div>
+                    <div class="menu-titles"><h1 class="">Vodka</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Smirnoff</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/wine.png" alt="Deserts"></div>
+                    <div class="menu-titles"><h1 class="">Brandy</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Azteca de Oro</li>
+                            <li>Presidente</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="menu-images "><img src="img/menu/sprites.png" alt="Deserts"></div>
+                    <div class="menu-titles"><h1 class="">Aguas o Refrescos/Sodas or Natural Juice</h1></div>
+                    <div class="menu-items ">
+                        <ul>
+                            <li>Jamaica</li>
+                            <li>Limonada</li>
+                            <li>Horchata</li>
+                            <li>Coca-Cola</li>
+                            <li>Coca-Cola Light</li>
+                            <li>Cristal</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+        <!-- /.container -->
+        <section class="ss-style-bottom"></section>
+    </div><!--/#food-menu-->
+
+<button>Comidas mas solicitadas</button>
+
+    <footer id="footer" class="dark-wrapper">
+        <section class="ss-style-top"></section>
+        <div class="container inner">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; Contactanos al:
+                    <br/>99999999999  <a class="themeBy" href=""></a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-bar">
+                        <a href="https://www.facebook.com/LupitayChencho/" class="fa fa-facebook-square tooltipped" title=""></a>
+                        <a href="https://www.google.com.mx/maps/place/Los+Barriles/@21.2925863,-89.6049421,16z/data=!4m5!3m4!1s0x8f55c4c817f58611:0x96d4ed16e2fc828e!8m2!3d21.2944476!4d-89.6057743" class="fa fa-google-plus-square tooltipped" title=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.actual.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
