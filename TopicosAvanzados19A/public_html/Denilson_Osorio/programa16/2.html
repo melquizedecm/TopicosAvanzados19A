@@ -1,0 +1,93 @@
+<!-- crud que perimite gestionar los datos del usuario
+elaborado= 11/04/2019-->
+ <?php
+require_once '../programa16/1.php';
+//CONECTARME A LA BASE DE DATOS
+$config=new Config();
+$conexion=$config->conectar();
+$sql="SELECT * FROM users";
+$tablaUsers=$conexion->query($sql);
+
+if(isset($_POST['id'])){
+  $id=$_POST['id'];
+  $username=$_POST['username'];
+  $password=md5($_POST['password']);
+$sql="INSERT INTO users (username,password) VALUES('".$inputUsername."','".$inputPassword."')";
+
+$conexion->query($sql);
+}
+ <?
+
+<html>
+  <head>
+    <script>
+    function agregar(){
+      document.getElementById("fomr2").style.display="inline";
+}
+    function editar(form){
+    var id = form.campo0.value;
+    var username = form.campo1.value;
+    var password = form.campo2.value;
+    var status = form.campo3.value;
+    $post('../controllers/users.php',{
+      'id': id,
+      'username': username,
+      'password': password,
+      'status': status
+    }
+  );
+      return false;
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id="fomr2" style="display:none;">
+<!--en esta parte podemos agregar otros usuarios a la tabla y base de datos-->
+      <h3> Ingreso de Usuarios</h3>
+      <br>
+      <form method="post">
+        <label>Username: </label>
+          <input name="inputUsername" type="text" placeholder="Ingresa tu usuario">
+<br>
+        <label>Password: </label>
+          <input name="inputPassword" type="text" placeholder="Ingresa tu contraseña">
+<br>
+        <input type="submit" value="Registrar">
+      </form>
+
+    </div>
+    <div class="content">
+      <button value="Agregar usuario" onclick="agregar();">Agregar Usuario</button>
+     <table class="" border="1" width="100%">
+       <thead>
+         <th>ID</th>
+         <th>Usuario</th>
+         <th>Password</th>
+         <th>Status</th>
+         <th>Acciones</th>
+       </thead>
+
+       <tbody>
+<!-- while que nos permite recorrer las filas y columnas de datos en base de datos -->
+           <?php while($filaUsers=$tablaUsers->fetch_array(MYSQLI_BOTH)){
+           ?>
+    <tr>
+    <form onsubmit="editar(this);">
+<!-- aqui generamos una tabla que se llena con los campos llenados con los nombre,
+contraseñas, status de los usuarios agrgados a la base de datos.<-->
+         <th><input type="text" name="campo0" value="<?php echo $filaUsers[0]; ?>"></th>
+         <th><input type="text" name="campo1" value="<?php echo $filaUsers[1]; ?>"></th>
+         <th><input type="text" name="campo2" value="<?php echo $filaUsers[2]; ?>"></th>
+         <th><input type="text" name="campo3" value="<?php echo $filaUsers[5]; ?>"></th>
+         <th><input type="submit" onsubmit="return false;" value="Editar"> </th>
+    </form>
+    </tr>
+    <?php }; ?>
+      </thbody>
+     </table>
+   </div>
+
+
+  </body>
+</html>
