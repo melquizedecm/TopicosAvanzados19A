@@ -1,3 +1,0 @@
-//LIBRERIA DE ANGULARJS// <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
-
-//LIBRERIA DEL JSPDF// <script src="jspdf.min.js"></script>
