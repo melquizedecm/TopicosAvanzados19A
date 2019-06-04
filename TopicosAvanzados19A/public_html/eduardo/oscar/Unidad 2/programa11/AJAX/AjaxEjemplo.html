@@ -1,0 +1,47 @@
+<!--
+Sours:          Programa10.html
+Description:    libreria AJAX
+Date:           18/marzo/2019
+nombre          eduardo suaste uh
+-->
+<!DOCTYPE html><html><head><title>Cursos aprende a programar</title><meta charset="utf-8">
+
+<script>
+<!--funcion que llama una valor de tipo string para guardar-->
+function mostrarSugerencia(str) {
+
+var xmlhttp;
+
+if (str.length==0) { document.getElementById("txtSugerencia").innerHTML=""; return; }
+
+xmlhttp=new XMLHttpRequest();
+ <!--es invocado cada vez que cambia el atributo contiene el manejador del evento -->
+xmlhttp.onreadystatechange = function() {
+
+  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+
+    document.getElementById("txtSugerencia").innerHTML=xmlhttp.responseText;
+
+    }
+
+}
+ 
+xmlhttp.open("GET","listadoDatos.php?q="+str,true);
+
+xmlhttp.send();
+
+}
+
+</script></head>
+
+<body><h3>Empieza a escribir un nombre en la casilla para obtener una sugerencia:</h3>
+
+<form action="">
+<!--cajon donde escribe un valor string para ser tomado en un arreglo -->
+Nombre: <input type="text" id="txt1" onkeyup="mostrarSugerencia(this.value)" />
+
+</form>
+
+<p>Sugerencias: <span id="txtSugerencia"></span></p>
+
+</body></html>

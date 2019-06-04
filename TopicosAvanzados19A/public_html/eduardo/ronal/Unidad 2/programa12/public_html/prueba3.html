@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--los controladores como dice el nombre contralo los datos de las aplicaciones del angularjs
+La función myCtrl es una función de JavaScript.
+La aplicación AngularJS está definida por  ng-app = "myApp"
+El atributo ng-controller = "myCtrl" Define un controlador.-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <!--se llama la libreria -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <!--aqui se agrega el atributo ng-controller y se pone los datos de la persona -->
+        <div ng-app="myApp" ng-controller="myCtrl">
+            <!--el ng-model es el campo d entrada de las propiedades de los controladores -->
+            Nombre de pila: <input type="text" ng-model="firstName"><br>
+            Apellido completo: <input type="text" ng-model="lastName"><br>
+            <br>
+            <!--se imprime o se muestra en la pantalla -->
+            Nombre completo: {{firstName + " " + lastName}}
+        </div>
+        <!--el scope es el propietrio de las variables y funciones d la aplicacion -->
+        <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+                $scope.firstName = " ";
+                $scope.lastName = " ";
+            });
+        </script>
+    </body>
+</html>
