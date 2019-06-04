@@ -18,6 +18,9 @@ nombre=document.getElementById(etiquetaNombre).value;
 alert("gano el caballo "+nombre);
 }
 function ejecutar(){
+
+
+//  <!--creamos los hilos de los diferentes procesos-->
 Concurrent.Thread.create(caballo, 1,"inputcab1","input1",10000);
 Concurrent.Thread.create(caballo,2,"inputcab2","input2",10000);
 Concurrent.Thread.create(caballo,3,"inputcab3","input3",10000);
@@ -27,27 +30,37 @@ Concurrent.Thread.create(caballo,3,"inputcab3","input3",10000);
     <title></title>
   </head>
   <body>
+
+<!--diferentes campos a llenar-->
+
       <labe>Caballo 1 :</label>
       <input type="text" name="" id="inputcab1"/>
+      <!--visualizacion del proceso-->
       <labe>Puntaje :</label>
       <input type="text" name="" id="input1"/><br>
+      <img src="imagen5.gif"><br>
       <labe>Caballo 2 :</label>
       <input type="text" name="" id="inputcab2"/>
       <labe>Puntaje :</label>
       <input type="text" name="" id="input2"/><br>
+      <img src="imagen5.gif"><br>
       <labe>Caballo 3 :</label>
       <input type="text" name="" id="inputcab3"/>
       <labe>Puntaje :</label>
       <input type="text" name="" id="input3"/><br>
       <br>
+      <img src="imagen5.gif"><br>
 
 
 
 
 
 
+<!--boton que manda la accion a la funcion e inicia el proceso-->
 
 <button onclick="ejecutar();">iniciar carrera</button><br>
+
+
 
   </body>
 </html>
