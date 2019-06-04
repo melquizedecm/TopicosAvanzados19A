@@ -1,24 +1,27 @@
 <?php
 session_start();
+//conecta a la BD
 require_once '../Core/Config.php';
   $conexion=new Config();
   $link=$conexion->conectar();
 	$sql="SELECT usuarios.usuario, usuarios.password, usuarios.status, usuarios.id_u FROM usuarios";
 	$tablausuario=$link->query($sql);
-
+//para ver si el usuario esta en la BD
 	if(isset($_POST['username'])){
 		$usuario=$_POST["username"];
 		$contrasena=$_POST["pass"];
-
+//busca si esta en la BD
 			while($filausuario=$tablausuario->fetch_array(MYSQLI_BOTH)){
 				if($usuario==$filausuario[0] && $contrasena==$filausuario[1] &&$filausuario[2]==1){
           $id=$filausuario[3];
+          // si esta lo deja entrar y si no da falso y no lo deja
 					$bandera=true;
 					break;
 				}else{
 				$bandera=false;
 			}
 		}
+    //si la contraseña o el usuario es incorrecto manda una alerta
 		if($bandera){
 			$_SESSION['usuario']=$id;
 			header("Location: Inicio.php");
@@ -33,7 +36,7 @@ require_once '../Core/Config.php';
 <html lang="en">
 <head>
 	<title>Login</title>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8">   <!--librerias-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -58,12 +61,13 @@ require_once '../Core/Config.php';
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 <style type="text/css">
+/*<!--para poder poner una imagen de fondo--> */
   body, html {
   height: 100%;
 }
 
 .bg {
-  /* The image used */
+  /* imagen de fondo */
   background-image: url("https://previews.123rf.com/images/macrovector/macrovector1705/macrovector170500708/79221586-fondo-blanco-con-diferentes-art%C3%ADculos-de-papeler%C3%ADa-ilustraci%C3%B3n-vectorial-realista.jpg");
 
   /* Full height */
@@ -86,23 +90,19 @@ require_once '../Core/Config.php';
 						~ Usuario ~
 					</span>
 
-
+<!--apartado para ingresar usuario y alerta de usuario requerido-->
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "Usuario es requerido">
 						<input class="input100"  type="text" name="username" placeholder="Usuario">
 						<span class="focus-input100"></span>
 					</div>
 
-
+<!--apartado para ingresar contraseña y alerta de contraseña requerida-->
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "Contraseña es requerido">
 						<input class="input100" type="password" name="pass" placeholder="Contraseña">
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="flex-sb-m w-full p-t-3 p-b-24">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						</div>
-
+<!--botono de entrar-->
             <div class="container-login100-form-btn m-t-17">
               <button class="login100-form-btn">
                 Entrar
@@ -110,11 +110,6 @@ require_once '../Core/Config.php';
             </div>
 
 					</div>
-        <!--  <div>
-            <a href="#" class="txt1" onclick="location='Registro.php'">
-              Registrarse
-            </a>
-          </div> --->
 				</form>
 			</div>
 		</div>
@@ -122,7 +117,7 @@ require_once '../Core/Config.php';
 
 
 	<div id="dropDownSelect1"></div>
-
+<!--librerias-->
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js" type="f3fb90b7366debd175696b71-text/javascript"></script>
 <!--===============================================================================================-->

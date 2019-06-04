@@ -246,29 +246,7 @@ require_once '../Core/Config.php';
 
 </script>
 <script type="text/javascript">
-$(document).ready(function(){
-	// Activate tooltip
-	$('[data-toggle="tooltip"]').tooltip();
-	// Select/Deselect checkboxes
-	var checkbox = $('table tbody input[type="checkbox"]');
-	$("#selectAll").click(function(){
-		if(this.checked){
-			checkbox.each(function(){
-				this.checked = true;
-			});
-		} else{
-			checkbox.each(function(){
-				this.checked = false;
-			});
-		}
-	});
-	checkbox.click(function(){
-		if(!this.checked){
-			$("#selectAll").prop("checked", false);
-		}
-	});
-});
-//envia los datos de la BD y los muestra
+////envia los datos de la BD y los muestra
 function enviaridprod(nombre,precio,cantidad,preciov,categoria){
   document.getElementById('editprod').value=nombre;
   document.getElementById('editprev').value=precio;
@@ -296,9 +274,9 @@ function enviaridprod(nombre,precio,cantidad,preciov,categoria){
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-						<h2>Productos de la tienda</h2>   <!--subtitulo de la pagina-->
+						<h2>Productos de la tienda</h2>   //<!--subtitulo de la pagina-->
 					</div>
-             <!--botones-->
+          //   <!--botones-->
 					<div class="col-sm-6">
               <input type="button" name="button" onclick="location='Inicio.php'" class="btn btn-warning" id="button" value="Regresar"/>
               <input type="button" name="button" onclick="Inventario()" class="btn btn-warning" id="button" value="Descargar Inventario"/>
@@ -306,11 +284,11 @@ function enviaridprod(nombre,precio,cantidad,preciov,categoria){
 					</div>
                 </div>
             </div>
-            <!--tabla-->
+        //    <!--tabla-->
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
-						   <!--encaebzado-->
+						  // <!--encaebzado-->
                         <th>Producto</th>
 						            <th>Precio de compra</th>
                         <th>Existencia</th>
@@ -320,20 +298,20 @@ function enviaridprod(nombre,precio,cantidad,preciov,categoria){
                     </tr>
                 </thead>
                 <tbody>
-                  <!--para mostrar todos del datos de la BD-->
+                //  <!--para mostrar todos del datos de la BD-->
 
                   <?php while($filainventario=$tablainvent->fetch_array(MYSQLI_BOTH)){
                       if($filainventario[0]==1){
                    ?>
                     <tr>
-                      <!--imprime las filas-->
+                    //  <!--imprime las filas-->
                         <td><?php echo $filainventario[1]; ?></td>
-						            <td><?php echo "$".$filainventario[3]; ?></td>
-                        <td><?php echo $filainventario[4]; ?></td>
+						            <td><?php echo "$".$filainventario[4]; ?></td>
+                        <td><?php echo $filainventario[3]; ?></td>
                         <td><?php echo "$".$filainventario[5]; ?></td>
                         <td><?php echo $filainventario[6]; ?></td>
                         <td>
-                          <!--botones de editaar y eliminar-->
+                        //  <!--botones de editaar y eliminar-->
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit"
                               onclick="javascript: enviaridprod('<?php echo $filainventario[1];?>','<?php echo $filainventario[3];?>',
                               '<?php echo $filainventario[4];?>','<?php echo $filainventario[5];?>','<?php echo $filainventario[6];?>');" >&#xE254;</i></a>
@@ -347,7 +325,7 @@ function enviaridprod(nombre,precio,cantidad,preciov,categoria){
 
         </div>
     </div>
-	<!-- Edit Modal HTML -->
+//	<!-- Edit Modal HTML -->
 	<div id="addEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -390,7 +368,7 @@ function enviaridprod(nombre,precio,cantidad,preciov,categoria){
 			</div>
 		</div>
 	</div>
-	<!-- Edit Modal HTML -->
+	//<!-- Edit Modal HTML -->
 	<div id="editEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -433,7 +411,7 @@ function enviaridprod(nombre,precio,cantidad,preciov,categoria){
 			</div>
 		</div>
 	</div>
-	<!-- Delete Modal HTML -->
+	//<!-- Delete Modal HTML -->
 	<div id="deleteEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
