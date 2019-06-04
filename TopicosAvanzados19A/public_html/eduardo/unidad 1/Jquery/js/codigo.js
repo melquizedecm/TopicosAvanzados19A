@@ -1,9 +1,4 @@
-<!--
-Sours:          Programa13.html
-Description:    uso de libreria de jquery
-Date:           18/marzo/2019
-nombre          eduardo suaste uh
--->
+
 
 //js del ejemplo 1 (su funcion de este ejemplo es cambiar el clor del cuadro de color por medio de un click
 
