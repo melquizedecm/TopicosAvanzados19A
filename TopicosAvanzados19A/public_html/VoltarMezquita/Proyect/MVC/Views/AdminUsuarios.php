@@ -1,6 +1,6 @@
 <?php
-
 require_once '../Core/Config.php';
+//conecta
   $conexion=new Config();
   $link=$conexion->conectar();
 
@@ -15,9 +15,6 @@ require_once '../Core/Config.php';
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Administrador de Usuarios</title> <!--Titulo de la pagina-->
-<!--librerias del pdf-->
-<script type="text/javascript" src="jspdf.min.js"></script>
-  <script src="PDF.js" charset="utf-8"></script>
   <!--librerias de la pagina-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--librerias-->
@@ -247,28 +244,6 @@ require_once '../Core/Config.php';
 	}
 </style>
 <script type="text/javascript">
-$(document).ready(function(){
-	// Activate tooltip
-	$('[data-toggle="tooltip"]').tooltip();
-	// Select/Deselect checkboxes
-	var checkbox = $('table tbody input[type="checkbox"]');
-	$("#selectAll").click(function(){
-		if(this.checked){
-			checkbox.each(function(){
-				this.checked = true;
-			});
-		} else{
-			checkbox.each(function(){
-				this.checked = false;
-			});
-		}
-	});
-	checkbox.click(function(){
-		if(!this.checked){
-			$("#selectAll").prop("checked", false);
-		}
-	});
-});
 </script>
 <script type="text/javascript" src="js/Admin.js">-
 </script>
@@ -302,14 +277,16 @@ $(document).ready(function(){
                 </thead>
 
                 <tbody>
+                  <!--para agregaar los usuarios de la bd-->
                   <?php while($filaadmin=$tablaadmin->fetch_array(MYSQLI_BOTH)){
                     if($filaadmin[4]==1){ ?>
                     <tr>
-
+                      <!--imprime los usuarios de la bd-->
                         <td><?php echo $filaadmin[0]; ?></td>
                         <td><?php echo $filaadmin[1]; ?></td>
 						            <td><?php echo $filaadmin[2]; ?></td>
 
+                        <!--editar y eliminar usuario-->
 
                         <td>
                             <a href="#editEmployeeModal" onclick="iduser('<?php echo $filaadmin[3]; ?>')" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>

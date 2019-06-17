@@ -21,19 +21,23 @@ Libreria chart-->
               12,
               23
               ],
+
+
+//Ajuste de la configuracion-->
+
               backgroundColor:[
               "#ABEBC6",
-              "#ABEBE6",
+              "red",
               "#008080",
-              "#ABB0EB",
+              "blue",
               "#C6ABEB"
               ],
-
+//ajuste de los campos -->
             }],
             labels:[
-            "Dato1",
-            "Dato2",
-            "Dato3",
+            "Tareas",
+            "Asistencia",
+            "Examen",
             "Dato4",
             "Dato5"
             ]
@@ -50,11 +54,14 @@ Libreria chart-->
           var newData={
             backgroundColor:[
               "#ABEBC6",
-              "#ABEBE6",
+              "red",
               "#008080",
-              "#ABB0EB",
+              "blue",
               "#C6ABEB"
             ],
+
+//<!--datos de la grafica-->
+
             data: [getRandom(),getRandom(),getRandom(),getRandom(),getRandom()]
           };
           datos.data.datasets.push(newData);

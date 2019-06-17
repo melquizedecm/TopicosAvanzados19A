@@ -1,7 +1,10 @@
 <?php
+//conecta a la config
 require_once '../Core/Config.php';
+//pone la hora de mexico para no generar error en la hora
 date_default_timezone_set("America/Mexico_City");
 session_start();
+//se conecta a la BD
   $conexion=new Config();
   $link=$conexion->conectar();
   $id=$_SESSION['usuario'];
@@ -251,33 +254,10 @@ session_start();
             }
         </style>
         <script type="text/javascript">
-            $(document).ready(function () {
-                // Activate tooltip
-                $('[data-toggle="tooltip"]').tooltip();
-
-                // Select/Deselect checkboxes
-                var checkbox = $('table tbody input[type="checkbox"]');
-                $("#selectAll").click(function () {
-                    if (this.checked) {
-                        checkbox.each(function () {
-                            this.checked = true;
-                        });
-                    } else {
-                        checkbox.each(function () {
-                            this.checked = false;
-                        });
-                    }
-                });
-                checkbox.click(function () {
-                    if (!this.checked) {
-                        $("#selectAll").prop("checked", false);
-                    }
-                });
-            });
         </script>
         <script type="text/javascript" src="js/Ventas.js">
 
-        </script>
+        </script><!--pone imagen en el fondo-->
     <body style="background-image:url('../img/dobla-papeles.jpg'); -webkit-background-size: cover;"> <!--fondo de la Pág-->
     </head>
 <body>
@@ -288,7 +268,7 @@ session_start();
                     <div class="col-sm-6">
                         <h2>Venta de productos</h2>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6"><!--botones-->
                       <input type="button" name="button" onclick="location='Inicio.php'" class="btn btn-warning" id="button" value="Regresar"/>
                       <input type="button" name="button" onclick="location='Gráfica de ventas.html'" class="btn btn-warning" id="button" value="Grafica de ventas del año"/>
                       <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Ventas</span></a>                     </div>
@@ -309,6 +289,7 @@ session_start();
                     </tr>
                 </thead>
                 <tbody>
+                  <!--imprime las ventas -->
                   <?php while ($filaventa=$tablaventa->fetch_array(MYSQLI_BOTH)){
                       if($filaventa[1]==1){
                    ?>
@@ -327,6 +308,7 @@ session_start();
                 </tbody>
             </table>
         </div>
+        <!--funcion del boton agregar venta-->
         <div id="addEmployeeModal" class="modal fade">
       		<div class="modal-dialog">
       			<div class="modal-content">
@@ -339,12 +321,14 @@ session_start();
 
       						<div class="form-group">
       							<label>Atiende</label>
+                    <!--usuario logiado y mostrado-->
       							<input value="<?php echo $filadesp[0]." ".$filadesp[1]; ?>" type="text" class="form-control" readonly="readonly" required>
       						</div>
       						<div class="form-group">
 
       							<label>Productos</label>
       							<select  id="addprod" onchange="importe()">
+                      <!--muestra todos los productos-->
                       <?php while($filaprod=$tablaprod->fetch_array(MYSQLI_BOTH)){
                          ?>
                       <option  value="<?php echo $filaprod[2].",".$filaprod[0]; ?>"><?php echo $filaprod[1]." -----$".$filaprod[2]; ?></option>
@@ -359,7 +343,7 @@ session_start();
       							<label>Importe</label>
       							<input id="addimp" type="text" class="form-control" readonly="readonly" required>
       						</div>
-
+<!--fecha y hora actual-->
       						<div class="form-group">
       							<label>Fecha</label>
       							<input id="addfech" type="text"  value="<?php echo date("Y-m-d");?>" class="form-control" readonly  required>
