@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+   en el css estilo modificamos los atributos del aspecto de las figuras
+*/
+/* se creo para comprobar que la hoja este vinculado con el css estilo*/
+*{
+ margin:0;
+ padding:0;
+ list-style: none;
+ text-decoration: none;
+ font-family: sans-serif;
+}
+
+/*estilo del div caja*/
+#caja{
+    width:300px;
+    height:100px;
+    background: blue;
+    cursor: pointer;
+    
+}
+
+/*estilo del div cajas*/
+.cajas{
+    position:relative;
+    width:500px;
+    height:100px;
+    background:#590714;
+    margin:20px;
+    cursor:pointer;
+    
+}
+
+/*estilo del input */
+input{
+    
+    padding:10px;
+    
+}
+
+/*estilo del boton*/
+button{
+    
+    padding:10px;
+    margin:20px;
+}
+
+/*estilo del div de la caja 2*/
+#caja2{
+    
+     position:relative;
+     margin:20px;
+    width:30px;
+    height:30px;
+    background:yellow;
+    cursor:pointer;
+}
+
+.parrafo{
+    
+    color:white;
+    font-size: 24px;
+    background:green;
+    padding: 20px;
+    text-align: right;
+    
+}
+
+#contenedor{
+    
+    margin:20px;
+    
+}
+
+#c3{
+    
+    padding: 20px;
+    text-align: center;
+    width:300px;
+    height:auto;
+    background:chocolate;
+    color:white;
+    display:none;
+}
+
